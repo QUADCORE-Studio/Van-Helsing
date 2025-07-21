@@ -1,0 +1,604 @@
+fileFormatVersion: 2
+guid: 45d70193a05a3584eba4bafef3ca778c
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 3035625573257114638
+    second: BloodBeamSheet_0
+  - first:
+      213: -3499422172573625434
+    second: BloodBeamSheet_1
+  - first:
+      213: 93946883446729357
+    second: BloodBeamSheet_2
+  - first:
+      213: -7752563150748777813
+    second: BloodBeamSheet_3
+  - first:
+      213: 5016520952237653932
+    second: BloodBeamSheet_4
+  - first:
+      213: -4586135555854350765
+    second: BloodBeamSheet_5
+  - first:
+      213: 1945186087320542657
+    second: BloodBeamSheet_6
+  - first:
+      213: 3213910877675392949
+    second: BloodBeamSheet_7
+  - first:
+      213: 1942652941907443625
+    second: BloodBeamSheet_8
+  - first:
+      213: -2788326944831058156
+    second: BloodBeamSheet_9
+  - first:
+      213: 7378595469432639777
+    second: BloodBeamSheet_10
+  - first:
+      213: -6853696270070109723
+    second: BloodBeamSheet_11
+  - first:
+      213: 2435649509819378102
+    second: BloodBeamSheet_12
+  - first:
+      213: -411429161649940630
+    second: BloodBeamSheet_13
+  - first:
+      213: -1483793388487391668
+    second: BloodBeamSheet_14
+  - first:
+      213: -6477043099866524910
+    second: BloodBeamSheet_15
+  - first:
+      213: 6412148144178956257
+    second: BloodBeamSheet_16
+  - first:
+      213: 3851538325505427807
+    second: BloodBeamSheet_17
+  - first:
+      213: 44954594175738924
+    second: BloodBeamSheet_18
+  - first:
+      213: -457727376744765167
+    second: BloodBeamSheet_19
+  - first:
+      213: 5967853010424656738
+    second: BloodBeamSheet_20
+  - first:
+      213: 2431351168839195200
+    second: BloodBeamSheet_21
+  - first:
+      213: 4770338251096419340
+    second: BloodBeamSheet_22
+  - first:
+      213: -439155001878380856
+    second: BloodBeamSheet_23
+  - first:
+      213: -7577706754107093546
+    second: BloodBeamSheet_24
+  - first:
+      213: -2201880068984992748
+    second: BloodBeamSheet_25
+  - first:
+      213: -6672083694960288387
+    second: BloodBeamSheet_26
+  - first:
+      213: -8993165738701143780
+    second: BloodBeamSheet_27
+  - first:
+      213: -3358333830903978920
+    second: BloodBeamSheet_28
+  - first:
+      213: -7072016079147331175
+    second: BloodBeamSheet_29
+  - first:
+      213: -2633293007993625797
+    second: BloodBeamSheet_30
+  - first:
+      213: -757423346538921350
+    second: BloodBeamSheet_31
+  - first:
+      213: -624309124377646010
+    second: BloodBeamSheet_32
+  - first:
+      213: -7027316951897046265
+    second: BloodBeamSheet_33
+  - first:
+      213: -9022100253488474611
+    second: BloodBeamSheet_34
+  - first:
+      213: 8826751397588649115
+    second: BloodBeamSheet_35
+  - first:
+      213: -718124125256177064
+    second: BloodBeamSheet_36
+  - first:
+      213: -5148604947738098120
+    second: BloodBeamSheet_37
+  - first:
+      213: 6491505912899480967
+    second: BloodBeamSheet_38
+  - first:
+      213: -8645300212155597879
+    second: BloodBeamSheet_39
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: BloodBeamSheet_0
+      rect:
+        serializedVersion: 2
+        x: 2925
+        y: 2929
+        width: 75
+        height: 88
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline:
+      - - {x: 37.5, y: -36.289036}
+        - {x: 37.5, y: 36.8887}
+        - {x: 31.574724, y: 44}
+        - {x: -36.824005, y: 44}
+        - {x: -36.824005, y: -42.652317}
+        - {x: 31.574724, y: -44}
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e04f41d1065b02a20800000000000000
+      internalID: 3035625573257114638
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BloodBeamSheet_1
+      rect:
+        serializedVersion: 2
+        x: 2950
+        y: 2740
+        width: 50
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline:
+      - - {x: 25, y: 32}
+        - {x: -24.549532, y: 32}
+        - {x: -24.549532, y: -32}
+        - {x: 25, y: -32}
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6a39f94231e8f6fc0800000000000000
+      internalID: -3499422172573625434
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BloodBeamSheet_2
+      rect:
+        serializedVersion: 2
+        x: 2925
+        y: 2547
+        width: 75
+        height: 88
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline:
+      - - {x: 37.5, y: -36.49216}
+        - {x: 37.5, y: 35.094753}
+        - {x: 29.984056, y: 44}
+        - {x: -28.870667, y: 44}
+        - {x: -36.824005, y: 36.685574}
+        - {x: -36.824005, y: -38.08298}
+        - {x: -30.461334, y: -44}
+        - {x: 31.574724, y: -44}
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d8ae8975134cd4100800000000000000
+      internalID: 93946883446729357
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BloodBeamSheet_3
+      rect:
+        serializedVersion: 2
+        x: 460
+        y: 1656
+        width: 2534
+        height: 227
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline:
+      - - {x: 32, y: 7}
+        - {x: -32, y: 7}
+        - {x: -32, y: -6.503876}
+        - {x: 32, y: -6.503876}
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ba206d4a3ec596490800000000000000
+      internalID: -7752563150748777813
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BloodBeamSheet_4
+      rect:
+        serializedVersion: 2
+        x: 847
+        y: 613
+        width: 2149
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline:
+      - - {x: 94, y: 7}
+        - {x: -94, y: -6.503876}
+        - {x: 94, y: -6.503876}
+      - - {x: -47, y: 5}
+        - {x: 45, y: 5}
+        - {x: 45, y: 7}
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: caffd663a334e9540800000000000000
+      internalID: 5016520952237653932
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BloodBeamSheet_5
+      rect:
+        serializedVersion: 2
+        x: 2295
+        y: 2305
+        width: 705
+        height: 200
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline:
+      - - {x: -170.92052, y: -39.07375}
+        - {x: -167.73918, y: -35.89211}
+        - {x: -167.73918, y: -30.935213}
+        - {x: -127.97247, y: -45.34481}
+        - {x: -127.97247, y: -86.798355}
+        - {x: -120.019135, y: -89.979996}
+        - {x: -89.79644, y: -89.979996}
+        - {x: -81.8431, y: -86.798355}
+        - {x: -81.8431, y: -62.059956}
+        - {x: 21.55033, y: -99.52492}
+        - {x: 183.79848, y: -99.52492}
+        - {x: 198, y: -67.70851}
+        - {x: 198, y: 48.42137}
+        - {x: -77.0711, y: 100}
+        - {x: -185.23653, y: 100}
+        - {x: -197.96187, y: 92.96434}
+        - {x: -197.96187, y: -39.07375}
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3564385a206ca50c0800000000000000
+      internalID: -4586135555854350765
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BloodBeamSheet_6
+      rect:
+        serializedVersion: 2
+        x: 1666
+        y: 1999
+        width: 1334
+        height: 200
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline:
+      - - {x: 667, y: -65.08945}
+        - {x: 667, y: 51.040436}
+        - {x: 548.55566, y: 100}
+        - {x: -199.05836, y: 100}
+        - {x: -666.7148, y: 47.858795}
+        - {x: -666.7148, y: -49.181244}
+        - {x: -453.56528, y: -100}
+        - {x: 527.87695, y: -100}
+      - - {x: 303.59277, y: 30.359774}
+        - {x: 322.6808, y: 31.950594}
+        - {x: 327.4528, y: 36.723053}
+        - {x: 327.4528, y: 43.086334}
+        - {x: 348.13147, y: 44.677155}
+        - {x: 352.90347, y: 49.449615}
+        - {x: 352.90347, y: 57.403717}
+        - {x: 365.6288, y: 57.403717}
+        - {x: 365.6288, y: 49.449615}
+        - {x: 371.9915, y: 43.086334}
+        - {x: 427.6649, y: 43.086334}
+        - {x: 427.6649, y: 36.723053}
+        - {x: 432.4369, y: 31.950594}
+        - {x: 451.5249, y: 30.359774}
+      - - {x: -54.30757, y: 30.359774}
+        - {x: -54.30757, y: 31.950594}
+        - {x: -17.722202, y: 31.950594}
+        - {x: -17.722202, y: 30.359774}
+      - - {x: 168.38597, y: -42.817963}
+        - {x: 168.38597, y: -34.86386}
+        - {x: 163.61397, y: -30.0914}
+        - {x: 138.16327, y: -18.955658}
+        - {x: 117.48459, y: -17.364838}
+        - {x: 241.5567, y: -17.364838}
+        - {x: 235.19403, y: -18.955658}
+        - {x: 217.69669, y: -34.86386}
+        - {x: 217.69669, y: -42.817963}
+      - - {x: 575.59705, y: -30.0914}
+        - {x: 575.59705, y: -22.137299}
+        - {x: 570.825, y: -18.955658}
+        - {x: 562.87164, y: -17.364838}
+        - {x: 612.1824, y: -17.364838}
+        - {x: 604.22906, y: -18.955658}
+        - {x: 599.45703, y: -23.728119}
+        - {x: 599.45703, y: -30.0914}
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1cdd5ccb070befa10800000000000000
+      internalID: 1945186087320542657
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BloodBeamSheet_7
+      rect:
+        serializedVersion: 2
+        x: 2018
+        y: 181
+        width: 982
+        height: 191
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline:
+      - - {x: 7, y: 7}
+        - {x: -7, y: 7}
+        - {x: -7, y: -7}
+        - {x: 7, y: -7}
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5bf0b9b4aea1a9c20800000000000000
+      internalID: 3213910877675392949
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BloodBeamSheet_12
+      rect:
+        serializedVersion: 2
+        x: 431
+        y: 1313
+        width: 2569
+        height: 150
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline:
+      - - {x: 1284.5, y: -70.218254}
+        - {x: 1284.5, y: 65.00148}
+        - {x: 1207.2461, y: 72.95558}
+        - {x: 965.4645, y: 75}
+        - {x: -1229.6576, y: 75}
+        - {x: -1283.7402, y: 55.456554}
+        - {x: -1283.7402, y: -46.355946}
+        - {x: -1261.471, y: -74.990715}
+        - {x: 1284.5, y: -74.990715}
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6b96326135a2dc120800000000000000
+      internalID: 2435649509819378102
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BloodBeamSheet_13
+      rect:
+        serializedVersion: 2
+        x: 443
+        y: 979
+        width: 2557
+        height: 138
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline:
+      - - {x: 1278.5, y: 69}
+        - {x: -1278.1029, y: 69}
+        - {x: -1278.1029, y: -62.98732}
+        - {x: -1274.9216, y: -69}
+        - {x: 1278.5, y: -69}
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a675e997b5f4a4af0800000000000000
+      internalID: -411429161649940630
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5d0df204625c80a48a2b2e66ed5de70e
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      BloodBeamSheet_0: 3035625573257114638
+      BloodBeamSheet_1: -3499422172573625434
+      BloodBeamSheet_10: 7378595469432639777
+      BloodBeamSheet_11: -6853696270070109723
+      BloodBeamSheet_12: 2435649509819378102
+      BloodBeamSheet_13: -411429161649940630
+      BloodBeamSheet_14: -1483793388487391668
+      BloodBeamSheet_15: -6477043099866524910
+      BloodBeamSheet_16: 6412148144178956257
+      BloodBeamSheet_17: 3851538325505427807
+      BloodBeamSheet_18: 44954594175738924
+      BloodBeamSheet_19: -457727376744765167
+      BloodBeamSheet_2: 93946883446729357
+      BloodBeamSheet_20: 5967853010424656738
+      BloodBeamSheet_21: 2431351168839195200
+      BloodBeamSheet_22: 4770338251096419340
+      BloodBeamSheet_23: -439155001878380856
+      BloodBeamSheet_24: -7577706754107093546
+      BloodBeamSheet_25: -2201880068984992748
+      BloodBeamSheet_26: -6672083694960288387
+      BloodBeamSheet_27: -8993165738701143780
+      BloodBeamSheet_28: -3358333830903978920
+      BloodBeamSheet_29: -7072016079147331175
+      BloodBeamSheet_3: -7752563150748777813
+      BloodBeamSheet_30: -2633293007993625797
+      BloodBeamSheet_31: -757423346538921350
+      BloodBeamSheet_32: -624309124377646010
+      BloodBeamSheet_33: -7027316951897046265
+      BloodBeamSheet_34: -9022100253488474611
+      BloodBeamSheet_35: 8826751397588649115
+      BloodBeamSheet_36: -718124125256177064
+      BloodBeamSheet_37: -5148604947738098120
+      BloodBeamSheet_38: 6491505912899480967
+      BloodBeamSheet_39: -8645300212155597879
+      BloodBeamSheet_4: 5016520952237653932
+      BloodBeamSheet_40: -1403450251
+      BloodBeamSheet_5: -4586135555854350765
+      BloodBeamSheet_6: 1945186087320542657
+      BloodBeamSheet_7: 3213910877675392949
+      BloodBeamSheet_8: 1942652941907443625
+      BloodBeamSheet_9: -2788326944831058156
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
