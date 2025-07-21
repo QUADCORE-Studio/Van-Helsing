@@ -1,10 +1,19 @@
 fileFormatVersion: 2
-guid: 8e836ba2cb3a48f478381c2fc6d98ec8
+guid: 9e2d45422710032418f1ee518e0bcff0
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -1799136117677553730
-    second: BackgroundColor_0
+      213: 1628447052339295752
+    second: BossRoomDoor_0
+  - first:
+      213: -8023854140004214924
+    second: BossRoomDoor_1
+  - first:
+      213: 7784946226196028942
+    second: BossRoomDoor_2
+  - first:
+      213: 1389111224054648728
+    second: BossRoomDoor_3
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -126,13 +135,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: BackgroundColor_0
+      name: BossRoomDoor_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 3000
-        height: 3000
+        x: 808
+        y: 752
+        width: 14
+        height: 39
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -141,8 +150,74 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: eb70143bb3f2807e0800000000000000
-      internalID: -1799136117677553730
+      spriteID: 806373a57f7699610800000000000000
+      internalID: 1628447052339295752
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BossRoomDoor_1
+      rect:
+        serializedVersion: 2
+        x: 869
+        y: 555
+        width: 1262
+        height: 1088
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 477508ffb2b85a090800000000000000
+      internalID: -8023854140004214924
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BossRoomDoor_2
+      rect:
+        serializedVersion: 2
+        x: 808
+        y: 678
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e0e9ee7a85fa90c60800000000000000
+      internalID: 7784946226196028942
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BossRoomDoor_3
+      rect:
+        serializedVersion: 2
+        x: 2289
+        y: 555
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 89f09476c4d174310800000000000000
+      internalID: 1389111224054648728
       vertices: []
       indices: 
       edges: []
@@ -161,7 +236,10 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      BackgroundColor_0: -1799136117677553730
+      BossRoomDoor_0: 1628447052339295752
+      BossRoomDoor_1: -8023854140004214924
+      BossRoomDoor_2: 7784946226196028942
+      BossRoomDoor_3: 1389111224054648728
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
