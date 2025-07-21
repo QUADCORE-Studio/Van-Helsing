@@ -44,7 +44,10 @@ TagManager:
   - name: Background
     uniqueID: 3625936637
     locked: 0
-  - name: Characters
+  - name: RoomItems
+    uniqueID: 227496993
+    locked: 0
+  - name: Player/Room
     uniqueID: 2299162555
     locked: 0
   m_RenderingLayers:
