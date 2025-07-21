@@ -1,0 +1,1157 @@
+fileFormatVersion: 2
+guid: 8f9168a2016fa2048b63c3b764fe5ec6
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 9087516118667357417
+    second: PoofSheet_0
+  - first:
+      213: -2898297393626532995
+    second: PoofSheet_1
+  - first:
+      213: 8185958597849063585
+    second: PoofSheet_2
+  - first:
+      213: -1469119278560039009
+    second: PoofSheet_3
+  - first:
+      213: -3488952217539136484
+    second: PoofSheet_4
+  - first:
+      213: -5799784393725474257
+    second: PoofSheet_5
+  - first:
+      213: 6673253312046030600
+    second: PoofSheet_6
+  - first:
+      213: -5118038837926496629
+    second: PoofSheet_7
+  - first:
+      213: 2691583235547534355
+    second: PoofSheet_8
+  - first:
+      213: -5871303416459215743
+    second: PoofSheet_9
+  - first:
+      213: 6819593550290874902
+    second: PoofSheet_10
+  - first:
+      213: -465642757704975931
+    second: PoofSheet_11
+  - first:
+      213: -6865663018221929762
+    second: PoofSheet_12
+  - first:
+      213: 822353719861116769
+    second: PoofSheet_13
+  - first:
+      213: -2003034100881102778
+    second: PoofSheet_14
+  - first:
+      213: -1704956243880413016
+    second: PoofSheet_15
+  - first:
+      213: 67289588662867129
+    second: PoofSheet_16
+  - first:
+      213: -888301910977481176
+    second: PoofSheet_17
+  - first:
+      213: 2246228017416622558
+    second: PoofSheet_18
+  - first:
+      213: -7043589135948286807
+    second: PoofSheet_19
+  - first:
+      213: 9191601318587686072
+    second: PoofSheet_20
+  - first:
+      213: -7911157935284077271
+    second: PoofSheet_21
+  - first:
+      213: -8364580899384799766
+    second: PoofSheet_22
+  - first:
+      213: 4624428650118475475
+    second: PoofSheet_23
+  - first:
+      213: 6918778105264864859
+    second: PoofSheet_24
+  - first:
+      213: -3528843109684085052
+    second: PoofSheet_25
+  - first:
+      213: 6189813300413207403
+    second: PoofSheet_26
+  - first:
+      213: 5995893085485410707
+    second: PoofSheet_27
+  - first:
+      213: -1086363626133652515
+    second: PoofSheet_28
+  - first:
+      213: 7466702743478091407
+    second: PoofSheet_29
+  - first:
+      213: -902903876108514041
+    second: PoofSheet_30
+  - first:
+      213: 5757011766424277114
+    second: PoofSheet_31
+  - first:
+      213: 6061953351637494049
+    second: PoofSheet_32
+  - first:
+      213: 9066075579700470822
+    second: PoofSheet_33
+  - first:
+      213: 7284510541641425377
+    second: PoofSheet_34
+  - first:
+      213: -991387729620436421
+    second: PoofSheet_35
+  - first:
+      213: -5958968698933482762
+    second: PoofSheet_36
+  - first:
+      213: -622616527494450186
+    second: PoofSheet_37
+  - first:
+      213: -2025979971900241366
+    second: PoofSheet_38
+  - first:
+      213: -9059110254687779386
+    second: PoofSheet_39
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: PoofSheet_0
+      rect:
+        serializedVersion: 2
+        x: 942
+        y: 259
+        width: 410
+        height: 483
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9ecedcf13c75d1e70800000000000000
+      internalID: 9087516118667357417
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PoofSheet_1
+      rect:
+        serializedVersion: 2
+        x: 1482
+        y: 259
+        width: 360
+        height: 471
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d73337750ed27c7d0800000000000000
+      internalID: -2898297393626532995
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PoofSheet_2
+      rect:
+        serializedVersion: 2
+        x: 2070
+        y: 642
+        width: 163
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1a029d249fd5a9170800000000000000
+      internalID: 8185958597849063585
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PoofSheet_3
+      rect:
+        serializedVersion: 2
+        x: 2504
+        y: 666
+        width: 137
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f9f20c4ccc3ac9be0800000000000000
+      internalID: -1469119278560039009
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PoofSheet_4
+      rect:
+        serializedVersion: 2
+        x: 3046
+        y: 679
+        width: 76
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c14b4438170c49fc0800000000000000
+      internalID: -3488952217539136484
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PoofSheet_5
+      rect:
+        serializedVersion: 2
+        x: 3624
+        y: 716
+        width: 39
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f2a832e82d6038fa0800000000000000
+      internalID: -5799784393725474257
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PoofSheet_6
+      rect:
+        serializedVersion: 2
+        x: 3587
+        y: 679
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 80fd3b8e7882c9c50800000000000000
+      internalID: 6673253312046030600
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PoofSheet_7
+      rect:
+        serializedVersion: 2
+        x: 2541
+        y: 642
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b86fcbe1bc219f8b0800000000000000
+      internalID: -5118038837926496629
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PoofSheet_8
+      rect:
+        serializedVersion: 2
+        x: 2578
+        y: 568
+        width: 150
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 314153e21bc6a5520800000000000000
+      internalID: 2691583235547534355
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PoofSheet_9
+      rect:
+        serializedVersion: 2
+        x: 3083
+        y: 642
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 18c396576a0f48ea0800000000000000
+      internalID: -5871303416459215743
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PoofSheet_10
+      rect:
+        serializedVersion: 2
+        x: 3120
+        y: 592
+        width: 125
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 612f1a5c33014ae50800000000000000
+      internalID: 6819593550290874902
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PoofSheet_11
+      rect:
+        serializedVersion: 2
+        x: 3624
+        y: 642
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5c9f2c20164b989f0800000000000000
+      internalID: -465642757704975931
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PoofSheet_12
+      rect:
+        serializedVersion: 2
+        x: 3661
+        y: 605
+        width: 26
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eda785b5cd348b0a0800000000000000
+      internalID: -6865663018221929762
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PoofSheet_13
+      rect:
+        serializedVersion: 2
+        x: 3710
+        y: 629
+        width: 39
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 16ffa08e956996b00800000000000000
+      internalID: 822353719861116769
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PoofSheet_14
+      rect:
+        serializedVersion: 2
+        x: 553
+        y: 259
+        width: 237
+        height: 298
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 648ecf7091bc334e0800000000000000
+      internalID: -2003034100881102778
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PoofSheet_15
+      rect:
+        serializedVersion: 2
+        x: 2033
+        y: 259
+        width: 335
+        height: 372
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8a87ce55457c658e0800000000000000
+      internalID: -1704956243880413016
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PoofSheet_16
+      rect:
+        serializedVersion: 2
+        x: 2479
+        y: 456
+        width: 125
+        height: 89
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9b4155d368f0fe000800000000000000
+      internalID: 67289588662867129
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PoofSheet_17
+      rect:
+        serializedVersion: 2
+        x: 2615
+        y: 432
+        width: 211
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 826f2ee4e1e1ca3f0800000000000000
+      internalID: -888301910977481176
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PoofSheet_18
+      rect:
+        serializedVersion: 2
+        x: 3021
+        y: 469
+        width: 113
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ed1d5a61b743c2f10800000000000000
+      internalID: 2246228017416622558
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PoofSheet_19
+      rect:
+        serializedVersion: 2
+        x: 3169
+        y: 469
+        width: 187
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9a47008dff4204e90800000000000000
+      internalID: -7043589135948286807
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PoofSheet_20
+      rect:
+        serializedVersion: 2
+        x: 3624
+        y: 518
+        width: 51
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8bc5e6733b02f8f70800000000000000
+      internalID: 9191601318587686072
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PoofSheet_21
+      rect:
+        serializedVersion: 2
+        x: 3772
+        y: 506
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 92d3161e5cbe53290800000000000000
+      internalID: -7911157935284077271
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PoofSheet_22
+      rect:
+        serializedVersion: 2
+        x: 3562
+        y: 469
+        width: 27
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aedc62d4df90beb80800000000000000
+      internalID: -8364580899384799766
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PoofSheet_23
+      rect:
+        serializedVersion: 2
+        x: 3698
+        y: 469
+        width: 14
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3de63732b554d2040800000000000000
+      internalID: 4624428650118475475
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PoofSheet_24
+      rect:
+        serializedVersion: 2
+        x: 3722
+        y: 493
+        width: 15
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b5eff0c8700740060800000000000000
+      internalID: 6918778105264864859
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PoofSheet_25
+      rect:
+        serializedVersion: 2
+        x: 3821
+        y: 469
+        width: 76
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4cef13b63e7070fc0800000000000000
+      internalID: -3528843109684085052
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PoofSheet_26
+      rect:
+        serializedVersion: 2
+        x: 2615
+        y: 395
+        width: 39
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b631e15d662a6e550800000000000000
+      internalID: 6189813300413207403
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PoofSheet_27
+      rect:
+        serializedVersion: 2
+        x: 3157
+        y: 407
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 399249f5ef0b53350800000000000000
+      internalID: 5995893085485410707
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PoofSheet_28
+      rect:
+        serializedVersion: 2
+        x: 3698
+        y: 407
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ddbf56fa9067ce0f0800000000000000
+      internalID: -1086363626133652515
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PoofSheet_29
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 259
+        width: 113
+        height: 113
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f8e327cb59e0f9760800000000000000
+      internalID: 7466702743478091407
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PoofSheet_30
+      rect:
+        serializedVersion: 2
+        x: 2528
+        y: 259
+        width: 286
+        height: 138
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 70d8a3e55bd3873f0800000000000000
+      internalID: -902903876108514041
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PoofSheet_31
+      rect:
+        serializedVersion: 2
+        x: 3231
+        y: 358
+        width: 63
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a70967913b305ef40800000000000000
+      internalID: 5757011766424277114
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PoofSheet_32
+      rect:
+        serializedVersion: 2
+        x: 3772
+        y: 370
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1296759a472602450800000000000000
+      internalID: 6061953351637494049
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PoofSheet_33
+      rect:
+        serializedVersion: 2
+        x: 3809
+        y: 370
+        width: 26
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 624e3e2a4bb21dd70800000000000000
+      internalID: 9066075579700470822
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PoofSheet_34
+      rect:
+        serializedVersion: 2
+        x: 3255
+        y: 321
+        width: 15
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1e1202d1eb7c71560800000000000000
+      internalID: 7284510541641425377
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PoofSheet_35
+      rect:
+        serializedVersion: 2
+        x: 3796
+        y: 321
+        width: 15
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b3afa4dcc12ed32f0800000000000000
+      internalID: -991387729620436421
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PoofSheet_36
+      rect:
+        serializedVersion: 2
+        x: 3107
+        y: 259
+        width: 27
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6fae5605a8d7d4da0800000000000000
+      internalID: -5958968698933482762
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PoofSheet_37
+      rect:
+        serializedVersion: 2
+        x: 3305
+        y: 259
+        width: 51
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6f3f76721950c57f0800000000000000
+      internalID: -622616527494450186
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PoofSheet_38
+      rect:
+        serializedVersion: 2
+        x: 3661
+        y: 259
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a2a84dc13f542e3e0800000000000000
+      internalID: -2025979971900241366
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PoofSheet_39
+      rect:
+        serializedVersion: 2
+        x: 3883
+        y: 259
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6c58c387833974280800000000000000
+      internalID: -9059110254687779386
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      PoofSheet_0: 9087516118667357417
+      PoofSheet_1: -2898297393626532995
+      PoofSheet_10: 6819593550290874902
+      PoofSheet_11: -465642757704975931
+      PoofSheet_12: -6865663018221929762
+      PoofSheet_13: 822353719861116769
+      PoofSheet_14: -2003034100881102778
+      PoofSheet_15: -1704956243880413016
+      PoofSheet_16: 67289588662867129
+      PoofSheet_17: -888301910977481176
+      PoofSheet_18: 2246228017416622558
+      PoofSheet_19: -7043589135948286807
+      PoofSheet_2: 8185958597849063585
+      PoofSheet_20: 9191601318587686072
+      PoofSheet_21: -7911157935284077271
+      PoofSheet_22: -8364580899384799766
+      PoofSheet_23: 4624428650118475475
+      PoofSheet_24: 6918778105264864859
+      PoofSheet_25: -3528843109684085052
+      PoofSheet_26: 6189813300413207403
+      PoofSheet_27: 5995893085485410707
+      PoofSheet_28: -1086363626133652515
+      PoofSheet_29: 7466702743478091407
+      PoofSheet_3: -1469119278560039009
+      PoofSheet_30: -902903876108514041
+      PoofSheet_31: 5757011766424277114
+      PoofSheet_32: 6061953351637494049
+      PoofSheet_33: 9066075579700470822
+      PoofSheet_34: 7284510541641425377
+      PoofSheet_35: -991387729620436421
+      PoofSheet_36: -5958968698933482762
+      PoofSheet_37: -622616527494450186
+      PoofSheet_38: -2025979971900241366
+      PoofSheet_39: -9059110254687779386
+      PoofSheet_4: -3488952217539136484
+      PoofSheet_5: -5799784393725474257
+      PoofSheet_6: 6673253312046030600
+      PoofSheet_7: -5118038837926496629
+      PoofSheet_8: 2691583235547534355
+      PoofSheet_9: -5871303416459215743
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
