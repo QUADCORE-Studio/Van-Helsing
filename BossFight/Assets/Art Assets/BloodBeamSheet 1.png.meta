@@ -1,0 +1,499 @@
+fileFormatVersion: 2
+guid: c923a284f4ca4264797f12047268f5ef
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -2347239477751605930
+    second: BloodBeamSheet 1_0
+  - first:
+      213: -6143817033839299343
+    second: BloodBeamSheet 1_1
+  - first:
+      213: 5699325965879791021
+    second: BloodBeamSheet 1_2
+  - first:
+      213: 6833914366070572245
+    second: BloodBeamSheet 1_3
+  - first:
+      213: 540020157562457872
+    second: BloodBeamSheet 1_4
+  - first:
+      213: -8148973218001423186
+    second: BloodBeamSheet 1_5
+  - first:
+      213: -4553684293563394105
+    second: BloodBeamSheet 1_6
+  - first:
+      213: -3521361394116149207
+    second: BloodBeamSheet 1_7
+  - first:
+      213: 2787665597666717138
+    second: BloodBeamSheet 1_8
+  - first:
+      213: 94286632188071158
+    second: BloodBeamSheet 1_9
+  - first:
+      213: -4676553184745991893
+    second: BloodBeamSheet 1_10
+  - first:
+      213: 2564795394023232239
+    second: BloodBeamSheet 1_11
+  - first:
+      213: 4429060962275340222
+    second: BloodBeamSheet 1_12
+  - first:
+      213: -5817263223239776674
+    second: BloodBeamSheet 1_13
+  - first:
+      213: -5415184307046551117
+    second: BloodBeamSheet 1_14
+  - first:
+      213: 8818257597398272564
+    second: BloodBeamSheet 1_15
+  - first:
+      213: -2439548563542824857
+    second: BloodBeamSheet 1_16
+  - first:
+      213: -7524420098681381412
+    second: BloodBeamSheet 1_17
+  - first:
+      213: 6782509025319652198
+    second: BloodBeamSheet 1_18
+  - first:
+      213: -4635686908663842788
+    second: BloodBeamSheet 1_19
+  - first:
+      213: -285265028800284594
+    second: BloodBeamSheet 1_20
+  - first:
+      213: 6923575976811182269
+    second: BloodBeamSheet 1_21
+  - first:
+      213: -5163858030265843136
+    second: BloodBeamSheet 1_22
+  - first:
+      213: 1546178474685784990
+    second: BloodBeamSheet 1_23
+  - first:
+      213: 4853622856299552422
+    second: BloodBeamSheet 1_24
+  - first:
+      213: 7330365040051542072
+    second: BloodBeamSheet 1_25
+  - first:
+      213: -4770317014358878905
+    second: BloodBeamSheet 1_26
+  - first:
+      213: 8782514443813605854
+    second: BloodBeamSheet 1_27
+  - first:
+      213: -6027133023323938306
+    second: BloodBeamSheet 1_28
+  - first:
+      213: -5600525834696811253
+    second: BloodBeamSheet 1_29
+  - first:
+      213: -112465520145311257
+    second: BloodBeamSheet 1_30
+  - first:
+      213: 6549287647822083871
+    second: BloodBeamSheet 1_31
+  - first:
+      213: 8572855882716158775
+    second: BloodBeamSheet 1_32
+  - first:
+      213: 2279419225398947553
+    second: BloodBeamSheet 1_33
+  - first:
+      213: -1335001471480095384
+    second: BloodBeamSheet 1_34
+  - first:
+      213: -6556303298852402278
+    second: BloodBeamSheet 1_35
+  - first:
+      213: 8239418651284289868
+    second: BloodBeamSheet 1_36
+  - first:
+      213: -1356430744776841468
+    second: BloodBeamSheet 1_37
+  - first:
+      213: 8432916317651373650
+    second: BloodBeamSheet 1_38
+  - first:
+      213: 126994361796649626
+    second: BloodBeamSheet 1_39
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: BloodBeamSheet 1_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2928
+        width: 76
+        height: 91
+      alignment: 4
+      pivot: {x: 0, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 65597d5912eec6fd0800000000000000
+      internalID: -2347239477751605930
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BloodBeamSheet 1_1
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 609
+        width: 2154
+        height: 249
+      alignment: 4
+      pivot: {x: 0, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1f4b30585f6ccbaa0800000000000000
+      internalID: -6143817033839299343
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BloodBeamSheet 1_2
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2739
+        width: 52
+        height: 66
+      alignment: 4
+      pivot: {x: 0, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dadcc6705c2181f40800000000000000
+      internalID: 5699325965879791021
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BloodBeamSheet 1_3
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2546
+        width: 76
+        height: 90
+      alignment: 4
+      pivot: {x: 0, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5d4431788e0f6de50800000000000000
+      internalID: 6833914366070572245
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BloodBeamSheet 1_4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2304
+        width: 707
+        height: 202
+      alignment: 4
+      pivot: {x: 0, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 01f8f0fd8798e7700800000000000000
+      internalID: 540020157562457872
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BloodBeamSheet 1_5
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 180
+        width: 982
+        height: 192
+      alignment: 4
+      pivot: {x: 0, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ea47ad8880809ee80800000000000000
+      internalID: -8148973218001423186
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BloodBeamSheet 1_7
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1998
+        width: 1335
+        height: 201
+      alignment: 4
+      pivot: {x: 0, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 920cee1187c912fc0800000000000000
+      internalID: -3521361394116149207
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BloodBeamSheet 1_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1657
+        width: 2540
+        height: 226
+      alignment: 4
+      pivot: {x: 0, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2dd60856717cfa620800000000000000
+      internalID: 2787665597666717138
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BloodBeamSheet 1_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1312
+        width: 2570
+        height: 152
+      alignment: 4
+      pivot: {x: 0, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ebfa8f0aa7f277d30800000000000000
+      internalID: 4429060962275340222
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BloodBeamSheet 1_13
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 978
+        width: 2558
+        height: 140
+      alignment: 4
+      pivot: {x: 0, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e5669dd6bede44fa0800000000000000
+      internalID: -5817263223239776674
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 2c479c3f00ba42f4092e34864832f9a6
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":64.0,"y":64.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"slicingType":0,"keepEmptyRects":false,"isAlternate":false}'
+    nameFileIdTable:
+      BloodBeamSheet 1_0: -2347239477751605930
+      BloodBeamSheet 1_1: -6143817033839299343
+      BloodBeamSheet 1_10: -4676553184745991893
+      BloodBeamSheet 1_11: 2564795394023232239
+      BloodBeamSheet 1_12: 4429060962275340222
+      BloodBeamSheet 1_13: -5817263223239776674
+      BloodBeamSheet 1_14: -5415184307046551117
+      BloodBeamSheet 1_15: 8818257597398272564
+      BloodBeamSheet 1_16: -2439548563542824857
+      BloodBeamSheet 1_17: -7524420098681381412
+      BloodBeamSheet 1_18: 6782509025319652198
+      BloodBeamSheet 1_19: -4635686908663842788
+      BloodBeamSheet 1_2: 5699325965879791021
+      BloodBeamSheet 1_20: -285265028800284594
+      BloodBeamSheet 1_21: 6923575976811182269
+      BloodBeamSheet 1_22: -5163858030265843136
+      BloodBeamSheet 1_23: 1546178474685784990
+      BloodBeamSheet 1_24: 4853622856299552422
+      BloodBeamSheet 1_25: 7330365040051542072
+      BloodBeamSheet 1_26: -4770317014358878905
+      BloodBeamSheet 1_27: 8782514443813605854
+      BloodBeamSheet 1_28: -6027133023323938306
+      BloodBeamSheet 1_29: -5600525834696811253
+      BloodBeamSheet 1_3: 6833914366070572245
+      BloodBeamSheet 1_30: -112465520145311257
+      BloodBeamSheet 1_31: 6549287647822083871
+      BloodBeamSheet 1_32: 8572855882716158775
+      BloodBeamSheet 1_33: 2279419225398947553
+      BloodBeamSheet 1_34: -1335001471480095384
+      BloodBeamSheet 1_35: -6556303298852402278
+      BloodBeamSheet 1_36: 8239418651284289868
+      BloodBeamSheet 1_37: -1356430744776841468
+      BloodBeamSheet 1_38: 8432916317651373650
+      BloodBeamSheet 1_39: 126994361796649626
+      BloodBeamSheet 1_4: 540020157562457872
+      BloodBeamSheet 1_5: -8148973218001423186
+      BloodBeamSheet 1_6: -4553684293563394105
+      BloodBeamSheet 1_7: -3521361394116149207
+      BloodBeamSheet 1_8: 2787665597666717138
+      BloodBeamSheet 1_9: 94286632188071158
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
