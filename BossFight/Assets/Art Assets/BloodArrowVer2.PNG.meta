@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: fbe88cb71b58dd541bdb37ffe397b432
+guid: 3ecb7e3b121754642b3d6e0c103bc361
 TextureImporter:
   internalIDToNameTable:
   - first:
@@ -103,7 +103,7 @@ TextureImporter:
       name: BloodArrowVer2_0
       rect:
         serializedVersion: 2
-        x: 1364
+        x: 1403
         y: 1443
         width: 273
         height: 114

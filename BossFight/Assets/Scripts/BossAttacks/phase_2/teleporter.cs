@@ -19,14 +19,11 @@ public class teleporter : MonoBehaviour
     }
 
 
-    // teleports inside radius from centerPoint
-
     void Start()
     {
-        
+        centerPoint = transform;
     }
 
-    // Update is called once per frame
     void Update()
     {
         if (teleportAction.WasPressedThisFrame())
@@ -39,9 +36,7 @@ public class teleporter : MonoBehaviour
     {
         // random point inside the radius
         Vector2 randomPoint = Random.insideUnitCircle * radius;
-        Debug.Log("Random point:" + randomPoint);
         Vector2 newPos = new Vector2(centerPoint.position.x, centerPoint.position.y) + new Vector2(randomPoint.x, randomPoint.y);
-        Debug.Log("Teleporting to " + newPos);
         boss.transform.position = newPos;
     }
     void OnDrawGizmosSelected()
