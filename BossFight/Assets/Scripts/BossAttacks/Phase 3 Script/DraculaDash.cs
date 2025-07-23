@@ -4,17 +4,22 @@ using UnityEngine;
 
 public class DraculaDash : MonoBehaviour
 {
+    public Vector3 lastPlayerDirection;
+    public float dashSpeed = 10f;
+    public float dashCooldown = 2f;
+    public bool isVulnerable = false;
+    public float vulnerableDuration = 3f;// Cooldown duration in seconds
+    public LayerMask pillarLayer;
+
     private Rigidbody2D rb;
     private bool isDashing = false;
-    public float dashSpeed = 10f;
-    public float dashCooldown = 2f; // Cooldown duration in seconds
     private float lastDashTime = -Mathf.Infinity;
-    private Vector3 lastPlayerDirection;
 
     void Awake()
     {
         rb = GetComponent<Rigidbody2D>();
     }
+
     void Update()
     {
         if (isDashing)
@@ -22,6 +27,7 @@ public class DraculaDash : MonoBehaviour
             rb.linearVelocity = lastPlayerDirection * dashSpeed;
         }
     }
+
     // Call this method to update the direction towards the player
     public void UpdatePlayerDirection(Vector3 playerPosition)
     {
@@ -40,9 +46,36 @@ public class DraculaDash : MonoBehaviour
         return false; // Dash not performed due to cooldown
     }
 
-    // Optionally, expose cooldown status
+    void OnCollisionEnter2D(Collision2D collision)
+    {
+        Debug.Log("CLOOIIIDS");
+        if (((1 << collision.gameObject.layer) & pillarLayer) != 0 && isDashing)
+        {
+            isDashing = false;
+            rb.linearVelocity = Vector2.zero;
+
+            collision.gameObject.SetActive(false);
+
+            BecomeVulnerable();
+        }
+    }
+
+
     public bool IsDashReady()
     {
         return Time.time >= lastDashTime + dashCooldown;
+    }
+
+    void BecomeVulnerable()
+    {
+        isVulnerable = true;
+        Debug.Log("Dracula is vulnerable!");
+        Invoke(nameof(RecoverFromVulnerability), vulnerableDuration);
+    }
+
+    void RecoverFromVulnerability()
+    {
+        isVulnerable = false;
+        Debug.Log("Dracula recovered from vulnerability.");
     }
 }
