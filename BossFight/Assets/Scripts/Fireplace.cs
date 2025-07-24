@@ -1,37 +1,67 @@
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 public class Fireplace : MonoBehaviour
 {
     public GameObject flameVisual;
     private bool isLit = false;
+    private bool playerInRange = false;
+    private PlayerControls controls;
+
+    void Awake()
+    {
+        controls = new PlayerControls();
+        controls.Player.Interact.performed += ctx => TryToggleFire();
+    }
+
+    void OnEnable()
+    {
+        controls.Enable();
+    }
+
+    void OnDisable()
+    {
+        controls.Disable();
+    }
 
     void Start()
     {
+        if (flameVisual != null)
+            flameVisual.SetActive(true);
+        else
+            Debug.LogWarning("Flame Visual is not assigned on " + gameObject.name);
+
         SetLitState(false);
-        FireplaceManager.Instance.Register(this);
     }
 
-    void OnTriggerStay2D(Collider2D other)
+    void TryToggleFire()
     {
-        if (other.CompareTag("Player") && Input.GetKeyDown(KeyCode.E))
+        if (playerInRange)
         {
             LightFire();
         }
     }
 
-    public void LightFire()
+    void OnTriggerEnter2D(Collider2D other)
     {
-        if (!isLit)
+        if (other.CompareTag("Player"))
         {
-            SetLitState(true);
-            // Optional: play sound, VFX
+            playerInRange = true;
+            Debug.Log("Player entered fireplace zone");
         }
     }
 
-    public void Extinguish()
+    void OnTriggerExit2D(Collider2D other)
     {
-        SetLitState(false);
+        if (other.CompareTag("Player"))
+        {
+            playerInRange = false;
+            Debug.Log("Player left fireplace zone");
+        }
     }
+
+    public void LightFire() => SetLitState(true);
+    public void Extinguish() => SetLitState(false);
 
     void SetLitState(bool state)
     {

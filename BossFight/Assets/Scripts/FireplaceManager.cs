@@ -1,3 +1,4 @@
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
@@ -19,5 +20,10 @@ public class FireplaceManager : MonoBehaviour
     }
 
     public bool AllLit() => fireplaces.All(f => f.IsLit());
+
+    public static implicit operator FireplaceManager(Fireplace v)
+    {
+        throw new NotImplementedException();
+    }
 }
 

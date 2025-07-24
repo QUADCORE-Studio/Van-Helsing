@@ -1,17 +1,33 @@
 using UnityEngine;
 
-[RequireComponent(typeof(SpriteRenderer))]
+[System.Serializable]
+public class SortingOffset
+{
+    public SpriteRenderer renderer;
+    public int offset = 1; // how much higher/lower it sorts relative to parent
+}
+
 public class YSort : MonoBehaviour
 {
-    private SpriteRenderer sr;
+    [Header("Main Renderer (base of object)")]
+    public SpriteRenderer mainRenderer;
 
-    void Awake()
-    {
-        sr = GetComponent<SpriteRenderer>();
-    }
+    [Header("Additional Renderers (children or layers)")]
+    public SortingOffset[] additionalRenderers;
 
     void LateUpdate()
     {
-        sr.sortingOrder = Mathf.RoundToInt(-transform.position.y * 100);
+        //calculate base sorting order from world Y
+        int baseOrder = Mathf.RoundToInt(-transform.position.y * 100);
+
+        if (mainRenderer != null)
+            mainRenderer.sortingOrder = baseOrder;
+
+        //apply sorting offsets for other children or items
+        foreach (var item in additionalRenderers)
+        {
+            if (item.renderer != null)
+                item.renderer.sortingOrder = baseOrder + item.offset;
+        }
     }
 }
