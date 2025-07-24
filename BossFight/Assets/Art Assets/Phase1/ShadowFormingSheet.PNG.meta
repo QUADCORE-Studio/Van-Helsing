@@ -1,0 +1,416 @@
+fileFormatVersion: 2
+guid: 38fa453b7cd0fd14190ed51fc25b597c
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 7818064325944313509
+    second: ShadowFormingSheet_0
+  - first:
+      213: 1377535315023432172
+    second: ShadowFormingSheet_1
+  - first:
+      213: -2467230203766900853
+    second: ShadowFormingSheet_2
+  - first:
+      213: -1360282809766339251
+    second: ShadowFormingSheet_3
+  - first:
+      213: 8328662941846717146
+    second: ShadowFormingSheet_4
+  - first:
+      213: -4446710179827186649
+    second: ShadowFormingSheet_5
+  - first:
+      213: -5377524571165588686
+    second: ShadowFormingSheet_6
+  - first:
+      213: 8951035593815248069
+    second: ShadowFormingSheet_7
+  - first:
+      213: 444964436462678776
+    second: ShadowFormingSheet_8
+  - first:
+      213: -1602421007505913508
+    second: ShadowFormingSheet_9
+  - first:
+      213: -8528827127662009041
+    second: ShadowFormingSheet_10
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: ShadowFormingSheet_0
+      rect:
+        serializedVersion: 2
+        x: 47
+        y: 166
+        width: 101
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5a6801325185f7c60800000000000000
+      internalID: 7818064325944313509
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShadowFormingSheet_1
+      rect:
+        serializedVersion: 2
+        x: 201
+        y: 166
+        width: 150
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ce9078d021dfd1310800000000000000
+      internalID: 1377535315023432172
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShadowFormingSheet_2
+      rect:
+        serializedVersion: 2
+        x: 435
+        y: 166
+        width: 335
+        height: 286
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b87fb5d9333a2cdd0800000000000000
+      internalID: -2467230203766900853
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShadowFormingSheet_3
+      rect:
+        serializedVersion: 2
+        x: 879
+        y: 166
+        width: 286
+        height: 236
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d4d9ec9ddfd4f1de0800000000000000
+      internalID: -1360282809766339251
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShadowFormingSheet_4
+      rect:
+        serializedVersion: 2
+        x: 1246
+        y: 166
+        width: 236
+        height: 174
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ad2cbb681da559370800000000000000
+      internalID: 8328662941846717146
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShadowFormingSheet_5
+      rect:
+        serializedVersion: 2
+        x: 1613
+        y: 166
+        width: 533
+        height: 471
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7248940b6ac1a42c0800000000000000
+      internalID: -4446710179827186649
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShadowFormingSheet_6
+      rect:
+        serializedVersion: 2
+        x: 2227
+        y: 166
+        width: 607
+        height: 483
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2338db4d4e13f55b0800000000000000
+      internalID: -5377524571165588686
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShadowFormingSheet_7
+      rect:
+        serializedVersion: 2
+        x: 2945
+        y: 165
+        width: 533
+        height: 471
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5cc4c3da277783c70800000000000000
+      internalID: 8951035593815248069
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShadowFormingSheet_8
+      rect:
+        serializedVersion: 2
+        x: 3574
+        y: 165
+        width: 496
+        height: 446
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8f23a052cc4dc2600800000000000000
+      internalID: 444964436462678776
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShadowFormingSheet_9
+      rect:
+        serializedVersion: 2
+        x: 4144
+        y: 165
+        width: 471
+        height: 459
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c598cfa659e03c9e0800000000000000
+      internalID: -1602421007505913508
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShadowFormingSheet_10
+      rect:
+        serializedVersion: 2
+        x: 4721
+        y: 170
+        width: 496
+        height: 446
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f25adf04ae483a980800000000000000
+      internalID: -8528827127662009041
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      ShadowFormingSheet_0: 7818064325944313509
+      ShadowFormingSheet_1: 1377535315023432172
+      ShadowFormingSheet_10: -8528827127662009041
+      ShadowFormingSheet_2: -2467230203766900853
+      ShadowFormingSheet_3: -1360282809766339251
+      ShadowFormingSheet_4: 8328662941846717146
+      ShadowFormingSheet_5: -4446710179827186649
+      ShadowFormingSheet_6: -5377524571165588686
+      ShadowFormingSheet_7: 8951035593815248069
+      ShadowFormingSheet_8: 444964436462678776
+      ShadowFormingSheet_9: -1602421007505913508
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -1,0 +1,676 @@
+fileFormatVersion: 2
+guid: 68a9e9697c3fe4043966b67216ec579a
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -6281367752390005682
+    second: ShadowSwipeSheet_0
+  - first:
+      213: 2772062870215587339
+    second: ShadowSwipeSheet_1
+  - first:
+      213: 350602779767937873
+    second: ShadowSwipeSheet_2
+  - first:
+      213: 2748993833208800871
+    second: ShadowSwipeSheet_3
+  - first:
+      213: 7274035406348892325
+    second: ShadowSwipeSheet_4
+  - first:
+      213: -1788796110326613431
+    second: ShadowSwipeSheet_5
+  - first:
+      213: 6653099870275452884
+    second: ShadowSwipeSheet_6
+  - first:
+      213: -2458700566566928875
+    second: ShadowSwipeSheet_7
+  - first:
+      213: 1214089788244945168
+    second: ShadowSwipeSheet_8
+  - first:
+      213: 5731170257460671321
+    second: ShadowSwipeSheet_9
+  - first:
+      213: -4058123128488544245
+    second: ShadowSwipeSheet_10
+  - first:
+      213: 2014391375463893340
+    second: ShadowSwipeSheet_11
+  - first:
+      213: 8805828684312237698
+    second: ShadowSwipeSheet_12
+  - first:
+      213: -1427177538887347454
+    second: ShadowSwipeSheet_13
+  - first:
+      213: 2796530423170825108
+    second: ShadowSwipeSheet_14
+  - first:
+      213: -7818449436670357815
+    second: ShadowSwipeSheet_15
+  - first:
+      213: 6967600107469065557
+    second: ShadowSwipeSheet_16
+  - first:
+      213: -8569483018833726425
+    second: ShadowSwipeSheet_17
+  - first:
+      213: -4754486449545957299
+    second: ShadowSwipeSheet_18
+  - first:
+      213: 2509362668080322789
+    second: ShadowSwipeSheet_19
+  - first:
+      213: -9212444046774928072
+    second: ShadowSwipeSheet_20
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: ShadowSwipeSheet_0
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 726
+        width: 496
+        height: 446
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e4c233f2f4914d8a0800000000000000
+      internalID: -6281367752390005682
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShadowSwipeSheet_1
+      rect:
+        serializedVersion: 2
+        x: 672
+        y: 726
+        width: 446
+        height: 446
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b06ff325e78587620800000000000000
+      internalID: 2772062870215587339
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShadowSwipeSheet_2
+      rect:
+        serializedVersion: 2
+        x: 1179
+        y: 713
+        width: 459
+        height: 459
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 15b1551ee579dd400800000000000000
+      internalID: 350602779767937873
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShadowSwipeSheet_3
+      rect:
+        serializedVersion: 2
+        x: 1691
+        y: 713
+        width: 446
+        height: 447
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 76666269353662620800000000000000
+      internalID: 2748993833208800871
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShadowSwipeSheet_4
+      rect:
+        serializedVersion: 2
+        x: 2196
+        y: 713
+        width: 459
+        height: 447
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5a83a0f99a092f460800000000000000
+      internalID: 7274035406348892325
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShadowSwipeSheet_5
+      rect:
+        serializedVersion: 2
+        x: 2779
+        y: 367
+        width: 1175
+        height: 805
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 94ab1644a6bec27e0800000000000000
+      internalID: -1788796110326613431
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShadowSwipeSheet_6
+      rect:
+        serializedVersion: 2
+        x: 3594
+        y: 441
+        width: 471
+        height: 595
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4df37f6151f845c50800000000000000
+      internalID: 6653099870275452884
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShadowSwipeSheet_7
+      rect:
+        serializedVersion: 2
+        x: 3754
+        y: 380
+        width: 422
+        height: 644
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 51ef9b88cd0f0edd0800000000000000
+      internalID: -2458700566566928875
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShadowSwipeSheet_8
+      rect:
+        serializedVersion: 2
+        x: 4391
+        y: 726
+        width: 1113
+        height: 434
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 019e4c9da3059d010800000000000000
+      internalID: 1214089788244945168
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShadowSwipeSheet_9
+      rect:
+        serializedVersion: 2
+        x: 5635
+        y: 738
+        width: 1101
+        height: 434
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9533a3febf4398f40800000000000000
+      internalID: 5731170257460671321
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShadowSwipeSheet_10
+      rect:
+        serializedVersion: 2
+        x: 6873
+        y: 738
+        width: 1101
+        height: 434
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b08b4a7f386aea7c0800000000000000
+      internalID: -4058123128488544245
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShadowSwipeSheet_11
+      rect:
+        serializedVersion: 2
+        x: 8140
+        y: 738
+        width: 965
+        height: 434
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c59c225884e84fb10800000000000000
+      internalID: 2014391375463893340
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShadowSwipeSheet_12
+      rect:
+        serializedVersion: 2
+        x: 9341
+        y: 738
+        width: 631
+        height: 434
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 28650697886943a70800000000000000
+      internalID: 8805828684312237698
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShadowSwipeSheet_13
+      rect:
+        serializedVersion: 2
+        x: 10163
+        y: 738
+        width: 496
+        height: 446
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 20314330795a13ce0800000000000000
+      internalID: -1427177538887347454
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShadowSwipeSheet_14
+      rect:
+        serializedVersion: 2
+        x: 10788
+        y: 738
+        width: 496
+        height: 434
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 49b7bac6a954fc620800000000000000
+      internalID: 2796530423170825108
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShadowSwipeSheet_15
+      rect:
+        serializedVersion: 2
+        x: 11478
+        y: 738
+        width: 496
+        height: 446
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9ce09e849a94f7390800000000000000
+      internalID: -7818449436670357815
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShadowSwipeSheet_16
+      rect:
+        serializedVersion: 2
+        x: 12135
+        y: 738
+        width: 496
+        height: 434
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 55dcaaeb163e1b060800000000000000
+      internalID: 6967600107469065557
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShadowSwipeSheet_17
+      rect:
+        serializedVersion: 2
+        x: 12728
+        y: 738
+        width: 496
+        height: 446
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7247ca1f894131980800000000000000
+      internalID: -8569483018833726425
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShadowSwipeSheet_18
+      rect:
+        serializedVersion: 2
+        x: 13323
+        y: 738
+        width: 496
+        height: 434
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d40b765b3cba40eb0800000000000000
+      internalID: -4754486449545957299
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShadowSwipeSheet_19
+      rect:
+        serializedVersion: 2
+        x: 13898
+        y: 738
+        width: 496
+        height: 446
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5e8dd8b2d0c03d220800000000000000
+      internalID: 2509362668080322789
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShadowSwipeSheet_20
+      rect:
+        serializedVersion: 2
+        x: 14462
+        y: 738
+        width: 496
+        height: 434
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 83d71d6f2f2d62080800000000000000
+      internalID: -9212444046774928072
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      ShadowSwipeSheet_0: -6281367752390005682
+      ShadowSwipeSheet_1: 2772062870215587339
+      ShadowSwipeSheet_10: -4058123128488544245
+      ShadowSwipeSheet_11: 2014391375463893340
+      ShadowSwipeSheet_12: 8805828684312237698
+      ShadowSwipeSheet_13: -1427177538887347454
+      ShadowSwipeSheet_14: 2796530423170825108
+      ShadowSwipeSheet_15: -7818449436670357815
+      ShadowSwipeSheet_16: 6967600107469065557
+      ShadowSwipeSheet_17: -8569483018833726425
+      ShadowSwipeSheet_18: -4754486449545957299
+      ShadowSwipeSheet_19: 2509362668080322789
+      ShadowSwipeSheet_2: 350602779767937873
+      ShadowSwipeSheet_20: -9212444046774928072
+      ShadowSwipeSheet_3: 2748993833208800871
+      ShadowSwipeSheet_4: 7274035406348892325
+      ShadowSwipeSheet_5: -1788796110326613431
+      ShadowSwipeSheet_6: 6653099870275452884
+      ShadowSwipeSheet_7: -2458700566566928875
+      ShadowSwipeSheet_8: 1214089788244945168
+      ShadowSwipeSheet_9: 5731170257460671321
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
