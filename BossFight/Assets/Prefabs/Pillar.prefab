@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 6716112925611486788}
   - component: {fileID: 4532160578988496071}
   - component: {fileID: 4720206412842653059}
+  - component: {fileID: 1599891904674523059}
   m_Layer: 0
   m_Name: Pillar
   m_TagString: Untagged
@@ -147,3 +148,16 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1.2451738, y: 0.5184512}
   m_EdgeRadius: 0
+--- !u!114 &1599891904674523059
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8378113322578472997}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 73f72fb80b2cd8c49a50a7365a057c9e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  brokenSprite: {fileID: 2710443080846324409, guid: 0e0615546bd785e4c9e3d2682045914b, type: 3}
