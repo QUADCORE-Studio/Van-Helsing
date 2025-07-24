@@ -823,6 +823,37 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 324795383388140941, guid: 1284d92b6bd9e164fbd7ad3031785e5b, type: 3}
   m_PrefabInstance: {fileID: 912979634}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1022962871
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1022962872}
+  m_Layer: 0
+  m_Name: HypnoBeam
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1022962872
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1022962871}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 949976136223380732}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1121395237
 GameObject:
   m_ObjectHideFlags: 0
@@ -1594,6 +1625,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 8972045787069439561}
+  - {fileID: 1022962872}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1526792005309567730
@@ -1608,6 +1640,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 677962a03aa5e874bb3948750ed7c8fe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  mainRenderer: {fileID: 0}
+  additionalRenderers: []
 --- !u!4 &1782146910037594734
 Transform:
   m_ObjectHideFlags: 0
@@ -1636,27 +1670,38 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   animator: {fileID: 2372078261936090320}
-  inputTrig:
-    m_Name: Input Trig
+  circle_input:
+    m_Name: 
     m_Type: 0
     m_ExpectedControlType: 
-    m_Id: 9bf2c273-9a7a-4257-975b-31cee5daa795
+    m_Id: 671bce94-60ed-4697-ac95-124c0f9f59cb
     m_Processors: 
     m_Interactions: 
-    m_SingletonActionBindings:
-    - m_Name: 
-      m_Id: 20f2d940-4209-4836-97e2-373c9140c89e
-      m_Path: <Keyboard>/e
-      m_Interactions: 
-      m_Processors: 
-      m_Groups: 
-      m_Action: Input Trig
-      m_Flags: 0
+    m_SingletonActionBindings: []
     m_Flags: 0
-  arrow: {fileID: 0}
-  beam: {fileID: 0}
-  projectileCount: 8
+  arrow_input:
+    m_Name: 
+    m_Type: 0
+    m_ExpectedControlType: 
+    m_Id: ead96a98-aa22-49bb-8d5a-3a3e0297c1b0
+    m_Processors: 
+    m_Interactions: 
+    m_SingletonActionBindings: []
+    m_Flags: 0
+  beam_input:
+    m_Name: 
+    m_Type: 0
+    m_ExpectedControlType: 
+    m_Id: 0d5a892e-f75d-4465-a8fa-883087893a2a
+    m_Processors: 
+    m_Interactions: 
+    m_SingletonActionBindings: []
+    m_Flags: 0
+  arrow_prefab: {fileID: 0}
+  beam_prefab: {fileID: 0}
+  arrow_circle_count: 8
   projectileSpeed: 5
+  target: {fileID: 0}
 --- !u!95 &2372078261936090320
 Animator:
   serializedVersion: 7
@@ -1945,6 +1990,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 677962a03aa5e874bb3948750ed7c8fe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  mainRenderer: {fileID: 0}
+  additionalRenderers: []
 --- !u!114 &7550767866181168358
 MonoBehaviour:
   m_ObjectHideFlags: 0
