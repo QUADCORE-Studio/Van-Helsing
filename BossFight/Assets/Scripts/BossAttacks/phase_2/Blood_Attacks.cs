@@ -22,12 +22,7 @@ public class Blood_Attacks : MonoBehaviour
 
     void Start()
     {
-        Debug.Log("I belong to: " + gameObject.name);
-
-        if (transform.parent != null)
-        {
-            Debug.Log("My parent is: " + transform.parent.name);
-        }
+        
         animator = GetComponent<Animator>();
         target = transform;
     }
@@ -69,11 +64,11 @@ public class Blood_Attacks : MonoBehaviour
     {
         Vector2 direction = (target.transform.position - transform.position).normalized;
         GameObject projectile = Instantiate(beam, target.position, Quaternion.identity);
-            projectile.transform.right = direction;
+        projectile.transform.right = direction;
 
-            Rigidbody2D rb = projectile.GetComponent<Rigidbody2D>();
-            rb.linearVelocity = direction * projectileSpeed;
+        Rigidbody2D rb = projectile.GetComponent<Rigidbody2D>();
+        rb.linearVelocity = direction * projectileSpeed;
 
-            Destroy(projectile, 5f);
+        Destroy(projectile, 3f);
     }
 }
