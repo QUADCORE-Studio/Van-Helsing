@@ -222,20 +222,34 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   animator: {fileID: 1075326526346123736}
-  inputTrig:
-    m_Name: Input Trig
+  circle_input:
+    m_Name: 
     m_Type: 0
     m_ExpectedControlType: 
-    m_Id: 9bf2c273-9a7a-4257-975b-31cee5daa795
+    m_Id: 4835f1f8-d6e9-4b30-a321-03746c8be180
     m_Processors: 
     m_Interactions: 
-    m_SingletonActionBindings:
-    - m_Name: 
-      m_Id: 20f2d940-4209-4836-97e2-373c9140c89e
-      m_Path: <Keyboard>/e
-      m_Interactions: 
-      m_Processors: 
-      m_Groups: 
-      m_Action: Input Trig
-      m_Flags: 0
+    m_SingletonActionBindings: []
     m_Flags: 0
+  arrow_input:
+    m_Name: 
+    m_Type: 0
+    m_ExpectedControlType: 
+    m_Id: 6a21ab52-6633-4e7d-b444-5393c8c44d55
+    m_Processors: 
+    m_Interactions: 
+    m_SingletonActionBindings: []
+    m_Flags: 0
+  beam_input:
+    m_Name: 
+    m_Type: 0
+    m_ExpectedControlType: 
+    m_Id: 1039610c-1c31-4750-b74b-b0f7ebfa5218
+    m_Processors: 
+    m_Interactions: 
+    m_SingletonActionBindings: []
+    m_Flags: 0
+  arrow_prefab: {fileID: 0}
+  beam_prefab: {fileID: 0}
+  arrow_circle_count: 8
+  projectileSpeed: 5
