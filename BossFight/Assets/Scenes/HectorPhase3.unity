@@ -669,6 +669,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: FirePlace2
       objectReference: {fileID: 0}
+    - target: {fileID: 521050082126662053, guid: 1284d92b6bd9e164fbd7ad3031785e5b, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2226095487999162142, guid: 1284d92b6bd9e164fbd7ad3031785e5b, type: 3}
       propertyPath: m_Enabled
       value: 0
@@ -800,6 +804,10 @@ PrefabInstance:
     - target: {fileID: 521050082126662053, guid: 1284d92b6bd9e164fbd7ad3031785e5b, type: 3}
       propertyPath: m_Name
       value: FirePlace3
+      objectReference: {fileID: 0}
+    - target: {fileID: 521050082126662053, guid: 1284d92b6bd9e164fbd7ad3031785e5b, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2226095487999162142, guid: 1284d92b6bd9e164fbd7ad3031785e5b, type: 3}
       propertyPath: m_Enabled
@@ -945,6 +953,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: FirePlace0
       objectReference: {fileID: 0}
+    - target: {fileID: 521050082126662053, guid: 1284d92b6bd9e164fbd7ad3031785e5b, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2226095487999162142, guid: 1284d92b6bd9e164fbd7ad3031785e5b, type: 3}
       propertyPath: m_Enabled
       value: 0
@@ -1010,6 +1022,10 @@ PrefabInstance:
     - target: {fileID: 521050082126662053, guid: 1284d92b6bd9e164fbd7ad3031785e5b, type: 3}
       propertyPath: m_Name
       value: FirePlace1
+      objectReference: {fileID: 0}
+    - target: {fileID: 521050082126662053, guid: 1284d92b6bd9e164fbd7ad3031785e5b, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2226095487999162142, guid: 1284d92b6bd9e164fbd7ad3031785e5b, type: 3}
       propertyPath: m_Enabled
@@ -1551,8 +1567,10 @@ GameObject:
   m_Component:
   - component: {fileID: 949976136223380732}
   - component: {fileID: 5463412757643229300}
-  - component: {fileID: 7550767866181168356}
   - component: {fileID: 7550767866181168355}
+  - component: {fileID: 7550767866181168358}
+  - component: {fileID: 7550767866181168359}
+  - component: {fileID: 7550767866181168357}
   - component: {fileID: 7550767866181168353}
   - component: {fileID: 7204995770402493255}
   m_Layer: 0
@@ -1852,7 +1870,7 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDamping: 0
   m_AngularDamping: 0.05
-  m_GravityScale: 1
+  m_GravityScale: 0.01
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
@@ -1915,7 +1933,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerTransform: {fileID: 1782146910037594734}
   currentState: 0
---- !u!114 &7550767866181168356
+--- !u!114 &7550767866181168357
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 616759053690205609}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 677962a03aa5e874bb3948750ed7c8fe, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &7550767866181168358
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1935,6 +1965,20 @@ MonoBehaviour:
   pillarLayer:
     serializedVersion: 2
     m_Bits: 64
+--- !u!114 &7550767866181168359
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 616759053690205609}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 931880f9faa386246ac47ffa21d4cb2c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  lurkSpeed: 10
+  lurkDuration: 5
 --- !u!4 &8972045787069439561
 Transform:
   m_ObjectHideFlags: 0
