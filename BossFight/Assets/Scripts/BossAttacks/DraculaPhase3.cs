@@ -6,9 +6,9 @@ public class DraculaPhase3 : MonoBehaviour
     {
         Idle,
         Lurk,
-        Dash
+        Dash,
       //  Slash,
-      //  Hypno
+        Hypno
     }
 
     public Transform playerTransform;
@@ -27,6 +27,7 @@ public class DraculaPhase3 : MonoBehaviour
     {
         draculaDash = GetComponent<DraculaDash>();
         draculaLurk = GetComponent<Lurk>();
+        draculaHypnoBeam = GetComponent<DraculaHypnoBeam>();
         nextAttackTime = Time.time + attackCooldown;
     }
 
@@ -45,11 +46,15 @@ public class DraculaPhase3 : MonoBehaviour
             case DraculaAttackState.Dash:
                 PerformDash();
                 break;
+            case DraculaAttackState.Hypno:
+                PerformHypnoBeam();
+                break;
+                
         }
     }
     void ChooseNextAttack()
     {
-        currentState = (DraculaAttackState)Random.Range(1, 3); // Pick Dash, Slash, or Hypno
+        currentState = (DraculaAttackState)Random.Range(1, 4); // Pick Dash, Slash, or Hypno
     }
     void PerformDash()
     {
@@ -59,6 +64,11 @@ public class DraculaPhase3 : MonoBehaviour
             Debug.Log("Dracula used Dash!");
             Invoke(nameof(FinishAttack),3f);
         }
+    }
+    void PerformHypnoBeam()
+    {
+        draculaHypnoBeam.ActivateBeam(playerTransform);
+        Invoke(nameof(FinishAttack), 3f); // or match beam duration
     }
     void PerformLurk()
     {
