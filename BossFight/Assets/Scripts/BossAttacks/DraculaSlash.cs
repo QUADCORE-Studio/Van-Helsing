@@ -44,7 +44,7 @@ public class DraculaSlashAttack : MonoBehaviour
         if (hit != null && hit.CompareTag("Player"))
         {
             // Example: apply damage
-            hit.GetComponent<PlayerHealth>()?.TakeDamage(damage);
+            hit.GetComponent<PlayerHealth>().TakeDamage(damage);
         }
     }
 

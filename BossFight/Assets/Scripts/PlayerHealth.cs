@@ -2,12 +2,16 @@ using UnityEngine;
 
 public class PlayerHealth : MonoBehaviour
 {
-    public float maxHealth = 100f;
+    public float maxHealth = 1000f;
     private float currentHealth;
 
     void Start()
     {
         currentHealth = maxHealth;
+    }
+    void Update()
+    {
+        Debug.Log("Player Health: " + currentHealth);
     }
 
     public void TakeDamage(float amount)

@@ -5,21 +5,28 @@ using UnityEngine;
 public class DraculaDash : MonoBehaviour
 {
     public Vector3 lastPlayerDirection;
-    public float dashSpeed = 10f;
-    public float dashCooldown = 2f;
+    public float dashSpeed = 40.6f;
+    public float dashCooldown = 3f;
     public bool isVulnerable = false;
-    public float vulnerableDuration = 3f;// Cooldown duration in seconds
+    public float vulnerableDuration = 5f;// Cooldown duration in seconds
+    private float dashDamage= 20f;
     public LayerMask pillarLayer;
 
     private Rigidbody2D rb;
+    private PlayerHealth playerHealth;
     private bool isDashing = false;
     private float lastDashTime = -Mathf.Infinity;
 
+    void Start()
+    {
+        GameObject player = GameObject.FindGameObjectWithTag("Player");
+        if (player != null) playerHealth = player.GetComponent<PlayerHealth>(); // Get the PlayerHealth component from the player)
+    }
     void Awake()
     {
         rb = GetComponent<Rigidbody2D>();
     }
-
+    
     void Update()
     {
         if (isDashing)
@@ -48,17 +55,27 @@ public class DraculaDash : MonoBehaviour
 
     void OnCollisionEnter2D(Collision2D collision)
     {
-        Debug.Log("CLOOIIIDS");
+        Debug.Log("COOOOLLIIIDDDS");
         if (((1 << collision.gameObject.layer) & pillarLayer) != 0 && isDashing)
         {
             isDashing = false;
             rb.linearVelocity = Vector2.zero;
 
-            collision.gameObject.SetActive(false);
-
+            Pillars pillarScript = collision.gameObject.GetComponent<Pillars>();
+            if (pillarScript != null)
+            {
+                pillarScript.BreakPillar();
+            }
             BecomeVulnerable();
+
+        }
+        if (isDashing && !isVulnerable && collision.gameObject.CompareTag("Player")&& playerHealth !=null)
+        {
+            playerHealth.TakeDamage(dashDamage);
         }
     }
+    
+
 
 
     public bool IsDashReady()
