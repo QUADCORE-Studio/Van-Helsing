@@ -7,7 +7,7 @@ public class DraculaPhase3 : MonoBehaviour
         Idle,
         Lurk,
         Dash,
-      //  Slash,
+        Slash,
         Hypno
     }
 
@@ -19,7 +19,7 @@ public class DraculaPhase3 : MonoBehaviour
     private Lurk draculaLurk;
 
     public DraculaAttackState currentState = DraculaAttackState.Idle;
-    private float attackCooldown = 3f;
+    private float attackCooldown = 1.5f;
     private float nextAttackTime;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -28,6 +28,7 @@ public class DraculaPhase3 : MonoBehaviour
         draculaDash = GetComponent<DraculaDash>();
         draculaLurk = GetComponent<Lurk>();
         draculaHypnoBeam = GetComponent<DraculaHypnoBeam>();
+        draculaSlash = GetComponent<DraculaSlashAttack>();
         nextAttackTime = Time.time + attackCooldown;
     }
 
@@ -46,6 +47,9 @@ public class DraculaPhase3 : MonoBehaviour
             case DraculaAttackState.Dash:
                 PerformDash();
                 break;
+            case DraculaAttackState.Slash:
+                PerformSlash();
+                break;
             case DraculaAttackState.Hypno:
                 PerformHypnoBeam();
                 break;
@@ -54,7 +58,7 @@ public class DraculaPhase3 : MonoBehaviour
     }
     void ChooseNextAttack()
     {
-        currentState = (DraculaAttackState)Random.Range(1, 4); // Pick Dash, Slash, or Hypno
+        currentState = (DraculaAttackState)Random.Range(2, 5); // Pick Dash, Slash, or Hypno
     }
     void PerformDash()
     {
@@ -63,6 +67,15 @@ public class DraculaPhase3 : MonoBehaviour
         {
             Debug.Log("Dracula used Dash!");
             Invoke(nameof(FinishAttack),3f);
+        }
+    }
+    void PerformSlash()
+    {
+        if (draculaSlash == null) return;
+        if (draculaSlash.IsSlashReady() && draculaSlash.StartSlash())
+        {
+            Debug.Log("dracula Slash!");
+            FinishAttack();
         }
     }
     void PerformHypnoBeam()

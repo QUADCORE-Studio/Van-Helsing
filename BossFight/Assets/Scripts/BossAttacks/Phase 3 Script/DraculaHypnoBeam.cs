@@ -5,7 +5,7 @@ public class DraculaHypnoBeam : MonoBehaviour
 
     public float beamDuration = 3f;
     public float hypnotizedDuration = 2f;
-    public float escapeMashCount = 10;
+    public float escapeMashCount = 5;
     public GameObject beamVisual; // Assign visual GameObject (turn on/off)
 
     private Transform player;

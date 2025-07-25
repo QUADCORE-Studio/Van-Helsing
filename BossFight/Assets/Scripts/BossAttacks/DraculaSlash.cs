@@ -2,55 +2,69 @@ using UnityEngine;
 
 public class DraculaSlashAttack : MonoBehaviour
 {
-    [Header("Slash Settings")]
-    public float slashRange = 1.5f;
-    public float damage = 1f;
-    public float cooldown = 3f;
-    public LayerMask playerLayer;
+    public GameObject Slash;
+    public BoxCollider2D slashHitbox;
+    public Animator animator;
+    public int slashDamage = 20;
+    public float slashDuration = 1.0f;
 
-    [Header("References")]
-    public Transform player;
-    //public Animator animator;
+    private bool isSlashing = false;
+    private float endTime;
 
-    private float lastSlashTime = -Mathf.Infinity;
-
-    void Update()
+    private void Start()
     {
-        if (CanSlash())
+        if (slashHitbox != null)
+            slashHitbox.enabled = false;
+    }
+
+    private void Update()
+    {
+        if (isSlashing && Time.time >= endTime)
         {
-            PerformSlash();
+            EndSlash();
         }
     }
 
-    private bool CanSlash()
+    public bool StartSlash()
     {
-        if (Time.time < lastSlashTime + cooldown)
-            return false;
+        if (isSlashing) return false;
+        Slash.SetActive(true);
+        isSlashing = true;
+        endTime = Time.time + slashDuration;
+        animator.Play("Slash");
+        if (animator != null)
+            animator.SetTrigger("Slash");
 
-        float dist = Vector2.Distance(transform.position, player.position);
-        return dist <= slashRange;
+        if (slashHitbox != null)
+            slashHitbox.enabled = true;
+
+        return true;
     }
 
-    private void PerformSlash()
+    private void EndSlash()
     {
-        lastSlashTime = Time.time;
+        Slash.SetActive(false);
+        isSlashing = false;
+        if (slashHitbox != null)
+            slashHitbox.enabled = false;
+    }
 
-        // Play slash animation
-        //if (animator != null)
-            //animator.SetTrigger("Slash");
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (!isSlashing) return;
 
-        // Damage check
-        Collider2D hit = Physics2D.OverlapCircle(transform.position, slashRange, playerLayer);
-        if (hit != null && hit.CompareTag("Player"))
+        if (collision.CompareTag("Player"))
         {
-            // Example: apply damage
-            hit.GetComponent<PlayerHealth>().TakeDamage(damage);
+            PlayerHealth player = collision.GetComponent<PlayerHealth>();
+            if (player != null)
+            {
+                player.TakeDamage(slashDamage);
+            }
         }
     }
 
-    private void OnDrawGizmosSelected()
+    public bool IsSlashReady()
     {
-        Gizmos.color = Color.red;
-        Gizmos.DrawWireSphere(transform.position, slashRange);
+        return !isSlashing;
     }
 }

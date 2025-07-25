@@ -11,17 +11,31 @@ public class PlayerHypno : MonoBehaviour
     private PlayerControls controller;
 
     public float moveSpeed = 1.5f;
+    private void Awake()
+    {
+        controller = new PlayerControls();
+        controller.Player.Mash.performed += ctx => OnMash();
+    }
+    void OnEnable()
+    {
+        controller.Player.Enable();
+    }
+
+    void OnDisable()
+    {
+        controller.Player.Disable();
+    }
     public void BeginHypnosis(float duration, float requiredMashes, Vector3 draculaPosition)
     {
-        if (isHypnotized) return;
-
         isHypnotized = true;
         mashCount = 0;
+
         requiredMashCount = Mathf.RoundToInt(requiredMashes);
         endTime = Time.time + duration;
-        draculaTarget = new GameObject("DraculaTarget").transform;
+
+        if (draculaTarget == null)
+            draculaTarget = new GameObject("DraculaTarget").transform;
         draculaTarget.position = draculaPosition;
-        Debug.Log("Player is hypnotized!");
     }
 
     void Update()
@@ -32,29 +46,33 @@ public class PlayerHypno : MonoBehaviour
         Vector3 direction = (draculaTarget.position - transform.position).normalized;
         transform.position += direction * moveSpeed * Time.deltaTime;
 
-        // Escape input
-        if (Input.GetKeyDown(KeyCode.Space))
-        {
-            mashCount++;
-            if (mashCount >= requiredMashCount)
-            {
-                EndHypnosis();
-                Debug.Log("Player broke free!");
-            }
-        }
-
         // Time runs out — fail
         if (Time.time >= endTime && isHypnotized)
         {
-            EndHypnosis();
+            EndHypnosis(false);
             Debug.Log("Player failed to escape. Dracula slashes!");
             // You could call player.GetComponent<PlayerHealth>().TakeDamage() here
         }
     }
+    void OnMash()
+    {
+        if (!isHypnotized) return;
 
-    void EndHypnosis()
+        mashCount++;
+        if (mashCount >= requiredMashCount)
+        {
+            EndHypnosis(true); // Escaped
+        }
+    }
+    void EndHypnosis(bool escaped)
     {
         isHypnotized = false;
-        Destroy(draculaTarget.gameObject);
+        if (draculaTarget) Destroy(draculaTarget.gameObject);
+
+        if (!escaped)
+        {
+            Debug.Log("Player failed to escape. Dracula slashes!");
+            GetComponent<PlayerHealth>().TakeDamage(25); // or whatever value
+        }
     }
 }
