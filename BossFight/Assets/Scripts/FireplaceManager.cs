@@ -7,12 +7,13 @@ public class FireplaceManager : MonoBehaviour
 {
     public static FireplaceManager Instance;
 
-    private List<Fireplace> fireplaces;
+    private List<Fireplace> fireplaces = new();
 
     void Awake() => Instance = this;
 
     public void Register(Fireplace f) => fireplaces.Add(f);
 
+    //method for dracula
     public void ExtinguishAll()
     {
         foreach (var f in fireplaces)
@@ -20,10 +21,6 @@ public class FireplaceManager : MonoBehaviour
     }
 
     public bool AllLit() => fireplaces.All(f => f.IsLit());
-
-    public static implicit operator FireplaceManager(Fireplace v)
-    {
-        throw new NotImplementedException();
-    }
+    
 }
 

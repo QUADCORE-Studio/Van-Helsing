@@ -5,9 +5,10 @@ public class DraculaPhase3 : MonoBehaviour
     public enum DraculaAttackState
     {
         Idle,
-        Dash
+        Lurk,
+        Dash,
       //  Slash,
-      //  Hypno
+        Hypno
     }
 
     public Transform playerTransform;
@@ -15,6 +16,7 @@ public class DraculaPhase3 : MonoBehaviour
     private DraculaDash draculaDash;
     private DraculaSlashAttack draculaSlash;
     private DraculaHypnoBeam draculaHypnoBeam;
+    private Lurk draculaLurk;
 
     public DraculaAttackState currentState = DraculaAttackState.Idle;
     private float attackCooldown = 3f;
@@ -24,7 +26,8 @@ public class DraculaPhase3 : MonoBehaviour
     void Start()
     {
         draculaDash = GetComponent<DraculaDash>();
-
+        draculaLurk = GetComponent<Lurk>();
+        draculaHypnoBeam = GetComponent<DraculaHypnoBeam>();
         nextAttackTime = Time.time + attackCooldown;
     }
 
@@ -37,14 +40,21 @@ public class DraculaPhase3 : MonoBehaviour
             case DraculaAttackState.Idle:
                 ChooseNextAttack();
                 break;
+            case DraculaAttackState.Lurk:
+                PerformLurk();
+                break;
             case DraculaAttackState.Dash:
                 PerformDash();
                 break;
+            case DraculaAttackState.Hypno:
+                PerformHypnoBeam();
+                break;
+                
         }
     }
     void ChooseNextAttack()
     {
-        currentState = (DraculaAttackState)Random.Range(1, 2); // Pick Dash, Slash, or Hypno
+        currentState = (DraculaAttackState)Random.Range(1, 4); // Pick Dash, Slash, or Hypno
     }
     void PerformDash()
     {
@@ -52,8 +62,24 @@ public class DraculaPhase3 : MonoBehaviour
         if (draculaDash.IsDashReady() && draculaDash.Dash())
         {
             Debug.Log("Dracula used Dash!");
-            FinishAttack();
+            Invoke(nameof(FinishAttack),3f);
         }
+    }
+    void PerformHypnoBeam()
+    {
+        draculaHypnoBeam.ActivateBeam(playerTransform);
+        Invoke(nameof(FinishAttack), 3f); // or match beam duration
+    }
+    void PerformLurk()
+    {
+        draculaLurk.SetPlayer(playerTransform);
+        draculaLurk.StartLurking();
+        Invoke(nameof(FinishLurk), 3f);
+    }
+    void FinishLurk()
+    {
+        draculaLurk.StopLurking();
+        FinishAttack();
     }
     void FinishAttack()
     {

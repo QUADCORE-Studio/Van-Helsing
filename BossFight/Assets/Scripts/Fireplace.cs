@@ -26,11 +26,7 @@ public class Fireplace : MonoBehaviour
 
     void Start()
     {
-        if (flameVisual != null)
-            flameVisual.SetActive(true);
-        else
-            Debug.LogWarning("Flame Visual is not assigned on " + gameObject.name);
-
+        FireplaceManager.Instance.Register(this);
         SetLitState(false);
     }
 
@@ -38,7 +34,10 @@ public class Fireplace : MonoBehaviour
     {
         if (playerInRange)
         {
-            LightFire();
+            if (isLit)
+                Extinguish();
+            else
+                LightFire();
         }
     }
 

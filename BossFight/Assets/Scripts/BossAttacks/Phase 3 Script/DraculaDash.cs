@@ -9,14 +9,13 @@ public class DraculaDash : MonoBehaviour
     public float dashCooldown = 3f;
     public bool isVulnerable = false;
     public float vulnerableDuration = 5f;// Cooldown duration in seconds
-    private float dashDamage= 20f;
     public LayerMask pillarLayer;
 
     private Rigidbody2D rb;
     private PlayerHealth playerHealth;
     private bool isDashing = false;
     private float lastDashTime = -Mathf.Infinity;
-
+    private float dashDamage= 20f;
     void Start()
     {
         GameObject player = GameObject.FindGameObjectWithTag("Player");
@@ -75,9 +74,6 @@ public class DraculaDash : MonoBehaviour
         }
     }
     
-
-
-
     public bool IsDashReady()
     {
         return Time.time >= lastDashTime + dashCooldown;
