@@ -4,7 +4,14 @@ public class BatAI : MonoBehaviour
 {
     private Transform target;
     public float speed = 3f;
+    public PlayerHealth playerHealth;
 
+    void Start()
+    {
+        GameObject player = GameObject.FindGameObjectWithTag("Player");
+        if (player != null)
+            playerHealth = player.GetComponent<PlayerHealth>();
+    }
     public void SetTarget(Transform t)
     {
         target = t;
@@ -22,7 +29,7 @@ public class BatAI : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
-            //damage player
+            playerHealth.TakeDamage(1f);
         }
     }
 }

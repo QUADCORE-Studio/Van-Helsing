@@ -1,4 +1,5 @@
 using UnityEngine;
+using System.Collections;
 
 public class Phase1 : IDraculaPhase
 {
@@ -23,7 +24,7 @@ public class Phase1 : IDraculaPhase
 
     public void Enter()
     {
-        FireplaceManager.Instance.ExtinguishAll();
+        //FireplaceManager.Instance.ExtinguishAll();
         if (boss.animator != null && boss.animator.isActiveAndEnabled)
         {
             boss.animator.Play("Appear");
@@ -36,10 +37,7 @@ public class Phase1 : IDraculaPhase
         if (!isVulnerable && FireplaceManager.Instance.AllLit())
         {
             TeleportToRandomSpawnZone();
-            if (boss.animator != null && boss.animator.isActiveAndEnabled)
-            {
-                boss.animator.Play("Appear"); 
-            }
+            boss.animator.Play("Appear");
             isVulnerable = true;
             vulnerableTimer = 5f;
 
@@ -62,7 +60,10 @@ public class Phase1 : IDraculaPhase
             vulnerableTimer -= Time.deltaTime;
             if (vulnerableTimer <= 0f)
             {
-                Enter();
+                //boss.animator.Play("ShadowSlash");
+                boss.animator.Play("ShadowLaugh");
+                boss.StartCoroutine(PlaySlashThenExtinguish());
+                vulnerableTimer = 5f;
             }
         }
 
@@ -110,5 +111,13 @@ public class Phase1 : IDraculaPhase
                 batScript.SetTarget(player);
             }
         }
+    }
+
+    private IEnumerator PlaySlashThenExtinguish()
+    {
+        boss.animator.Play("ShadowSlash");
+        yield return new WaitForSeconds(1.5f);
+        FireplaceManager.Instance.ExtinguishAll();
+        isVulnerable = false;
     }
 }
