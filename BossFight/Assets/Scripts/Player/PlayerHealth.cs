@@ -11,7 +11,7 @@ public class PlayerHealth : MonoBehaviour
     }
     void Update()
     {
-        Debug.Log("Player Health: " + currentHealth);
+       
     }
 
     public void TakeDamage(float amount)
