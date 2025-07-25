@@ -52,5 +52,8 @@ TagManager:
   - name: Player/Room
     uniqueID: 2299162555
     locked: 0
+  - name: Mobs
+    uniqueID: 1019355775
+    locked: 0
   m_RenderingLayers:
   - Default
