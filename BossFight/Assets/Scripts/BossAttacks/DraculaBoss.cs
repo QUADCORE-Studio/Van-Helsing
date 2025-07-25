@@ -1,48 +1,74 @@
-// using UnityEngine;
+using UnityEngine;
 
-// public enum BossPhase
-// {
-//     Phase1,
-//     Phase2,
-//     Phase3
-// }
+public class DraculaBoss : MonoBehaviour
+{
+    public Animator animator;
+    public Transform[] vulnerablePositions;
+    public int maxHealth = 9;
 
-// public class DraculaBoss : MonoBehaviour
-// {
-//     public BossPhase currentPhase;
-//     private IDraculaPhase currentBehavior;
+    private IDraculaPhase[] phases;
+    private int currentPhaseIndex = 0;
+    private int health;
+    private IDraculaPhase currentPhase;
+    public BoxCollider2D[] spawnZones;
+    public GameObject batPrefab;
+    public Transform player;
 
-//     void Start()
-//     {
-//         SwitchPhase(BossPhase.Phase1);
-//     }
+    void Awake()
+    {
+        if (animator == null)
+        {
+            animator = GetComponent<Animator>();
+            if (animator == null)
+            {
+                animator = GetComponentInChildren<Animator>();
+                Debug.LogWarning("DraculaBoss: Animator found on child.");
+            }
+        }
+    }
+    void Start()
+    {
+        Debug.Log("Animator layers: " + animator.layerCount);
+        health = maxHealth;
+        phases = new IDraculaPhase[]
+        {
+            new Phase1(this, batPrefab, player),
+            //new Phase2(this),
+            //new Phase3(this)
+        };
 
-//     void SwitchPhase(BossPhase phase)
-//     {
-//         currentPhase = phase;
-//         switch (phase)
-//         {
-//             case BossPhase.Phase1:
-//                 currentBehavior = new DraculaPhase1(this);
-//                 break;
-//             case BossPhase.Phase2:
-//                 currentBehavior = new DraculaPhase2(this);
-//                 break;
-//             case BossPhase.Phase3:
-//                 currentBehavior = new DraculaPhase3(this);
-//                 break;
-//         }
-//     }
+        SwitchToPhase(0);
+    }
 
-//     void Update()
-//     {
-//         currentBehavior?.Tick();
-//     }
+    void Update()
+    {
+        currentPhase?.Update();
+    }
 
-//     #if UNITY_EDITOR
-// public void ForcePhaseSwitch(Phase phase)
-// {
-//     SwitchToPhase(phase);
-// }
-// #endif
-// }
+    public void TakeDamage()
+    {
+        health--;
+        if (health <= 0)
+        {
+            animator.Play("ShadowSlash");
+            // Death logic
+            return;
+        }
+
+        // Example: advance phase every 3 hits
+        if (health % 3 == 0)
+        {
+            SwitchToPhase(currentPhaseIndex + 1);
+        }
+    }
+
+    void SwitchToPhase(int index)
+    {
+        if (currentPhase != null)
+            currentPhase.Exit();
+
+        currentPhaseIndex = Mathf.Clamp(index, 0, phases.Length - 1);
+        currentPhase = phases[currentPhaseIndex];
+        currentPhase.Enter();
+    }
+}

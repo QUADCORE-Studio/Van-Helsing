@@ -181,7 +181,7 @@ TextureImporter:
         width: 496
         height: 446
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -203,7 +203,7 @@ TextureImporter:
         width: 446
         height: 446
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -225,7 +225,7 @@ TextureImporter:
         width: 459
         height: 459
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -247,7 +247,7 @@ TextureImporter:
         width: 446
         height: 447
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -269,7 +269,7 @@ TextureImporter:
         width: 459
         height: 447
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -287,11 +287,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 2779
-        y: 367
-        width: 1175
-        height: 805
+        y: 346
+        width: 1452
+        height: 826
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -305,50 +305,6 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ShadowSwipeSheet_6
-      rect:
-        serializedVersion: 2
-        x: 3594
-        y: 441
-        width: 471
-        height: 595
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 4df37f6151f845c50800000000000000
-      internalID: 6653099870275452884
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: ShadowSwipeSheet_7
-      rect:
-        serializedVersion: 2
-        x: 3754
-        y: 380
-        width: 422
-        height: 644
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 51ef9b88cd0f0edd0800000000000000
-      internalID: -2458700566566928875
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
       name: ShadowSwipeSheet_8
       rect:
         serializedVersion: 2
@@ -357,7 +313,7 @@ TextureImporter:
         width: 1113
         height: 434
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -379,7 +335,7 @@ TextureImporter:
         width: 1101
         height: 434
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -401,7 +357,7 @@ TextureImporter:
         width: 1101
         height: 434
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -423,7 +379,7 @@ TextureImporter:
         width: 965
         height: 434
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -445,7 +401,7 @@ TextureImporter:
         width: 631
         height: 434
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -467,7 +423,7 @@ TextureImporter:
         width: 496
         height: 446
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -489,7 +445,7 @@ TextureImporter:
         width: 496
         height: 434
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -511,7 +467,7 @@ TextureImporter:
         width: 496
         height: 446
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -533,7 +489,7 @@ TextureImporter:
         width: 496
         height: 434
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -555,7 +511,7 @@ TextureImporter:
         width: 496
         height: 446
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -577,7 +533,7 @@ TextureImporter:
         width: 496
         height: 434
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -599,7 +555,7 @@ TextureImporter:
         width: 496
         height: 446
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -621,7 +577,7 @@ TextureImporter:
         width: 496
         height: 434
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -638,7 +594,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 6d5b72d3b9d6e7d41b06a1fd8c076048
     internalID: 0
     vertices: []
     indices: 

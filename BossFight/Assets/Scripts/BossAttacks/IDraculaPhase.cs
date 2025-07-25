@@ -1,5 +1,6 @@
 public interface IDraculaPhase
 {
-    void Tick();
-    void OnBossDamaged(float dmg);
+    void Enter();
+    void Update();
+    void Exit();
 }
