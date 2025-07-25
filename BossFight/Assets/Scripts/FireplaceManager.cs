@@ -11,7 +11,16 @@ public class FireplaceManager : MonoBehaviour
 
     void Awake() => Instance = this;
 
-    public void Register(Fireplace f) => fireplaces.Add(f);
+    void Start()
+    {
+        Debug.Log("Total fireplaces: " + fireplaces.Count);
+    }
+
+    public void Register(Fireplace f)
+    {
+        fireplaces.Add(f);
+        Debug.Log("Registered fireplace: " + f.name);
+    }
 
     //method for dracula
     public void ExtinguishAll()
@@ -21,6 +30,6 @@ public class FireplaceManager : MonoBehaviour
     }
 
     public bool AllLit() => fireplaces.All(f => f.IsLit());
-    
+
 }
 

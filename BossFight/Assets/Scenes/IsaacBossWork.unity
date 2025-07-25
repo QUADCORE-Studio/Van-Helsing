@@ -377,7 +377,7 @@ MonoBehaviour:
   m_BlendStyleIndex: 0
   m_FalloffIntensity: 0.5
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_Intensity: 0.78
+  m_Intensity: 0.73
   m_LightVolumeIntensity: 1
   m_LightVolumeEnabled: 0
   m_ApplyToSortingLayers: 00000000
@@ -571,6 +571,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 677962a03aa5e874bb3948750ed7c8fe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  mainRenderer: {fileID: 0}
+  additionalRenderers: []
 --- !u!50 &180686973045738941
 Rigidbody2D:
   serializedVersion: 5
@@ -586,7 +588,7 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDamping: 0
   m_AngularDamping: 0.05
-  m_GravityScale: 1
+  m_GravityScale: 0
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
@@ -810,7 +812,6 @@ GameObject:
   - component: {fileID: 7805401029894703625}
   - component: {fileID: 699487293832917531}
   - component: {fileID: 180686973045738941}
-  - component: {fileID: 7805401029894703626}
   m_Layer: 0
   m_Name: Dracula_b
   m_TagString: Untagged
@@ -900,6 +901,8 @@ MonoBehaviour:
   arrow_prefab: {fileID: 5239621148246319555, guid: 01fa349bc65117746949384cf86c29c3, type: 3}
   beam_prefab: {fileID: 4719212814198332376, guid: b7c5f2d997f7f484494636927c982cd2, type: 3}
   arrow_circle_count: 8
+  projectileSpeed: 5
+  target: {fileID: 8095464610283525826}
 --- !u!114 &7805401029894703625
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -913,22 +916,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   centerPoint: {fileID: 1447440355}
-  radius: 3.67
+  radius: 3.82
   teleporter_1: {fileID: 1356560534698349917, guid: 60458780da8e60b47962e7ccf3c2d0e8, type: 3}
   teleporter_2: {fileID: 2171389512985579544, guid: b8bbdcd4675abdb47bc45c02cb60f5d3, type: 3}
+  offset: 0.95
   repeatRate: 3.53
---- !u!114 &7805401029894703626
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7634603805032786771}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 677962a03aa5e874bb3948750ed7c8fe, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &8095464610283525826
 GameObject:
   m_ObjectHideFlags: 0
