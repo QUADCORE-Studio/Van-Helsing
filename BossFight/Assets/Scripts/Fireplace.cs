@@ -30,8 +30,9 @@ public class Fireplace : MonoBehaviour
         SetLitState(false);
     }
 
-    void TryToggleFire()
+    public void TryToggleFire()
     {
+         Debug.Log("E was pressed – Interact action performed!");
         if (playerInRange)
         {
             if (isLit)
