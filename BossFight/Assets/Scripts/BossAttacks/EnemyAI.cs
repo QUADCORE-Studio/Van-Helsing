@@ -16,6 +16,7 @@ public class EnemyAI : MonoBehaviour
 
     void Awake()
     {
+        this.enabled = false;
         currentHealth = maxHealth;
 
         GameObject player = GameObject.FindGameObjectWithTag("Player");
@@ -56,4 +57,21 @@ public class EnemyAI : MonoBehaviour
             playerHealth.TakeDamage(damage);
         }
     }
+
+    private RoomTrigger myRoom;
+    public void SetRoom(RoomTrigger room)
+    {
+        myRoom = room;
+        this.enabled = false;
+    }
+
+    public bool IsInRoom(RoomTrigger room) => myRoom == room;
+    public void Activate() => this.enabled = true;
+
+
+
+
+
+    
+
 }
