@@ -102,7 +102,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 677962a03aa5e874bb3948750ed7c8fe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mainRenderer: {fileID: 0}
+  mainRenderer: {fileID: 6716112925611486788}
   additionalRenderers: []
 --- !u!61 &4720206412842653059
 BoxCollider2D:
