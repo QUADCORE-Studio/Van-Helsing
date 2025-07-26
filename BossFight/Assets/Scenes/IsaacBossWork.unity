@@ -377,7 +377,7 @@ MonoBehaviour:
   m_BlendStyleIndex: 0
   m_FalloffIntensity: 0.5
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_Intensity: 0.73
+  m_Intensity: 0.31
   m_LightVolumeIntensity: 1
   m_LightVolumeEnabled: 0
   m_ApplyToSortingLayers: 00000000
@@ -437,6 +437,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1024127367}
   - component: {fileID: 1024127366}
+  - component: {fileID: 1024127368}
   m_Layer: 0
   m_Name: Light 2D
   m_TagString: Untagged
@@ -461,7 +462,7 @@ MonoBehaviour:
   m_BlendStyleIndex: 0
   m_FalloffIntensity: 0.504
   m_Color: {r: 0.9150943, g: 0.87300456, b: 0.46186364, a: 1}
-  m_Intensity: 4.71
+  m_Intensity: 1.47
   m_LightVolumeIntensity: 1
   m_LightVolumeEnabled: 0
   m_ApplyToSortingLayers: 00000000fd661fd821548f0dbb6f0a89
@@ -484,8 +485,8 @@ MonoBehaviour:
     m_Extent: {x: 0.9985302, y: 0.99853027, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
-  m_PointLightInnerRadius: 0
-  m_PointLightOuterRadius: 3.25
+  m_PointLightInnerRadius: 1.18
+  m_PointLightOuterRadius: 3.37
   m_ShapeLightParametricSides: 5
   m_ShapeLightParametricAngleOffset: 0
   m_ShapeLightParametricRadius: 1
@@ -514,6 +515,24 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1835830574756947817}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1024127368
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1024127365}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c7d0b0e1104d42a498cae5b30601af0a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  radius_offset: 0
+  repeatRate: 7
+  duration: 5
+  pulsating_flag: 0
+  slide_flag: 0
+  min_nums: []
 --- !u!1 &1447440353
 GameObject:
   m_ObjectHideFlags: 0
@@ -659,7 +678,7 @@ Transform:
   m_GameObject: {fileID: 8095464610283525826}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.54, y: -0.89, z: 0.1}
+  m_LocalPosition: {x: -1.06, y: -1.15, z: 0.1}
   m_LocalScale: {x: 0.35351446, y: 0.35351446, z: 0}
   m_ConstrainProportionsScale: 0
   m_Children:
