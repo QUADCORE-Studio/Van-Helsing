@@ -1,47 +1,68 @@
-// using UnityEngine;
-// using UnityEngine.InputSystem;
+using UnityEngine;
+using UnityEngine.InputSystem;
 
-// public class PlayerCombat : MonoBehaviour
-// {
-//     public Animator animator;
-//     private PlayerControls controls;
-//     public Transform attackPoint;
-//     public GameObject slashPrefab;
+public class PlayerCombat : MonoBehaviour
+{
+    public Animator animator;
+    private PlayerControls controls;
+    public Transform attackPoint;
+    public GameObject slashPrefab;
+    private SpriteRenderer spriteRenderer;
 
-//     void Awake()
-//     {
-//         animator = GetComponent<Animator>();
-//         controls = new PlayerControls();
-//     }
+    void Awake()
+    {
+        animator = GetComponent<Animator>();
+        controls = new PlayerControls();
+        spriteRenderer = GetComponent<SpriteRenderer>();
+    }
 
-//     public void Attack()
-//     {
-//         animator.Play("AttackPlayer");
+    private float lastAttackTime = 0f;
+    public float attackCooldown = 1f;
+    public void Attack()
+    {
+        if (Time.time - lastAttackTime < attackCooldown)
+            return;
 
-//         Vector2 mouseScreenPos = Mouse.current.position.ReadValue();
-//         Vector3 mouseWorldPos = Camera.main.ScreenToWorldPoint(mouseScreenPos);
-//         mouseWorldPos.z = 0;
+        lastAttackTime = Time.time;
+        animator.Play("AttackPlayer");
 
-//         Vector2 direction = (mouseWorldPos - attackPoint.position).normalized;
-//         float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
+        Vector2 mouseScreenPos = Mouse.current.position.ReadValue();
+        Vector3 mouseWorldPos = Camera.main.ScreenToWorldPoint(mouseScreenPos);
+        mouseWorldPos.z = 0;
 
-//         Instantiate(slashPrefab, attackPoint.position, Quaternion.Euler(0, 0, angle));
+        Vector2 direction = (mouseWorldPos - attackPoint.position).normalized;
+        float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
 
-//     }
+        // Flip player depending on direction
+        if (direction.x < 0)
+            spriteRenderer.flipX = true;
+        else
+            spriteRenderer.flipX = false;
 
-//     void OnEnable()
-//     {
-//         controls.Enable();
-//         controls.Player.Attack.performed += ctx => Attack();
-//     }
+        float offsetDistance = 1.0f;
 
-//     void OnDisable()
-//     {
-//         controls.Player.Attack.performed -= ctx => Attack();
-//         controls.Disable();
-//     }
+        // Calculate offset position in attack direction
+        Vector3 offset = direction * offsetDistance;
+        Vector3 spawnPosition = attackPoint.position + offset;
+
+        GameObject slash = Instantiate(slashPrefab, spawnPosition, Quaternion.Euler(0, 0, angle));
+        Destroy(slash, 0.5f);
+
+    }
+
+    void OnEnable()
+    {
+        controls.Enable();
+        controls.Player.Attack.performed += ctx => Attack();
+    }
+
+    void OnDisable()
+    {
+        controls.Player.Attack.performed -= ctx => Attack();
+        controls.Disable();
+    }
 
 
-//     //dodge logic
+    //dodge logic
 
-// }
+}
