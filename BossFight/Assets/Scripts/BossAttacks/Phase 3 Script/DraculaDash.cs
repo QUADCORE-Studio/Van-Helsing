@@ -5,13 +5,14 @@ using UnityEngine;
 public class DraculaDash : MonoBehaviour
 {
     public Vector3 lastPlayerDirection;
-    public float dashSpeed = 40.6f;
-    public float dashCooldown = 3f;
+    public float dashSpeed = 35f;
+    public float dashCooldown = 10f;
     public bool isVulnerable = false;
-    public float vulnerableDuration = 5f;// Cooldown duration in seconds
+    public float vulnerableDuration = 5f;
     public LayerMask pillarLayer;
+    public Animator animator;
 
-    private Rigidbody2D rb;
+    public Rigidbody2D rb;
     private PlayerHealth playerHealth;
     private bool isDashing = false;
     private float lastDashTime = -Mathf.Infinity;
@@ -21,10 +22,7 @@ public class DraculaDash : MonoBehaviour
         GameObject player = GameObject.FindGameObjectWithTag("Player");
         if (player != null) playerHealth = player.GetComponent<PlayerHealth>(); // Get the PlayerHealth component from the player)
     }
-    void Awake()
-    {
-        rb = GetComponent<Rigidbody2D>();
-    }
+
     
     void Update()
     {
@@ -45,6 +43,7 @@ public class DraculaDash : MonoBehaviour
     {
         if (Time.time >= lastDashTime + dashCooldown && lastPlayerDirection != Vector3.zero)
         {
+            animator.Play("Charge");
             isDashing = true;
             lastDashTime = Time.time;
             return true; // Dash performed
@@ -81,8 +80,11 @@ public class DraculaDash : MonoBehaviour
 
     void BecomeVulnerable()
     {
+        if (isVulnerable) return; // Already vulnerable, do nothing
+        
         isVulnerable = true;
         Debug.Log("Dracula is vulnerable!");
+        animator.Play("Recover");
         Invoke(nameof(RecoverFromVulnerability), vulnerableDuration);
     }
 

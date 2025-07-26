@@ -2,49 +2,77 @@ using UnityEngine;
 
 public class DraculaSlashAttack : MonoBehaviour
 {
-    public GameObject Slash;
-    public BoxCollider2D slashHitbox;
-    public Animator animator;
+   [Header("Slash Settings")]
     public int slashDamage = 20;
     public float slashDuration = 1.0f;
+    public float slashRange = 2.5f;
+    public float slashCooldown = 2.5f;
 
+    [Header("References")]
+    public BoxCollider2D slashHitbox;
+    public Animator animator;
+    public DraculaDash draculaDash;
+
+    private Transform player;
     private bool isSlashing = false;
     private float endTime;
+    private float lastSlashTime = -Mathf.Infinity;
 
-    private void Start()
+    void Start()
     {
+        // Disable hitbox until we actually slash
         if (slashHitbox != null)
             slashHitbox.enabled = false;
+
+        // Find the player by tag
+        GameObject playerObj = GameObject.FindGameObjectWithTag("Player");
+        if (playerObj != null)
+            player = playerObj.transform;
     }
 
-    private void Update()
+    void Update()
     {
-        if (isSlashing && Time.time >= endTime)
+        Debug.Log(draculaDash.isVulnerable);
+        if (player == null) return;
+
+        // 1. If we're in the middle of a slash, check for end
+        if (isSlashing)
         {
-            EndSlash();
+            if (Time.time >= endTime)
+                EndSlash();
+            return;
+        }
+
+        // 2. If off cooldown and player in range, start a new slash
+        bool offCooldown = Time.time >= lastSlashTime + slashCooldown;
+        float dist = Vector2.Distance(transform.position, player.position);
+
+        if (offCooldown && dist <= slashRange)
+        {
+            StartSlash();
         }
     }
 
-    public bool StartSlash()
+    private void StartSlash()
     {
-        if (isSlashing) return false;
-        Slash.SetActive(true);
         isSlashing = true;
         endTime = Time.time + slashDuration;
-        animator.Play("Slash");
-        if (animator != null)
-            animator.SetTrigger("Slash");
+        lastSlashTime = Time.time;
 
+        // Play animation
+        if (animator != null)
+            animator.Play("Slash");
+
+        // Enable hitbox
         if (slashHitbox != null)
             slashHitbox.enabled = true;
-
-        return true;
     }
 
     private void EndSlash()
     {
-        Slash.SetActive(false);
         isSlashing = false;
+
+        // Disable hitbox
         if (slashHitbox != null)
             slashHitbox.enabled = false;
     }
@@ -55,16 +83,9 @@ public class DraculaSlashAttack : MonoBehaviour
 
         if (collision.CompareTag("Player"))
         {
-            PlayerHealth player = collision.GetComponent<PlayerHealth>();
-            if (player != null)
-            {
-                player.TakeDamage(slashDamage);
-            }
+            PlayerHealth playerHealth = collision.GetComponent<PlayerHealth>();
+            if (playerHealth != null)
+                playerHealth.TakeDamage(slashDamage);
         }
-    }
-
-    public bool IsSlashReady()
-    {
-        return !isSlashing;
     }
 }

@@ -1,40 +1,19 @@
 fileFormatVersion: 2
-guid: ef3221c5312a8bf4fa2bed7eeb9b71d2
+guid: 83bb58bd20aed31479cbce22ab081b2f
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -1577116974042243974
-    second: FirePitSheet_0
+      213: 7688559663923816715
+    second: ClawAttackSheet_0
   - first:
-      213: 5493606904956060461
-    second: FirePitSheet_1
+      213: 9160229310281549494
+    second: ClawAttackSheet_1
   - first:
-      213: 1500331867196719924
-    second: FirePitSheet_2
+      213: 5463607733514517491
+    second: ClawAttackSheet_2
   - first:
-      213: 1704349189249024360
-    second: FirePitSheet_3
-  - first:
-      213: -509415229132435698
-    second: FirePitSheet_4
-  - first:
-      213: 1153962634286812264
-    second: FirePitSheet_5
-  - first:
-      213: 7512688109840410471
-    second: FirePitSheet_6
-  - first:
-      213: 1180289440082152213
-    second: FirePitSheet_7
-  - first:
-      213: 1108843438204335593
-    second: FirePitSheet_8
-  - first:
-      213: 897664840743540211
-    second: FirePitSheet_9
-  - first:
-      213: 6852711416716873782
-    second: FirePitSheet_10
+      213: -1844455267963363939
+    second: ClawAttackSheet_3
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -156,89 +135,89 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: FirePitSheet_6
+      name: ClawAttackSheet_0
       rect:
         serializedVersion: 2
-        x: 121
-        y: 151
-        width: 155
-        height: 283
+        x: 144
+        y: 2234
+        width: 743
+        height: 693
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 767a65f280e624860800000000000000
-      internalID: 7512688109840410471
+      spriteID: b096392574043ba60800000000000000
+      internalID: 7688559663923816715
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: FirePitSheet_7
+      name: ClawAttackSheet_1
       rect:
         serializedVersion: 2
-        x: 402
-        y: 155
-        width: 137
-        height: 264
+        x: 925
+        y: 2234
+        width: 805
+        height: 668
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 51bcd380efa316010800000000000000
-      internalID: 1180289440082152213
+      spriteID: 6b60474560caf1f70800000000000000
+      internalID: 9160229310281549494
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: FirePitSheet_8
+      name: ClawAttackSheet_2
       rect:
         serializedVersion: 2
-        x: 709
-        y: 155
-        width: 117
-        height: 288
+        x: 1786
+        y: 2235
+        width: 805
+        height: 656
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 9e531bd6b37636f00800000000000000
-      internalID: 1108843438204335593
+      spriteID: 3fbb5344942a2db40800000000000000
+      internalID: 5463607733514517491
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: FirePitSheet_10
+      name: ClawAttackSheet_3
       rect:
         serializedVersion: 2
-        x: 956
-        y: 155
-        width: 163
-        height: 309
+        x: 2701
+        y: 2235
+        width: 780
+        height: 681
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 6305cade9b8b91f50800000000000000
-      internalID: 6852711416716873782
+      spriteID: d9d12f4c4bd2766e0800000000000000
+      internalID: -1844455267963363939
       vertices: []
       indices: 
       edges: []
@@ -247,7 +226,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 976bb2563654e98408fa274b32cd18a2
+    spriteID: 
     internalID: 0
     vertices: []
     indices: 
@@ -257,17 +236,10 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      FirePitSheet_0: -1577116974042243974
-      FirePitSheet_1: 5493606904956060461
-      FirePitSheet_10: 6852711416716873782
-      FirePitSheet_2: 1500331867196719924
-      FirePitSheet_3: 1704349189249024360
-      FirePitSheet_4: -509415229132435698
-      FirePitSheet_5: 1153962634286812264
-      FirePitSheet_6: 7512688109840410471
-      FirePitSheet_7: 1180289440082152213
-      FirePitSheet_8: 1108843438204335593
-      FirePitSheet_9: 897664840743540211
+      ClawAttackSheet_0: 7688559663923816715
+      ClawAttackSheet_1: 9160229310281549494
+      ClawAttackSheet_2: 5463607733514517491
+      ClawAttackSheet_3: -1844455267963363939
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

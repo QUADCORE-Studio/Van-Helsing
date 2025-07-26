@@ -3,12 +3,12 @@ using UnityEngine;
 public class DraculaHypnoBeam : MonoBehaviour
 {
 
-    public float beamDuration = 3f;
+    public float beamDuration = 2f;
     public float hypnotizedDuration = 2f;
     public float escapeMashCount = 5;
     public GameObject beamVisual; // Assign visual GameObject (turn on/off)
 
-    private Transform player;
+    public Transform player;
     private PlayerHypno playerHypnosis; // Script on player
 
     private bool beamActive = false;
@@ -21,8 +21,11 @@ public class DraculaHypnoBeam : MonoBehaviour
 
     public void ActivateBeam(Transform playerTransform)
     {
-        player = playerTransform;
         playerHypnosis = player.GetComponent<PlayerHypno>();
+
+        Vector3 dir = (player.position - transform.position).normalized;
+        float angle = Mathf.Atan2(dir.y, dir.x) * Mathf.Rad2Deg;
+        beamVisual.transform.rotation = Quaternion.Euler(0f, 0f, angle);
 
         beamActive = true;
         beamEndTime = Time.time + beamDuration;

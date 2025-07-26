@@ -7,17 +7,17 @@ public class DraculaPhase3 : MonoBehaviour
         Idle,
         Lurk,
         Dash,
-        Slash,
         Hypno
     }
 
     public Transform playerTransform;
     // private DraculaBoss boss;
     private DraculaDash draculaDash;
-    private DraculaSlashAttack draculaSlash;
     private DraculaHypnoBeam draculaHypnoBeam;
     private Lurk draculaLurk;
 
+
+    public Animator animator;
     public DraculaAttackState currentState = DraculaAttackState.Idle;
     private float attackCooldown = 1.5f;
     private float nextAttackTime;
@@ -28,7 +28,6 @@ public class DraculaPhase3 : MonoBehaviour
         draculaDash = GetComponent<DraculaDash>();
         draculaLurk = GetComponent<Lurk>();
         draculaHypnoBeam = GetComponent<DraculaHypnoBeam>();
-        draculaSlash = GetComponent<DraculaSlashAttack>();
         nextAttackTime = Time.time + attackCooldown;
     }
 
@@ -47,9 +46,6 @@ public class DraculaPhase3 : MonoBehaviour
             case DraculaAttackState.Dash:
                 PerformDash();
                 break;
-            case DraculaAttackState.Slash:
-                PerformSlash();
-                break;
             case DraculaAttackState.Hypno:
                 PerformHypnoBeam();
                 break;
@@ -58,7 +54,13 @@ public class DraculaPhase3 : MonoBehaviour
     }
     void ChooseNextAttack()
     {
-        currentState = (DraculaAttackState)Random.Range(2, 5); // Pick Dash, Slash, or Hypno
+        if (draculaDash.isVulnerable)
+        {
+            currentState = DraculaAttackState.Idle; // If vulnerable, just wait
+            return;
+        }
+        currentState = (DraculaAttackState)Random.Range(1, 4); // Pick Dash, Slash, or Hypno
+        if(currentState == DraculaAttackState.Idle) currentState = DraculaAttackState.Lurk;
     }
     void PerformDash()
     {
@@ -66,22 +68,17 @@ public class DraculaPhase3 : MonoBehaviour
         if (draculaDash.IsDashReady() && draculaDash.Dash())
         {
             Debug.Log("Dracula used Dash!");
-            Invoke(nameof(FinishAttack),3f);
+            Invoke(nameof(FinishAttack), 3f);
+            
         }
+        
     }
-    void PerformSlash()
-    {
-        if (draculaSlash == null) return;
-        if (draculaSlash.IsSlashReady() && draculaSlash.StartSlash())
-        {
-            Debug.Log("dracula Slash!");
-            FinishAttack();
-        }
-    }
+
     void PerformHypnoBeam()
     {
+        animator.Play("BeamCharge");
         draculaHypnoBeam.ActivateBeam(playerTransform);
-        Invoke(nameof(FinishAttack), 3f); // or match beam duration
+        Invoke(nameof(FinishAttack), 1.5f); // or match beam duration
     }
     void PerformLurk()
     {
