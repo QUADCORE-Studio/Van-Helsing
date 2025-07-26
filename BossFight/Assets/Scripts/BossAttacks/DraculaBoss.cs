@@ -71,4 +71,13 @@ public class DraculaBoss : MonoBehaviour
         currentPhase = phases[currentPhaseIndex];
         currentPhase.Enter();
     }
+
+    public bool IsVulnerable()
+    {
+        if (currentPhase is Phase1 phase1)
+        {
+            return phase1.IsVulnerable();
+        }
+        return true;
+    }
 }

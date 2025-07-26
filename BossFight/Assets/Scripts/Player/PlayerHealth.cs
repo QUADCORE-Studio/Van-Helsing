@@ -9,10 +9,6 @@ public class PlayerHealth : MonoBehaviour
     {
         currentHealth = maxHealth;
     }
-    void Update()
-    {
-       
-    }
 
     public void TakeDamage(float amount)
     {

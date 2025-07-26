@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: 721993898380738976}
   m_Layer: 0
   m_Name: Bat
-  m_TagString: Untagged
+  m_TagString: Mob
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -122,6 +122,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 3
+  maxHealth: 3
+  damage: 1
+  followPlayer: 1
 --- !u!95 &7667383688165619063
 Animator:
   serializedVersion: 7

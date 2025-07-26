@@ -24,7 +24,6 @@ public class Phase1 : IDraculaPhase
 
     public void Enter()
     {
-        //FireplaceManager.Instance.ExtinguishAll();
         if (boss.animator != null && boss.animator.isActiveAndEnabled)
         {
             boss.animator.Play("Appear");
@@ -60,7 +59,6 @@ public class Phase1 : IDraculaPhase
             vulnerableTimer -= Time.deltaTime;
             if (vulnerableTimer <= 0f)
             {
-                //boss.animator.Play("ShadowSlash");
                 boss.animator.Play("ShadowLaugh");
                 boss.StartCoroutine(PlaySlashThenExtinguish());
                 vulnerableTimer = 5f;
@@ -90,7 +88,7 @@ public class Phase1 : IDraculaPhase
         Vector3 randomPos = new Vector3(
             Random.Range(bounds.min.x, bounds.max.x),
             Random.Range(bounds.min.y, bounds.max.y),
-            boss.transform.position.z // maintain Z
+            boss.transform.position.z
         );
 
         boss.transform.position = randomPos;
@@ -104,12 +102,6 @@ public class Phase1 : IDraculaPhase
         {
             Vector3 spawnOffset = new Vector3(Random.Range(-1f, 1f), Random.Range(-1f, 1f), 0f);
             GameObject bat = GameObject.Instantiate(batPrefab, boss.transform.position + spawnOffset, Quaternion.identity);
-
-            BatAI batScript = bat.GetComponent<BatAI>();
-            if (batScript != null && player != null)
-            {
-                batScript.SetTarget(player);
-            }
         }
     }
 
@@ -119,5 +111,10 @@ public class Phase1 : IDraculaPhase
         yield return new WaitForSeconds(1.5f);
         FireplaceManager.Instance.ExtinguishAll();
         isVulnerable = false;
+    }
+    
+     public bool IsVulnerable()
+    {
+        return isVulnerable;
     }
 }
