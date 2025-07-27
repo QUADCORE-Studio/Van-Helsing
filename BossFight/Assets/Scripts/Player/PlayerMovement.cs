@@ -11,10 +11,12 @@ public class PlayerMovement : MonoBehaviour
     private Vector2 moveInput;
     private Rigidbody2D rb;
     private PlayerControls controls;
+    private SpriteRenderer spriteRenderer;
 
 
     private void Awake()
     {
+        spriteRenderer = GetComponent<SpriteRenderer>();
         rb = GetComponent<Rigidbody2D>();
         controls = new PlayerControls();
         animator = GetComponent<Animator>();
@@ -39,10 +41,12 @@ public class PlayerMovement : MonoBehaviour
     {
         if (moveInput.x < 0)
         {
-           animator.SetBool("isWalkingLeft", true);
+           spriteRenderer.flipX = false;
+            animator.SetBool("isWalkingLeft", true);
         }
         else if (moveInput.x > 0)
         {
+            spriteRenderer.flipX = true;
             animator.SetBool("isWalking", true);
         }
         rb.MovePosition(rb.position + moveInput * moveSpeed * Time.fixedDeltaTime);

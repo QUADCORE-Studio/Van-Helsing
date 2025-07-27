@@ -301,6 +301,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 2871163152666891176, guid: 10c65f0c164d2e04e9c3daf97304609a, type: 3}
   m_PrefabInstance: {fileID: 838458151}
   m_PrefabAsset: {fileID: 0}
+--- !u!212 &160143797 stripped
+SpriteRenderer:
+  m_CorrespondingSourceObject: {fileID: 9194925451620142301, guid: baf0914febaab7e468de873908d1178c, type: 3}
+  m_PrefabInstance: {fileID: 5720191421050983588}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &177854001 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4281089077329777152, guid: 94dd71624077a4d47893d0872f883ba9, type: 3}
@@ -2622,6 +2627,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1780631197322071201, guid: baf0914febaab7e468de873908d1178c, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2032487384318636903, guid: baf0914febaab7e468de873908d1178c, type: 3}
+      propertyPath: spriteRenderer
+      value: 
+      objectReference: {fileID: 160143797}
     - target: {fileID: 2264565455698604853, guid: baf0914febaab7e468de873908d1178c, type: 3}
       propertyPath: m_LocalPosition.x
       value: -55.46
@@ -2668,7 +2681,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9194925451620142301, guid: baf0914febaab7e468de873908d1178c, type: 3}
       propertyPath: m_FlipX
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

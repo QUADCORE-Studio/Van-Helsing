@@ -54,14 +54,14 @@ public class EnemyAI : MonoBehaviour
                 Vector3 moveDir = dir.normalized;
                 transform.position += moveDir * speed * Time.deltaTime;
 
-                animator?.SetFloat("Speed", 1f);
-                animator?.SetFloat("Attack", 0f); // stop attacking
+                // animator?.SetFloat("Speed", 1f);
+                // animator?.SetFloat("Attack", 0f); // stop attacking
             }
             else
             {
                 // Attack loop while close
-                animator?.SetFloat("Speed", 0f);
-                animator?.SetFloat("Attack", 1f); // keep attacking
+                // animator?.SetFloat("Speed", 0f);
+                // animator?.SetFloat("Attack", 1f); // keep attacking
             }
         }
     }
