@@ -460,9 +460,9 @@ MonoBehaviour:
   m_ComponentVersion: 2
   m_LightType: 3
   m_BlendStyleIndex: 0
-  m_FalloffIntensity: 0.504
+  m_FalloffIntensity: 0.288
   m_Color: {r: 0.9150943, g: 0.87300456, b: 0.46186364, a: 1}
-  m_Intensity: 1.47
+  m_Intensity: 2.31
   m_LightVolumeIntensity: 1
   m_LightVolumeEnabled: 0
   m_ApplyToSortingLayers: 00000000fd661fd821548f0dbb6f0a89
@@ -485,8 +485,8 @@ MonoBehaviour:
     m_Extent: {x: 0.9985302, y: 0.99853027, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
-  m_PointLightInnerRadius: 1.18
-  m_PointLightOuterRadius: 3.37
+  m_PointLightInnerRadius: 0.93
+  m_PointLightOuterRadius: 2.45
   m_ShapeLightParametricSides: 5
   m_ShapeLightParametricAngleOffset: 0
   m_ShapeLightParametricRadius: 1
@@ -528,56 +528,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   radius_offset: 0
-  repeatRate: 7
   duration: 5
-  pulsating_flag: 0
-  slide_flag: 0
-  min_nums: []
---- !u!1 &1447440353
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1447440355}
-  - component: {fileID: 1447440356}
-  m_Layer: 0
-  m_Name: controller
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1447440355
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1447440353}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.28, y: -1.25, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1447440356
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1447440353}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b438af12a169a5d4da379c6f136443c1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  hitboxes: []
+  pulsating_flag: 1
+  min_nums:
+  - 1
+  - 0.5
+  - 1.5
+  max_nums:
+  - 2.3
+  - 1.25
+  - 2
+  tees: []
+  flags: 
 --- !u!114 &26930502850506786
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -668,7 +630,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 66d17c8d827b3af44bba77c852d4fa38, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHealth: 5
+  maxHealth: 100
 --- !u!4 &1835830574756947817
 Transform:
   m_ObjectHideFlags: 0
@@ -827,8 +789,8 @@ GameObject:
   m_Component:
   - component: {fileID: 7805401029894703622}
   - component: {fileID: 3075206850724996750}
-  - component: {fileID: 7805401029894703623}
   - component: {fileID: 7805401029894703625}
+  - component: {fileID: 7805401029894703626}
   - component: {fileID: 699487293832917531}
   - component: {fileID: 180686973045738941}
   m_Layer: 0
@@ -853,75 +815,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &7805401029894703623
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7634603805032786771}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 621759570c1bee842b767d2b1845ab8d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  animator: {fileID: 0}
-  circle_input:
-    m_Name: Circle_input
-    m_Type: 0
-    m_ExpectedControlType: 
-    m_Id: c2743c87-6699-4e33-8e80-55212feeae52
-    m_Processors: 
-    m_Interactions: 
-    m_SingletonActionBindings:
-    - m_Name: 
-      m_Id: cf72f269-9b21-4303-9121-ca85b00e74c7
-      m_Path: <Keyboard>/2
-      m_Interactions: 
-      m_Processors: 
-      m_Groups: 
-      m_Action: Circle_input
-      m_Flags: 0
-    m_Flags: 0
-  arrow_input:
-    m_Name: Arrow_input
-    m_Type: 0
-    m_ExpectedControlType: 
-    m_Id: ac6ee1bb-7958-4cc3-92a1-94e1562119b6
-    m_Processors: 
-    m_Interactions: 
-    m_SingletonActionBindings:
-    - m_Name: 
-      m_Id: e0c21be7-ba51-4fb4-bfed-8dddacbd0169
-      m_Path: <Keyboard>/1
-      m_Interactions: 
-      m_Processors: 
-      m_Groups: 
-      m_Action: Arrow_input
-      m_Flags: 0
-    m_Flags: 0
-  beam_input:
-    m_Name: Beam_input
-    m_Type: 0
-    m_ExpectedControlType: 
-    m_Id: 3dad3bb6-511e-475e-9a3b-1f76eab22145
-    m_Processors: 
-    m_Interactions: 
-    m_SingletonActionBindings:
-    - m_Name: 
-      m_Id: e9c2c275-a767-48e9-82fe-847378e66c60
-      m_Path: <Keyboard>/3
-      m_Interactions: 
-      m_Processors: 
-      m_Groups: 
-      m_Action: Beam_input
-      m_Flags: 0
-    m_Flags: 0
-  arrow_prefab: {fileID: 5239621148246319555, guid: 01fa349bc65117746949384cf86c29c3, type: 3}
-  beam_prefab: {fileID: 4719212814198332376, guid: b7c5f2d997f7f484494636927c982cd2, type: 3}
-  arrow_circle_count: 8
-  projectileSpeed: 5
-  target: {fileID: 8095464610283525826}
 --- !u!114 &7805401029894703625
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -934,12 +827,28 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e96dd9ff85fa25c4aa42a34757d1fe6f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  centerPoint: {fileID: 1447440355}
+  centerPoint: {fileID: 0}
   radius: 3.82
   teleporter_1: {fileID: 1356560534698349917, guid: 60458780da8e60b47962e7ccf3c2d0e8, type: 3}
   teleporter_2: {fileID: 2171389512985579544, guid: b8bbdcd4675abdb47bc45c02cb60f5d3, type: 3}
   offset: 0.95
-  repeatRate: 3.53
+  toggleTP: 0
+  repeatRate: 10
+--- !u!114 &7805401029894703626
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7634603805032786771}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 361e49dd7c0d8bc4e882653feec813cf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  attackLoop: 1
+  cooldown: 4
+  player: {fileID: 0}
 --- !u!1 &8095464610283525826
 GameObject:
   m_ObjectHideFlags: 0
@@ -955,7 +864,7 @@ GameObject:
   - component: {fileID: 7558806827315765044}
   - component: {fileID: 26930502850506786}
   - component: {fileID: 1539000031687757912}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Player (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1024,6 +933,5 @@ SceneRoots:
   - {fileID: 519420032}
   - {fileID: 619394802}
   - {fileID: 376424235}
-  - {fileID: 1447440355}
   - {fileID: 1835830574756947817}
   - {fileID: 7805401029894703622}

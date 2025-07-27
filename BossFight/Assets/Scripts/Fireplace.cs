@@ -1,3 +1,4 @@
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
@@ -26,13 +27,16 @@ public class Fireplace : MonoBehaviour
 
     void Start()
     {
-        FireplaceManager.Instance.Register(this);
+        if (FireplaceManager.Instance != null)
+        {
+            FireplaceManager.Instance.Register(this);
+        }
         SetLitState(false);
     }
 
     public void TryToggleFire()
     {
-         Debug.Log("E was pressed – Interact action performed!");
+        Debug.Log("E was pressed – Interact action performed!");
         if (playerInRange)
         {
             if (isLit)

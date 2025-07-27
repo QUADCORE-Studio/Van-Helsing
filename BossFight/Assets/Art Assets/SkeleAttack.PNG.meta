@@ -1,10 +1,16 @@
 fileFormatVersion: 2
-guid: a833a29534864b840b84c19243639c3b
+guid: 9c5084a4ece371844992213a0bc23cf3
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -3389322571458397610
-    second: Pew_0
+      213: 4555313091669619201
+    second: SkeleAttack_0
+  - first:
+      213: 5464185398400595454
+    second: SkeleAttack_1
+  - first:
+      213: 7298822340353909774
+    second: SkeleAttack_2
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -46,7 +52,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -113,13 +119,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Pew_0
+      name: SkeleAttack_0
       rect:
         serializedVersion: 2
-        x: 1355
-        y: 1427
-        width: 290
-        height: 146
+        x: 94
+        y: 2678
+        width: 113
+        height: 249
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +134,52 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 65a32032415b6f0d0800000000000000
-      internalID: -3389322571458397610
+      spriteID: 10277ad2f19b73f30800000000000000
+      internalID: 4555313091669619201
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SkeleAttack_1
+      rect:
+        serializedVersion: 2
+        x: 277
+        y: 2678
+        width: 138
+        height: 237
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ef53b8a5bafa4db40800000000000000
+      internalID: 5464185398400595454
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SkeleAttack_2
+      rect:
+        serializedVersion: 2
+        x: 492
+        y: 2679
+        width: 162
+        height: 212
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e04ea7b6f30aa4560800000000000000
+      internalID: 7298822340353909774
       vertices: []
       indices: 
       edges: []
@@ -138,7 +188,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 5e97eb03825dee720800000000000000
+    spriteID: 
     internalID: 0
     vertices: []
     indices: 
@@ -148,7 +198,9 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Pew_0: -3389322571458397610
+      SkeleAttack_0: 4555313091669619201
+      SkeleAttack_1: 5464185398400595454
+      SkeleAttack_2: 7298822340353909774
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

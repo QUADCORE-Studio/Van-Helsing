@@ -1,20 +1,29 @@
 using UnityEngine;
 
+[RequireComponent(typeof(SpriteRenderer))]
+[RequireComponent(typeof(BoxCollider2D))]
 public class beam_hitbox_controller : MonoBehaviour
 {
-    public Collider2D[] hitboxes;
+    private SpriteRenderer spriteRenderer;
+    private BoxCollider2D boxCollider;
+    private Sprite lastSprite = null;
 
-    public void EnableCollider(int index)
+    void Awake()
     {
-        for (int i = 0; i < hitboxes.Length; i++)
-        {
-            hitboxes[i].enabled = (i == index);
-        }
+        spriteRenderer = GetComponent<SpriteRenderer>();
+        boxCollider = GetComponent<BoxCollider2D>();
     }
 
-    public void DisableAllColliders()
+
+    void LateUpdate()
     {
-        foreach (var col in hitboxes)
-            col.enabled = false;
+        if (spriteRenderer.sprite != lastSprite)
+        {
+            lastSprite = spriteRenderer.sprite;
+
+            Vector2 spriteSize = spriteRenderer.sprite.bounds.size;
+            boxCollider.size = spriteSize;
+            boxCollider.offset = spriteRenderer.sprite.bounds.center;
+        }
     }
 }
