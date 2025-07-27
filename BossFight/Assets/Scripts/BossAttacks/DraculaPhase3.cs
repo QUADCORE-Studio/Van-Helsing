@@ -43,6 +43,10 @@ public class DraculaPhase3 : MonoBehaviour
         {
             transform.localScale = new Vector3(-1, 1, 1);
         }
+        else
+        {
+            transform.localScale = new Vector3(1, 1, 1);
+        }
         if (Time.time < nextAttackTime || playerTransform == null) return;
         switch (currentState)
         {
