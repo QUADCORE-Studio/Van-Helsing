@@ -618,7 +618,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   praySign: {fileID: 1426231493}
-  nextSceneName: MapGeneration
+  nextSceneName: MapGeneration - Backup
   duration: 0.6
 --- !u!1660057539 &9223372036854775807
 SceneRoots:

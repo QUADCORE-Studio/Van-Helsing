@@ -29,6 +29,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/dead.unity
     guid: 82f95b63052d36b44a04216856ce988e
+  - enabled: 1
+    path: Assets/Scenes/MapGeneration - Backup.unity
+    guid: 3cd0ed586cefb7e409a7a70b5940302f
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   m_UseUCBPForAssetBundles: 0
