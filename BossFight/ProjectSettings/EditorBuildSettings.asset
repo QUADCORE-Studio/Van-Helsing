@@ -5,7 +5,7 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/SampleScene.unity
     guid: 8c9cfa26abfee488c85f1582747f6a02
   - enabled: 1
@@ -14,6 +14,21 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/BossRoom.unity
     guid: 64611a8d9ca748442bc9916b45461896
+  - enabled: 1
+    path: Assets/Scenes/praying.unity
+    guid: 207e5876e610f4042859b1e70abf6e64
+  - enabled: 1
+    path: Assets/Scenes/Title.unity
+    guid: b0e27d2f82ce3c64191c3e8cd51e46b6
+  - enabled: 0
+    path: Assets/Scenes/IsaacBossWork.unity
+    guid: 658307c8fe2ceeb408f82d4e9b90c854
+  - enabled: 0
+    path: Assets/Scenes/KrystalBossWork.unity
+    guid: bbfe3a5000ac4ff408311550a24dce5e
+  - enabled: 1
+    path: Assets/Scenes/dead.unity
+    guid: 82f95b63052d36b44a04216856ce988e
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   m_UseUCBPForAssetBundles: 0

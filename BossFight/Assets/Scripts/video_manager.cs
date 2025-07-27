@@ -6,16 +6,21 @@ public class video_manager : MonoBehaviour
 {
     public VideoPlayer videoPlayer;
     public string nextSceneName;
+    private bool hasStarted = false;
+
     void Start()
     {
-        // Start the video
-        videoPlayer.Play();
+        videoPlayer.Prepare();
+        videoPlayer.prepareCompleted += OnVideoPrepared;
     }
-
+    void OnVideoPrepared(VideoPlayer vp)
+    {
+        videoPlayer.Play();
+        hasStarted = true;
+    }
     void Update()
     {
-        // Auto-load next scene when video finishes
-        if (videoPlayer.isPrepared && !videoPlayer.isPlaying)
+        if (hasStarted && !videoPlayer.isPlaying)
         {
             LoadNextScene();
         }
