@@ -16,7 +16,7 @@ public class DraculaDash : MonoBehaviour
     private PlayerHealth playerHealth;
     private bool isDashing = false;
     private float lastDashTime = -Mathf.Infinity;
-    private float dashDamage= 20f;
+    private float dashDamage= 10f;
     void Start()
     {
         GameObject player = GameObject.FindGameObjectWithTag("Player");

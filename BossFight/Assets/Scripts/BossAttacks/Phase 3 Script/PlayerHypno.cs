@@ -72,7 +72,7 @@ public class PlayerHypno : MonoBehaviour
         if (!escaped)
         {
             Debug.Log("Player failed to escape. Dracula slashes!");
-            GetComponent<PlayerHealth>().TakeDamage(25); // or whatever value
+            GetComponent<PlayerHealth>().TakeDamage(12); // or whatever value
         }
     }
 }
