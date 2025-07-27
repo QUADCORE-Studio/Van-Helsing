@@ -36,11 +36,25 @@ public class PlayerMovement : MonoBehaviour
 
     private void FixedUpdate()
     {
-        animator.SetBool("isWalking", true);
+        if (moveInput.x < 0)
+        {
+           animator.SetBool("isWalkingLeft", true);
+        }
+        else if (moveInput.x > 0)
+        {
+            animator.SetBool("isWalking", true);
+        }
         rb.MovePosition(rb.position + moveInput * moveSpeed * Time.fixedDeltaTime);
         if (moveInput.sqrMagnitude < 0.01f)
         {
             animator.SetBool("isWalking", false);
+            animator.SetBool("isWalkingLeft", false);
         }
+    }
+    private void Flip()
+    {
+        Vector3 scale = transform.localScale;
+        scale.x *= -1;
+        transform.localScale = scale;
     }
 }

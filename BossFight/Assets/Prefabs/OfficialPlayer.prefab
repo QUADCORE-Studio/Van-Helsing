@@ -18,6 +18,7 @@ GameObject:
   - component: {fileID: 5115328283611112770}
   - component: {fileID: 1320859839088535178}
   - component: {fileID: 2582115348844708882}
+  - component: {fileID: 3908603265026495266}
   m_Layer: 0
   m_Name: OfficialPlayer
   m_TagString: Player
@@ -172,6 +173,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 570dc9f772a8ce445a3bbe92f62d01eb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  animator: {fileID: 5115328283611112770}
   moveSpeed: 20
 --- !u!114 &2281538158916140376
 MonoBehaviour:
@@ -251,6 +253,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 1.5
+--- !u!114 &3908603265026495266
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3351129527374964055}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0e7f0e9c332cd84bbe8c8914c109b6d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dodgeForce: 15
+  animator: {fileID: 5115328283611112770}
 --- !u!1 &3386038038101926671
 GameObject:
   m_ObjectHideFlags: 0
