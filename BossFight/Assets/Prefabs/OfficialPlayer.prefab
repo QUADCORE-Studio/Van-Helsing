@@ -174,7 +174,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   animator: {fileID: 1780631197322071201}
-  moveSpeed: 20
+  moveSpeed: 5
 --- !u!114 &1674114675723595747
 MonoBehaviour:
   m_ObjectHideFlags: 0
