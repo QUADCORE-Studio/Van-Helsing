@@ -13,10 +13,13 @@ public class FacePlayer : MonoBehaviour
 
     void Update()
     {
-        if (player == null) return;
-        bool left = player.position.x < transform.position.x;
-        Vector3 s = initialScale;
-        s.x = left ? -Mathf.Abs(initialScale.x) : Mathf.Abs(initialScale.x);
-        transform.localScale = s;
+        if (player.transform.position.x < transform.position.x)
+        {
+            transform.localScale = new Vector3(0.7f, 0.7f,0.7f);
+        }
+        else
+        {
+            transform.localScale = new Vector3(-0.7f, 0.7f,0.7f);
+        }
     }
 }

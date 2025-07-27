@@ -649,7 +649,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &392076143
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2871,7 +2871,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 2.6208308, y: 1.51}
+    oldSize: {x: 2.9809449, y: 3.7199998}
     newSize: {x: 2.9809449, y: 3.7199998}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -2991,7 +2991,6 @@ MonoBehaviour:
   animator: {fileID: 1780631196566362055}
   attackPoint: {fileID: 2435064616121984090}
   slashPrefab: {fileID: 9016858104080237798, guid: e7faaab0e57bfde4a8f8ed011a2c7426, type: 3}
-  spriteRenderer: {fileID: 9194925450865481659}
   attackCooldown: 0.3
 --- !u!1 &2043361033761410528
 GameObject:
@@ -3751,7 +3750,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4011546275588485143}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5f1f6b923da44b64298cbdab6931d3f2, type: 3}
   m_Name: 

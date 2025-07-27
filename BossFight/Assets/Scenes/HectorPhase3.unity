@@ -306,6 +306,24 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4667284943475315967, guid: 160fe1b4d65292a40abc0e29bcce38ca, type: 3}
   m_PrefabInstance: {fileID: 290884329}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &302371737 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8426292810278421828, guid: d35a53b4717e6994eaa0858f04c9267f, type: 3}
+  m_PrefabInstance: {fileID: 6903108373248551934}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &302371738
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 302371737}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f1f6b923da44b64298cbdab6931d3f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 1980303808}
 --- !u!1001 &332277728
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1218,6 +1236,11 @@ SpriteRenderer:
   m_CorrespondingSourceObject: {fileID: 6716112925611486788, guid: 160fe1b4d65292a40abc0e29bcce38ca, type: 3}
   m_PrefabInstance: {fileID: 1763768841}
   m_PrefabAsset: {fileID: 0}
+--- !u!4 &1980303808 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 2264565455698604853, guid: baf0914febaab7e468de873908d1178c, type: 3}
+  m_PrefabInstance: {fileID: 1385444225}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &2110810849
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1436,6 +1459,14 @@ PrefabInstance:
       propertyPath: playerTransform
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 7607262221155873484, guid: d35a53b4717e6994eaa0858f04c9267f, type: 3}
+      propertyPath: m_FlipX
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7607262221155873484, guid: d35a53b4717e6994eaa0858f04c9267f, type: 3}
+      propertyPath: m_WasSpriteAssigned
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8426292810278421828, guid: d35a53b4717e6994eaa0858f04c9267f, type: 3}
       propertyPath: m_Name
       value: Dracula 3
@@ -1447,7 +1478,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 8426292810278421828, guid: d35a53b4717e6994eaa0858f04c9267f, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 302371738}
   m_SourcePrefab: {fileID: 100100000, guid: d35a53b4717e6994eaa0858f04c9267f, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
