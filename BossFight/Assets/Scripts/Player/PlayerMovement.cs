@@ -17,6 +17,7 @@ public class PlayerMovement : MonoBehaviour
     {
         rb = GetComponent<Rigidbody2D>();
         controls = new PlayerControls();
+        animator = GetComponent<Animator>();
     }
 
     private void OnEnable()
@@ -50,11 +51,5 @@ public class PlayerMovement : MonoBehaviour
             animator.SetBool("isWalking", false);
             animator.SetBool("isWalkingLeft", false);
         }
-    }
-    private void Flip()
-    {
-        Vector3 scale = transform.localScale;
-        scale.x *= -1;
-        transform.localScale = scale;
     }
 }

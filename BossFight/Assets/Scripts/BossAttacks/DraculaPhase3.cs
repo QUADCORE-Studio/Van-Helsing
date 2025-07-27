@@ -25,6 +25,10 @@ public class DraculaPhase3 : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
+        if (playerTransform == null)
+        {
+            playerTransform = GameObject.FindGameObjectWithTag("Player").transform;
+        }
         draculaDash = GetComponent<DraculaDash>();
         draculaLurk = GetComponent<Lurk>();
         draculaHypnoBeam = GetComponent<DraculaHypnoBeam>();
