@@ -427,6 +427,37 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &789384396
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 789384397}
+  m_Layer: 0
+  m_Name: teleport_centerpoint
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &789384397
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 789384396}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.36573, y: -0.85, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1024127365
 GameObject:
   m_ObjectHideFlags: 0
@@ -789,6 +820,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7805401029894703622}
   - component: {fileID: 3075206850724996750}
+  - component: {fileID: 7805401029894703627}
   - component: {fileID: 7805401029894703625}
   - component: {fileID: 7805401029894703626}
   - component: {fileID: 699487293832917531}
@@ -827,7 +859,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e96dd9ff85fa25c4aa42a34757d1fe6f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  centerPoint: {fileID: 0}
+  centerPoint: {fileID: 789384397}
   radius: 3.82
   teleporter_1: {fileID: 1356560534698349917, guid: 60458780da8e60b47962e7ccf3c2d0e8, type: 3}
   teleporter_2: {fileID: 2171389512985579544, guid: b8bbdcd4675abdb47bc45c02cb60f5d3, type: 3}
@@ -848,7 +880,23 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   attackLoop: 1
   cooldown: 4
-  player: {fileID: 0}
+--- !u!114 &7805401029894703627
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7634603805032786771}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 621759570c1bee842b767d2b1845ab8d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  arrow_prefab: {fileID: 5239621148246319555, guid: 01fa349bc65117746949384cf86c29c3, type: 3}
+  beam_prefab: {fileID: 4719212814198332376, guid: b7c5f2d997f7f484494636927c982cd2, type: 3}
+  arrow_circle_count: 8
+  projectileSpeed: 5
+  target: {fileID: 8095464610283525826}
 --- !u!1 &8095464610283525826
 GameObject:
   m_ObjectHideFlags: 0
@@ -935,3 +983,4 @@ SceneRoots:
   - {fileID: 376424235}
   - {fileID: 1835830574756947817}
   - {fileID: 7805401029894703622}
+  - {fileID: 789384397}
