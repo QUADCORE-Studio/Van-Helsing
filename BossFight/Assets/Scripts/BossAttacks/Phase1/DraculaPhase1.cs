@@ -102,6 +102,9 @@ public class Phase1 : IDraculaPhase
         {
             Vector3 spawnOffset = new Vector3(Random.Range(-1f, 1f), Random.Range(-1f, 1f), 0f);
             GameObject bat = GameObject.Instantiate(batPrefab, boss.transform.position + spawnOffset, Quaternion.identity);
+            EnemyAI ai = bat.GetComponent<EnemyAI>();
+            ai.SetRoom(null);
+            ai.Activate();
         }
     }
 
@@ -112,9 +115,10 @@ public class Phase1 : IDraculaPhase
         FireplaceManager.Instance.ExtinguishAll();
         isVulnerable = false;
     }
-    
-     public bool IsVulnerable()
+
+    public bool IsVulnerable()
     {
         return isVulnerable;
     }
+
 }

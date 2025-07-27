@@ -191,10 +191,10 @@ TextureImporter:
       name: CandleCluster0
       rect:
         serializedVersion: 2
-        x: 826
-        y: 1987
-        width: 294
-        height: 354
+        x: 825
+        y: 1990
+        width: 295
+        height: 372
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -205,292 +205,6 @@ TextureImporter:
       bones: []
       spriteID: 5fe66fca578dad380800000000000000
       internalID: -8945599709893464331
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: BossCandles_1
-      rect:
-        serializedVersion: 2
-        x: 2067
-        y: 2197
-        width: 88
-        height: 150
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: fa526d26579525c40800000000000000
-      internalID: 5499556455677044143
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: BossCandles_2
-      rect:
-        serializedVersion: 2
-        x: 832
-        y: 2110
-        width: 39
-        height: 39
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 4b337d62d98acdc20800000000000000
-      internalID: 3232644025460143028
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: BossCandles_3
-      rect:
-        serializedVersion: 2
-        x: 968
-        y: 2135
-        width: 39
-        height: 39
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 993e0d9cbea30fd10800000000000000
-      internalID: 2157289005888103321
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: BossCandles_4
-      rect:
-        serializedVersion: 2
-        x: 2030
-        y: 2135
-        width: 39
-        height: 39
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 15a67644a84e08340800000000000000
-      internalID: 4864138880064383569
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: BossCandles_5
-      rect:
-        serializedVersion: 2
-        x: 2153
-        y: 2110
-        width: 39
-        height: 39
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: cb230e91288c5e770800000000000000
-      internalID: 8639531921285591740
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: BossCandles_6
-      rect:
-        serializedVersion: 2
-        x: 869
-        y: 1999
-        width: 39
-        height: 39
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: a450b694424373170800000000000000
-      internalID: 8158046580460160330
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: BossCandles_7
-      rect:
-        serializedVersion: 2
-        x: 906
-        y: 2011
-        width: 89
-        height: 89
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 93175532071a8ff00800000000000000
-      internalID: 1150847207794372921
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: BossCandles_8
-      rect:
-        serializedVersion: 2
-        x: 1005
-        y: 1999
-        width: 76
-        height: 113
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 3813d61b5de1ef870800000000000000
-      internalID: 8718439831789449603
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: BossCandles_9
-      rect:
-        serializedVersion: 2
-        x: 1079
-        y: 2036
-        width: 39
-        height: 39
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: c9cfcc532c7cf8340800000000000000
-      internalID: 4868329359151004828
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: BossCandles_10
-      rect:
-        serializedVersion: 2
-        x: 1919
-        y: 2036
-        width: 39
-        height: 39
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 6112cbfb376b4d6f0800000000000000
-      internalID: -660702637062348522
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: BossCandles_11
-      rect:
-        serializedVersion: 2
-        x: 1956
-        y: 1999
-        width: 76
-        height: 113
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: fabc032508dfa8a20800000000000000
-      internalID: 3065541223955614639
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: BossCandles_12
-      rect:
-        serializedVersion: 2
-        x: 2042
-        y: 2011
-        width: 89
-        height: 89
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 46b206abd1125e8a0800000000000000
-      internalID: -6276574094106285212
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: BossCandles_13
-      rect:
-        serializedVersion: 2
-        x: 2129
-        y: 1999
-        width: 39
-        height: 39
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 8b9652463069fba30800000000000000
-      internalID: 4233267116060797368
       vertices: []
       indices: 
       edges: []
@@ -518,94 +232,6 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BossCandles_15
-      rect:
-        serializedVersion: 2
-        x: 808
-        y: 1122
-        width: 51
-        height: 77
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: ad22707dee0e588a0800000000000000
-      internalID: -6303384787020733734
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: BossCandles_16
-      rect:
-        serializedVersion: 2
-        x: 869
-        y: 1073
-        width: 76
-        height: 88
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: d4d1c06583c9f36b0800000000000000
-      internalID: -5314357269498159795
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: BossCandles_17
-      rect:
-        serializedVersion: 2
-        x: 2079
-        y: 1073
-        width: 76
-        height: 88
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 368b8eb6105b1cd10800000000000000
-      internalID: 2144193915315075171
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: BossCandles_18
-      rect:
-        serializedVersion: 2
-        x: 2166
-        y: 1122
-        width: 51
-        height: 77
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 609adcf09a5f9af70800000000000000
-      internalID: 9199153820344363270
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
       name: BossCandles_19
       rect:
         serializedVersion: 2
@@ -623,28 +249,6 @@ TextureImporter:
       bones: []
       spriteID: e7a314ff2a361df60800000000000000
       internalID: 8057330760060844670
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: BossCandles_20
-      rect:
-        serializedVersion: 2
-        x: 746
-        y: 1024
-        width: 101
-        height: 88
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 11ae7132a6d4be820800000000000000
-      internalID: 2948535499294763537
       vertices: []
       indices: 
       edges: []
@@ -672,103 +276,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BossCandles_22
-      rect:
-        serializedVersion: 2
-        x: 2129
-        y: 1024
-        width: 39
-        height: 39
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: e740c18a3182909a0800000000000000
-      internalID: -6266433341619436418
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: BossCandles_23
-      rect:
-        serializedVersion: 2
-        x: 2178
-        y: 1024
-        width: 101
-        height: 88
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 51a5d4dc5f3a58fa0800000000000000
-      internalID: -5799048669062931947
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: BossCandles_24
-      rect:
-        serializedVersion: 2
-        x: 2277
-        y: 987
-        width: 39
-        height: 39
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: f6ccc22092ae960b0800000000000000
-      internalID: -5734795188628566929
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: BossCandles_25
-      rect:
-        serializedVersion: 2
-        x: 2363
-        y: 1024
-        width: 39
-        height: 39
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 793c6ee699dbde300800000000000000
-      internalID: 283090818282472343
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
       name: CandleCluster1
       rect:
         serializedVersion: 2
         x: 1912
         y: 1963
-        width: 282
-        height: 386
+        width: 297
+        height: 399
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -790,7 +306,7 @@ TextureImporter:
         width: 354
         height: 223
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -807,12 +323,12 @@ TextureImporter:
       name: CandleCluster2
       rect:
         serializedVersion: 2
-        x: 600
+        x: 587
         y: 1009
-        width: 356
-        height: 216
+        width: 369
+        height: 215
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []

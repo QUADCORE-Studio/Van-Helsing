@@ -29,6 +29,7 @@ public class EnemyAI : MonoBehaviour
             target = player.transform;
             playerHealth = player.GetComponent<PlayerHealth>();
         }
+
     }
 
 
@@ -99,7 +100,8 @@ public class EnemyAI : MonoBehaviour
     public void SetRoom(RoomTrigger room)
     {
         myRoom = room;
-        this.enabled = false;
+        if (room == null)
+            this.enabled = true;
 
     }
 
