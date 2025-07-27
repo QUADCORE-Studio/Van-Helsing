@@ -1,4 +1,5 @@
 using System.Collections;
+using TMPro;
 using UnityEngine;
 
 public class phase_2_manager : MonoBehaviour
@@ -11,8 +12,9 @@ public class phase_2_manager : MonoBehaviour
     private Coroutine loopCourtine;
 
     [Header("Health Settings")]
-    public int maxHealth = 5;
+    public int maxHealth = 10;
     private int currentHealth;
+    public TextMeshProUGUI healthUI;
 
     void Start()
     {
@@ -33,8 +35,6 @@ public class phase_2_manager : MonoBehaviour
     void random_attack()
     {
         int randInt = Random.Range(0, 3);
-        Debug.Log(randInt);
-        Debug.Log("test");
         if (randInt == 0)
         {
             StartCoroutine(arrow_attack());
@@ -66,13 +66,23 @@ public class phase_2_manager : MonoBehaviour
     public void TakeDamage(int damage)
     {
         currentHealth -= damage;
-         Debug.Log("Dracula Phase 2 took damage! Current HP: " + currentHealth);
-
+        healthUI.text = currentHealth.ToString("F0");
         if (currentHealth <= 0)
         {
-            Debug.Log("Phase 2 Dracula defeated!");
             FindFirstObjectByType<DraculaPhaseManager>()?.OnDraculaDeath();
             gameObject.SetActive(false);
         }
     }
+
+    void OnEnable()
+    {
+        currentHealth = maxHealth;
+        UpdateHealthUI();
+    }
+    
+    void UpdateHealthUI()
+    {
+        healthUI.text = currentHealth.ToString("F0");
+    }
+
 }

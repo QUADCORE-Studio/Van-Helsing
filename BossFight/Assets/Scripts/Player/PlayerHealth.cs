@@ -1,6 +1,7 @@
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
+using UnityEngine.SceneManagement;
 
 public class PlayerHealth : MonoBehaviour
 {
@@ -16,7 +17,7 @@ public class PlayerHealth : MonoBehaviour
     public void TakeDamage(float amount)
     {
         currentHealth -= amount;
-        // healthUI.text = currentHealth.ToString("F0");
+        healthUI.text = currentHealth.ToString("F0");
         if (currentHealth <= 0)
         {
             Die();
@@ -25,10 +26,8 @@ public class PlayerHealth : MonoBehaviour
 
     private void Die()
     {
-        Debug.Log("Player has died!");
-        //disable movement, play animation, or reload scene here
-
         gameObject.SetActive(false);
+        SceneManager.LoadScene("dead");
     }
 
     public void Heal(float amount)
@@ -40,7 +39,6 @@ public class PlayerHealth : MonoBehaviour
     {
         if (collision.CompareTag("Mob") || collision.CompareTag("Dracula"))
         {
-            Debug.Log("Player hit by: " + collision.name);
             TakeDamage(1); // or whatever function you're using
         }
     }

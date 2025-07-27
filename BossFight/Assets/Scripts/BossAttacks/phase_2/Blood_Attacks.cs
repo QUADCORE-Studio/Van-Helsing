@@ -53,7 +53,6 @@ public class Blood_Attacks : MonoBehaviour
 
         Rigidbody2D rb = arrow.GetComponent<Rigidbody2D>();
         rb.linearVelocity = direction * projectileSpeed;
-        Debug.Log(rb.linearVelocity);
 
         Destroy(arrow, 3f);
     }

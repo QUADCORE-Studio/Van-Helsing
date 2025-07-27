@@ -1879,6 +1879,14 @@ PrefabInstance:
       propertyPath: targetRoomSpawn
       value: 
       objectReference: {fileID: 1470867379}
+    - target: {fileID: 4771997893425082414, guid: c9518fddab9921444b82e86f3d8a9eec, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.663
+      objectReference: {fileID: 0}
+    - target: {fileID: 4771997893425082414, guid: c9518fddab9921444b82e86f3d8a9eec, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -1.26
+      objectReference: {fileID: 0}
     - target: {fileID: 5290498463545541209, guid: c9518fddab9921444b82e86f3d8a9eec, type: 3}
       propertyPath: newRoomCenter
       value: 
@@ -1887,6 +1895,14 @@ PrefabInstance:
       propertyPath: targetRoomSpawn
       value: 
       objectReference: {fileID: 1244784726}
+    - target: {fileID: 5589898767903797169, guid: c9518fddab9921444b82e86f3d8a9eec, type: 3}
+      propertyPath: m_SortingLayer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 5775716916603645851, guid: c9518fddab9921444b82e86f3d8a9eec, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.749
+      objectReference: {fileID: 0}
     - target: {fileID: 6827396899522833976, guid: c9518fddab9921444b82e86f3d8a9eec, type: 3}
       propertyPath: m_Name
       value: LR (1)
@@ -1930,6 +1946,10 @@ PrefabInstance:
     - target: {fileID: 7368415268502054476, guid: c9518fddab9921444b82e86f3d8a9eec, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7487366921468417735, guid: c9518fddab9921444b82e86f3d8a9eec, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.398
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -2249,6 +2269,14 @@ PrefabInstance:
       propertyPath: targetRoomSpawn
       value: 
       objectReference: {fileID: 900858036}
+    - target: {fileID: 4771997893425082414, guid: c9518fddab9921444b82e86f3d8a9eec, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -1.183
+      objectReference: {fileID: 0}
+    - target: {fileID: 4771997893425082414, guid: c9518fddab9921444b82e86f3d8a9eec, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.23
+      objectReference: {fileID: 0}
     - target: {fileID: 5290498463545541209, guid: c9518fddab9921444b82e86f3d8a9eec, type: 3}
       propertyPath: newRoomCenter
       value: 
@@ -2257,6 +2285,14 @@ PrefabInstance:
       propertyPath: targetRoomSpawn
       value: 
       objectReference: {fileID: 146689419}
+    - target: {fileID: 5775716916603645851, guid: c9518fddab9921444b82e86f3d8a9eec, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.536
+      objectReference: {fileID: 0}
+    - target: {fileID: 5775716916603645851, guid: c9518fddab9921444b82e86f3d8a9eec, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -1.23
+      objectReference: {fileID: 0}
     - target: {fileID: 6827396899522833976, guid: c9518fddab9921444b82e86f3d8a9eec, type: 3}
       propertyPath: m_Name
       value: LR
@@ -2300,6 +2336,10 @@ PrefabInstance:
     - target: {fileID: 7368415268502054476, guid: c9518fddab9921444b82e86f3d8a9eec, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7487366921468417735, guid: c9518fddab9921444b82e86f3d8a9eec, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.66
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

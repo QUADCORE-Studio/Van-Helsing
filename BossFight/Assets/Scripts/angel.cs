@@ -23,7 +23,6 @@ public class angel : MonoBehaviour
         if (toggle)
         {
             Vector2 currentPosition = transform.position;
-            Debug.Log($"Moving down - CurrentY: {currentPosition.y}, TargetY: {targetY}");
 
             if (Mathf.Abs(currentPosition.y - targetY) > 0.01f)
             {

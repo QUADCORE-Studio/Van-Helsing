@@ -36,12 +36,10 @@ public class PlayerCombat : MonoBehaviour
         // Flip player depending on direction
         if (direction.x < 0)
         {
-            Debug.Log("Flipping player to face left");
             spriteRenderer.flipX = true;
         }
         else
         {
-            Debug.Log("Flipping player to face right");
             spriteRenderer.flipX = false;
         }
         float offsetDistance = 1.0f;

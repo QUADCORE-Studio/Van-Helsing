@@ -1,25 +1,22 @@
 using UnityEngine;
+using UnityEngine.InputSystem;
 using UnityEngine.SceneManagement;
 
 public class restart : MonoBehaviour
 {
      private PlayerControls controls;
-    public string nextScene;
+    private float inputDelay = 1.5f;
+    private float timer = 0f;
 
-    void Awake()
+    void Update()
     {
-        controls = new PlayerControls();
-        controls.Player.Interact.performed += ctx => SceneManager.LoadScene(nextScene);
-    }
+        timer += Time.deltaTime;
 
-    void OnEnable()
-    {
-        controls.Enable();
+        if (timer >= inputDelay &&
+            (Mouse.current.leftButton.wasPressedThisFrame ||
+             (Touchscreen.current != null && Touchscreen.current.primaryTouch.press.wasPressedThisFrame)))
+        {
+            SceneManager.LoadScene("MapGeneration - Backup");
+        }
     }
-
-    void OnDisable()
-    {
-        controls.Disable();
-    }
-
 }

@@ -1,10 +1,11 @@
+using TMPro;
 using UnityEngine;
 
 public class DraculaBoss : MonoBehaviour
 {
     public Animator animator;
     public Transform[] vulnerablePositions;
-    public int maxHealth = 9;
+    public int maxHealth = 10;
 
     private IDraculaPhase[] phases;
     private int currentPhaseIndex = 0;
@@ -13,6 +14,7 @@ public class DraculaBoss : MonoBehaviour
     public BoxCollider2D[] spawnZones;
     public GameObject batPrefab;
     public Transform player;
+    public TextMeshProUGUI healthUI;
 
     void Awake()
     {
@@ -22,13 +24,11 @@ public class DraculaBoss : MonoBehaviour
             if (animator == null)
             {
                 animator = GetComponentInChildren<Animator>();
-                Debug.LogWarning("DraculaBoss: Animator found on child.");
             }
         }
     }
     void Start()
     {
-        Debug.Log("Animator layers: " + animator.layerCount);
         health = maxHealth;
         phases = new IDraculaPhase[]
         {
@@ -48,12 +48,10 @@ public class DraculaBoss : MonoBehaviour
     public void TakeDamage()
     {
         health--;
-        Debug.Log("Dracula Phase 1 took damage! Current HP: " + health);
-
+        healthUI.text = health.ToString("F0");
         if (health <= 0)
         {
             animator.Play("ShadowSlash");
-            Debug.Log("Phase 1 Dracula defeated!");
             FindFirstObjectByType<DraculaPhaseManager>()?.OnDraculaDeath();
             gameObject.SetActive(false);
         }
