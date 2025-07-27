@@ -24,7 +24,7 @@ public class BossMusic : MonoBehaviour
         backgroundSource.Play();
 
         // Wait exactly for its length
-        yield return new WaitForSeconds(background.length);
+        yield return new WaitForSeconds(background.length-3f);
 
         backgroundSource.clip = background2;
         backgroundSource.loop = true; 
