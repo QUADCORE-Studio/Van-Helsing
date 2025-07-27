@@ -93,7 +93,6 @@ public class Phase1 : IDraculaPhase
 
         boss.transform.position = randomPos;
 
-        Debug.Log("Dracula teleported to: " + randomPos);
     }
 
     private void SpawnBats()

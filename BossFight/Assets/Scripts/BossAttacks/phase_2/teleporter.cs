@@ -30,7 +30,6 @@ public class teleporter : MonoBehaviour
 
     void Teleport()
     {
-        Debug.Log("teleporting!");
         // random point inside the radius
         Vector2 randomPoint = UnityEngine.Random.insideUnitCircle * radius;
         Vector2 newPos = new Vector2(centerPoint.position.x, centerPoint.position.y) + new Vector2(randomPoint.x, randomPoint.y);

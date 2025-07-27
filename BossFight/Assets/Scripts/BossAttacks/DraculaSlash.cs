@@ -18,10 +18,6 @@ public class DraculaSlashAttack : MonoBehaviour
 
     void Start()
     {
-        // Disable hitbox until we actually slash
-        // if (slashHitbox != null)
-        //     slashHitbox.enabled = false;
-
         // Find the player by tag
         GameObject playerObj = GameObject.FindGameObjectWithTag("Player");
         if (playerObj != null)
@@ -30,7 +26,6 @@ public class DraculaSlashAttack : MonoBehaviour
 
     void Update()
     {
-        Debug.Log(draculaDash.isVulnerable);
         if (player == null) return;
 
         // 1. If we're in the middle of a slash, check for end
@@ -53,7 +48,6 @@ public class DraculaSlashAttack : MonoBehaviour
 
     private void StartSlash()
     {
-        Debug.Log("Starting slash attack");
         isSlashing = true;
         endTime = Time.time + slashDuration;
         lastSlashTime = Time.time;

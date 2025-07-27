@@ -1,14 +1,18 @@
+using TMPro;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class DraculaPhaseManager : MonoBehaviour
 {
     [Header("Drag all Dracula phase GameObjects here")]
     public GameObject[] draculas;
+    public TextMeshProUGUI phaseText;
 
     private int currentIndex = 0;
 
     void Start()
     {
+        phaseText.text = "Phase " + currentIndex + 1;
         ActivateDracula(currentIndex);
     }
 
@@ -23,18 +27,20 @@ public class DraculaPhaseManager : MonoBehaviour
         }
         else
         {
-            Debug.Log("🧛 All Dracula phases defeated!");
         }
-        // add in scene transition
+        if (currentIndex == draculas.Length)
+        {
+            SceneManager.LoadScene("win");
+        }
     }
 
     private void ActivateDracula(int index)
     {
         for (int i = 0; i < draculas.Length; i++)
         {
-            draculas[i].SetActive(i == index); // Only one active at a time
+            draculas[i].SetActive(i == index); 
+            phaseText.text = "Phase " + (currentIndex + 1);
         }
 
-        Debug.Log($"🩸 Activated Dracula Phase {index + 1}");
     }
 }

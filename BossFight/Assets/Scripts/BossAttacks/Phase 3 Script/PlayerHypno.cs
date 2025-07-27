@@ -50,7 +50,6 @@ public class PlayerHypno : MonoBehaviour
         if (Time.time >= endTime && isHypnotized)
         {
             EndHypnosis(false);
-            Debug.Log("Player failed to escape. Dracula slashes!");
             // You could call player.GetComponent<PlayerHealth>().TakeDamage() here
         }
     }
@@ -71,7 +70,6 @@ public class PlayerHypno : MonoBehaviour
 
         if (!escaped)
         {
-            Debug.Log("Player failed to escape. Dracula slashes!");
             GetComponent<PlayerHealth>().TakeDamage(12); // or whatever value
         }
     }

@@ -62,7 +62,6 @@ public class pray : MonoBehaviour
 
         if (sr == null)
         {
-            Debug.LogWarning("praySign has no SpriteRenderer.");
             yield break;
         }
 

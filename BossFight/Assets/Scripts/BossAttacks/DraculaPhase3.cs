@@ -1,4 +1,5 @@
 using System.Transactions;
+using TMPro;
 using UnityEngine;
 
 public class DraculaPhase3 : MonoBehaviour
@@ -24,7 +25,8 @@ public class DraculaPhase3 : MonoBehaviour
     private float nextAttackTime;
 
     [Header("Health Settings")]
-    public int maxHealth = 5;
+    public TextMeshProUGUI healthUI;
+    public int maxHealth = 10;
     private int currentHealth;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -44,6 +46,7 @@ public class DraculaPhase3 : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        healthUI.text = currentHealth.ToString("F0");
         if (Time.time < nextAttackTime || playerTransform == null) return;
         switch (currentState)
         {
@@ -110,12 +113,22 @@ public class DraculaPhase3 : MonoBehaviour
     public void TakeDamage(int damage)
     {
         currentHealth -= damage;
-        Debug.Log("Dracula Phase 3 took damage! Current HP: " + currentHealth);
+        healthUI.text = currentHealth.ToString("F0");
         if (currentHealth <= 0)
         {
-            Debug.Log("Phase 3 Dracula defeated!");
             FindFirstObjectByType<DraculaPhaseManager>()?.OnDraculaDeath();
             gameObject.SetActive(false);
         }
+    }
+
+    void OnEnable()
+    {
+        currentHealth = maxHealth;
+        UpdateHealthUI();
+    }
+
+    void UpdateHealthUI()
+    {
+        healthUI.text = currentHealth.ToString("F0");
     }
 }

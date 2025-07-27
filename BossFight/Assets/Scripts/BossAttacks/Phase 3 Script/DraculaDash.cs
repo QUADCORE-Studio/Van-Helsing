@@ -88,28 +88,18 @@ public class DraculaDash : MonoBehaviour
     private IEnumerator VulnerabilityRoutine()
     {
         isVulnerable = true;
-        Debug.Log("Dracula is now vulnerable!");
 
         // (Optional) If you want to log a countdown every second:
         float remaining = vulnerableDuration;
         while (remaining > 0f)
         {
-            Debug.Log($"Dracula vulnerable for {remaining:F0} more seconds");
             yield return new WaitForSeconds(1f);
             remaining -= 1f;
         }
 
         // End vulnerability
         isVulnerable = false;
-        Debug.Log("Dracula has recovered and is no longer vulnerable.");
-        // (Optional) play a “get up” or idle animation here:
         if (animator != null)
             animator.Play("Recover");
     }
-
-    // void RecoverFromVulnerability()
-    // {
-    //     isVulnerable = false;
-    //     Debug.Log("Dracula recovered from vulnerability.");
-    // }
 }

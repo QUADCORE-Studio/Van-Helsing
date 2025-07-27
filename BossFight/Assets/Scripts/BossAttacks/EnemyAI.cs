@@ -70,7 +70,6 @@ public class EnemyAI : MonoBehaviour
     public void TakeDamage(float amount)
     {
         currentHealth -= amount;
-        Debug.Log(gameObject.name + " took damage: " + currentHealth);
 
         if (currentHealth <= 0)
             Die();

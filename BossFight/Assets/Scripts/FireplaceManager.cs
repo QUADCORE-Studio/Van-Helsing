@@ -13,13 +13,11 @@ public class FireplaceManager : MonoBehaviour
 
     void Start()
     {
-        Debug.Log("Total fireplaces: " + fireplaces.Count);
     }
 
     public void Register(Fireplace f)
     {
         fireplaces.Add(f);
-        Debug.Log("Registered fireplace: " + f.name);
     }
 
     //method for dracula

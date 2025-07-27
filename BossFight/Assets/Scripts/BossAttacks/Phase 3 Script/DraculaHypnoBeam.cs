@@ -31,7 +31,6 @@ public class DraculaHypnoBeam : MonoBehaviour
         beamActive = true;
         beamEndTime = Time.time + beamDuration;
         beamVisual.SetActive(true);
-        Debug.Log("Dracula uses Hypno Beam!");
     }
 
     void Update()

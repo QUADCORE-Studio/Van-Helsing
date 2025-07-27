@@ -36,7 +36,6 @@ public class Fireplace : MonoBehaviour
 
     public void TryToggleFire()
     {
-        Debug.Log("E was pressed – Interact action performed!");
         if (playerInRange)
         {
             if (isLit)
@@ -51,7 +50,6 @@ public class Fireplace : MonoBehaviour
         if (other.CompareTag("Player"))
         {
             playerInRange = true;
-            Debug.Log("Player entered fireplace zone");
         }
     }
 
@@ -60,7 +58,6 @@ public class Fireplace : MonoBehaviour
         if (other.CompareTag("Player"))
         {
             playerInRange = false;
-            Debug.Log("Player left fireplace zone");
         }
     }
 
