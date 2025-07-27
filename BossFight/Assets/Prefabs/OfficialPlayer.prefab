@@ -173,7 +173,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 570dc9f772a8ce445a3bbe92f62d01eb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+<<<<<<< Updated upstream
   animator: {fileID: 0}
+=======
+  animator: {fileID: 5115328283611112770}
+>>>>>>> Stashed changes
   moveSpeed: 20
 --- !u!114 &2281538158916140376
 MonoBehaviour:
