@@ -1,9 +1,12 @@
 using UnityEngine;
+using UnityEngine.UI;
+using TMPro;
 
 public class PlayerHealth : MonoBehaviour
 {
-    public float maxHealth;
+    public float maxHealth = 100f;
     private float currentHealth;
+    public TextMeshProUGUI healthUI;
 
     void Start()
     {
@@ -13,8 +16,7 @@ public class PlayerHealth : MonoBehaviour
     public void TakeDamage(float amount)
     {
         currentHealth -= amount;
-        Debug.Log("Player took damage! Current HP: " + currentHealth);
-
+        healthUI.text = currentHealth.ToString("F0");
         if (currentHealth <= 0)
         {
             Die();
