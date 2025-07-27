@@ -1,3 +1,4 @@
+using System.Transactions;
 using UnityEngine;
 
 public class DraculaPhase3 : MonoBehaviour
@@ -38,6 +39,10 @@ public class DraculaPhase3 : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (playerTransform.transform.position.x > 0)
+        {
+            transform.localScale = new Vector3(-1, 1, 1);
+        }
         if (Time.time < nextAttackTime || playerTransform == null) return;
         switch (currentState)
         {
