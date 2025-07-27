@@ -1,2 +1,15 @@
 fileFormatVersion: 2
 guid: 621759570c1bee842b767d2b1845ab8d
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - arrow_prefab: {fileID: 5239621148246319555, guid: 01fa349bc65117746949384cf86c29c3, type: 3}
+  - beam_prefab: {fileID: 4719212814198332376, guid: b7c5f2d997f7f484494636927c982cd2, type: 3}
+  - target: {instanceID: 0}
+  - boss: {instanceID: 0}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

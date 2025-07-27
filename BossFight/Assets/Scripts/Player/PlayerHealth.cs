@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class PlayerHealth : MonoBehaviour
 {
-    public float maxHealth = 1000f;
+    public float maxHealth;
     private float currentHealth;
 
     void Start()

@@ -1,8 +1,6 @@
 using UnityEngine;
-using UnityEngine.InputSystem;
 using System.Collections;
 using System;
-using Unity.VisualScripting;
 
 public class teleporter : MonoBehaviour
 {
@@ -15,14 +13,19 @@ public class teleporter : MonoBehaviour
     private Animator entrance_anim;
     private Animator exit_anim;
     public float offset;
+    public bool toggleTP;
     void Start()
     {
-        StartRepeating();
+        
     }
 
     void Update()
     {
-
+        if (toggleTP) StartRepeating();
+        else
+        {
+            StopRepeating();
+        }
     }
 
     void Teleport()
@@ -58,7 +61,6 @@ public class teleporter : MonoBehaviour
 
     public float repeatRate = 7f;
     private Coroutine repeatCoroutine;
-    // Start the repeating coroutine to teleport 
     public void StartRepeating()
     {
         if (repeatCoroutine == null)
@@ -67,13 +69,12 @@ public class teleporter : MonoBehaviour
         }
     }
 
-    // Stop the repeating coroutine
     public void StopRepeating()
     {
         if (repeatCoroutine != null)
         {
             StopCoroutine(repeatCoroutine);
-            repeatCoroutine = null;  // Optionally reset the reference
+            repeatCoroutine = null;
         }
     }
 

@@ -1,105 +1,96 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.Burst.Intrinsics;
 using UnityEngine;
 using UnityEngine.Rendering.Universal;
 public class light : MonoBehaviour
 {
     private Light2D myLight;
     public float radius_offset;
-    private Coroutine pulseCourtine;
-    public float repeatRate = 7f;
     public float duration = 5f;
     public bool pulsating_flag;
-    public bool slide_flag;
-    private string key = "000";
-    private List<float> tees;
     public List<float> min_nums;
-    private List<float> max_nums;
-    private List<float> I_offset;
-    private List<float> IR_offset;
-    private List<float> OR_offset;
+    public List<float> max_nums;
+    public List<float> tees;
+    public List<bool> flags;
+
     void Start()
     {
         myLight = GetComponent<Light2D>();
-        max_nums = new List<float>() { myLight.intensity, myLight.pointLightInnerRadius, myLight.pointLightOuterRadius };
-        I_offset = new List<float>() { max_nums[0]/2 - max_nums[0]/2, max_nums[0]/2 + max_nums[0]/2};
-        IR_offset = new List<float>() { max_nums[1]/2 - max_nums[1]/2, max_nums[1]/2 + max_nums[1]/2};
-        OR_offset = new List<float>() { max_nums[2]/2 - max_nums[2]/2, max_nums[2]/2 + max_nums[2]/2};
+        flags = new List<bool>() { true, true, true };
         tees = new List<float>() { 0f, 0f, 0f };
-        Debug.Log(I_offset);
-        Debug.Log(IR_offset);
-        Debug.Log(OR_offset);
+
     }
 
     void Update()
     {
         if (pulsating_flag)
         {
-            if (myLight.pointLightInnerRadius < min_nums[1])
+            if (myLight.intensity >= max_nums[0])
             {
-                
+                flags[0] = false;
             }
-            Debug.Log("pulsating");
-            if (slide_flag)
+            else if (myLight.intensity <= min_nums[0])
             {
-                tees[0] += Time.deltaTime / duration;
-                tees[1] += Time.deltaTime / duration;
-                tees[2] += Time.deltaTime / duration;
+                flags[0] = true;
             }
-            else
+            if (myLight.pointLightInnerRadius >= max_nums[1])
             {
-                tees[0] -= Time.deltaTime / duration;
-                tees[1] -= Time.deltaTime / duration;
-                tees[2] -= Time.deltaTime / duration;
+                flags[1] = false;
             }
-            tees[0] = Mathf.Clamp01(tees[0]);
-            tees[1] = Mathf.Clamp01(tees[1]);
-            tees[2] = Mathf.Clamp01(tees[2]);
-            
-            // pulse(tees[0], key);
+            else if (myLight.pointLightInnerRadius <= min_nums[1])
+            {
+                flags[1] = true;
+            }
+            if (myLight.pointLightOuterRadius >= max_nums[2])
+            {
+                flags[2] = false;
+            }
+            else if (myLight.pointLightOuterRadius <= min_nums[2])
+            {
+                flags[2] = true;
+            }
 
-            // if (tees[0] >= 1f) slide_flag = false;
-            // if (tees[0] <= 0f) slide_flag = true;
+            for (int i = 0; i < 3; i++)
+            {
+                if (flags[i])
+                {
+                    tees[i] += Time.deltaTime / duration;
+                }
+                else
+                {
+                    tees[i] -= Time.deltaTime / duration;
+                }
+                tees[i] = Mathf.Clamp01(tees[i]);
+
+                pulse(tees[i], i);
+
+            }
         }
         else
         {
-            myLight.intensity = max_nums[0];
+            myLight.intensity = max_nums[0]/2;
         }
         
     }
     void pulsateToggle()
     {
-        if (pulsating_flag)
-        {
-            pulsating_flag = false;
-        }
-        else
-        {
-            pulsating_flag = true;
-        }
+        pulsating_flag = !pulsating_flag;
     }
-    void pulse(float t, string key)
+    void pulse(float t, int key)
     {
-        if (key[0] == '1')
+        if (key == 0)
         {
-            myLight.intensity = Mathf.Lerp(I_offset[0], I_offset[1], t);
+            myLight.intensity = Mathf.SmoothStep(min_nums[0], max_nums[0], t);
         }
-        if (key[1] == '1')
+        if (key == 1)
         {
-            myLight.pointLightInnerRadius = Mathf.Lerp(IR_offset[0], IR_offset[1], t);
+            myLight.pointLightInnerRadius = Mathf.SmoothStep(min_nums[1], max_nums[1], t);
         }
-        if (key[2] == '1')
+        if (key == 2)
         {
-            myLight.pointLightOuterRadius = Mathf.Lerp(OR_offset[0], OR_offset[1], t);
+            myLight.pointLightOuterRadius = Mathf.SmoothStep(min_nums[2], max_nums[2], t);
         }
     }
 
-    // IEnumerator CallRepeatedly()
-    // {
-    //     while (true)
-    //     {
-    //         pulse();
-    //         yield return new WaitForSeconds(repeatRate);
-    //     }
-    // }
 }
