@@ -16,7 +16,7 @@ public class PlayerHealth : MonoBehaviour
     public void TakeDamage(float amount)
     {
         currentHealth -= amount;
-        healthUI.text = currentHealth.ToString("F0");
+        // healthUI.text = currentHealth.ToString("F0");
         if (currentHealth <= 0)
         {
             Die();
