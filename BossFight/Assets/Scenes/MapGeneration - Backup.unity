@@ -2482,7 +2482,7 @@ AudioSource:
   m_audioClip: {fileID: 0}
   m_Resource: {fileID: 0}
   m_PlayOnAwake: 1
-  m_Volume: 0.1
+  m_Volume: 0.2
   m_Pitch: 1
   Loop: 1
   Mute: 0
@@ -2665,6 +2665,10 @@ PrefabInstance:
     - target: {fileID: 5567277613955665368, guid: baf0914febaab7e468de873908d1178c, type: 3}
       propertyPath: m_Name
       value: OfficialPlayer
+      objectReference: {fileID: 0}
+    - target: {fileID: 9194925451620142301, guid: baf0914febaab7e468de873908d1178c, type: 3}
+      propertyPath: m_FlipX
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

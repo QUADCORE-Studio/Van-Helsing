@@ -129,6 +129,7 @@ GameObject:
   m_Component:
   - component: {fileID: 86476064}
   - component: {fileID: 86476063}
+  - component: {fileID: 86476065}
   m_Layer: 0
   m_Name: CandleCluster2
   m_TagString: Untagged
@@ -177,8 +178,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: -1995804741
-  m_SortingLayer: 3
+  m_SortingLayerID: 227496993
+  m_SortingLayer: 2
   m_SortingOrder: 0
   m_Sprite: {fileID: 1350532731, guid: 0c70e35f278b64340a95506e360f9f46, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -206,6 +207,20 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &86476065
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 86476062}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 677962a03aa5e874bb3948750ed7c8fe, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mainRenderer: {fileID: 86476063}
+  additionalRenderers: []
 --- !u!4 &97622791 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4667284943475315967, guid: 160fe1b4d65292a40abc0e29bcce38ca, type: 3}
@@ -267,6 +282,14 @@ PrefabInstance:
     - target: {fileID: 521050082126662053, guid: 1284d92b6bd9e164fbd7ad3031785e5b, type: 3}
       propertyPath: m_Name
       value: FirePlace
+      objectReference: {fileID: 0}
+    - target: {fileID: 8488728778328850148, guid: 1284d92b6bd9e164fbd7ad3031785e5b, type: 3}
+      propertyPath: m_SortingLayer
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8488728778328850148, guid: 1284d92b6bd9e164fbd7ad3031785e5b, type: 3}
+      propertyPath: m_SortingLayerID
+      value: 227496993
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -499,6 +522,14 @@ PrefabInstance:
     - target: {fileID: 521050082126662053, guid: 1284d92b6bd9e164fbd7ad3031785e5b, type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8488728778328850148, guid: 1284d92b6bd9e164fbd7ad3031785e5b, type: 3}
+      propertyPath: m_SortingLayer
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8488728778328850148, guid: 1284d92b6bd9e164fbd7ad3031785e5b, type: 3}
+      propertyPath: m_SortingLayerID
+      value: 227496993
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects:
@@ -851,7 +882,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6716112925611486788, guid: 160fe1b4d65292a40abc0e29bcce38ca, type: 3}
       propertyPath: m_SortingLayer
-      value: 3
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6716112925611486788, guid: 160fe1b4d65292a40abc0e29bcce38ca, type: 3}
+      propertyPath: m_SortingLayerID
+      value: 227496993
       objectReference: {fileID: 0}
     - target: {fileID: 8378113322578472997, guid: 160fe1b4d65292a40abc0e29bcce38ca, type: 3}
       propertyPath: m_Name
@@ -1073,11 +1108,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6716112925611486788, guid: 160fe1b4d65292a40abc0e29bcce38ca, type: 3}
       propertyPath: m_SortingLayer
-      value: 3
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 6716112925611486788, guid: 160fe1b4d65292a40abc0e29bcce38ca, type: 3}
       propertyPath: m_SortingLayerID
-      value: -1995804741
+      value: 227496993
       objectReference: {fileID: 0}
     - target: {fileID: 8378113322578472997, guid: 160fe1b4d65292a40abc0e29bcce38ca, type: 3}
       propertyPath: m_Name
@@ -1249,6 +1284,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: FirePlace
       objectReference: {fileID: 0}
+    - target: {fileID: 8488728778328850148, guid: 1284d92b6bd9e164fbd7ad3031785e5b, type: 3}
+      propertyPath: m_SortingLayer
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8488728778328850148, guid: 1284d92b6bd9e164fbd7ad3031785e5b, type: 3}
+      propertyPath: m_SortingLayerID
+      value: 227496993
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1403,6 +1446,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6716112925611486788, guid: 160fe1b4d65292a40abc0e29bcce38ca, type: 3}
+      propertyPath: m_SortingLayer
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6716112925611486788, guid: 160fe1b4d65292a40abc0e29bcce38ca, type: 3}
+      propertyPath: m_SortingLayerID
+      value: 227496993
+      objectReference: {fileID: 0}
     - target: {fileID: 8378113322578472997, guid: 160fe1b4d65292a40abc0e29bcce38ca, type: 3}
       propertyPath: m_Name
       value: Pillar5 (2)
@@ -1538,6 +1589,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1327111522}
   - component: {fileID: 1327111521}
+  - component: {fileID: 1327111523}
   m_Layer: 0
   m_Name: CandleCluster0
   m_TagString: Untagged
@@ -1615,6 +1667,20 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1327111523
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1327111520}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 677962a03aa5e874bb3948750ed7c8fe, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mainRenderer: {fileID: 1327111521}
+  additionalRenderers: []
 --- !u!1 &1332093065
 GameObject:
   m_ObjectHideFlags: 0
@@ -1673,6 +1739,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1333207888}
   - component: {fileID: 1333207887}
+  - component: {fileID: 1333207889}
   m_Layer: 0
   m_Name: CandleCluster1
   m_TagString: Untagged
@@ -1750,6 +1817,20 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1333207889
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1333207886}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 677962a03aa5e874bb3948750ed7c8fe, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mainRenderer: {fileID: 1333207887}
+  additionalRenderers: []
 --- !u!1 &1436569848
 GameObject:
   m_ObjectHideFlags: 0
@@ -1975,6 +2056,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1612951499}
   - component: {fileID: 1612951498}
+  - component: {fileID: 1612951500}
   m_Layer: 0
   m_Name: CandleCluster3
   m_TagString: Untagged
@@ -2023,8 +2105,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: -1995804741
-  m_SortingLayer: 3
+  m_SortingLayerID: 227496993
+  m_SortingLayer: 2
   m_SortingOrder: 0
   m_Sprite: {fileID: 623038267, guid: 0c70e35f278b64340a95506e360f9f46, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -2052,6 +2134,20 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1612951500
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1612951497}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 677962a03aa5e874bb3948750ed7c8fe, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mainRenderer: {fileID: 1612951498}
+  additionalRenderers: []
 --- !u!4 &1652100643 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4667284943475315967, guid: 160fe1b4d65292a40abc0e29bcce38ca, type: 3}
@@ -2153,6 +2249,14 @@ PrefabInstance:
     - target: {fileID: 4667284943475315967, guid: 160fe1b4d65292a40abc0e29bcce38ca, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6716112925611486788, guid: 160fe1b4d65292a40abc0e29bcce38ca, type: 3}
+      propertyPath: m_SortingLayer
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6716112925611486788, guid: 160fe1b4d65292a40abc0e29bcce38ca, type: 3}
+      propertyPath: m_SortingLayerID
+      value: 227496993
       objectReference: {fileID: 0}
     - target: {fileID: 8378113322578472997, guid: 160fe1b4d65292a40abc0e29bcce38ca, type: 3}
       propertyPath: m_Name
@@ -2314,18 +2418,6 @@ PrefabInstance:
     - target: {fileID: 521050082126662053, guid: 1284d92b6bd9e164fbd7ad3031785e5b, type: 3}
       propertyPath: m_Name
       value: FirePlace
-      objectReference: {fileID: 0}
-    - target: {fileID: 1456828922323261055, guid: 1284d92b6bd9e164fbd7ad3031785e5b, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2226095487999162142, guid: 1284d92b6bd9e164fbd7ad3031785e5b, type: 3}
-      propertyPath: flameVisual
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 3241352018332136020, guid: 1284d92b6bd9e164fbd7ad3031785e5b, type: 3}
-      propertyPath: m_Enabled
-      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -2577,11 +2669,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6716112925611486788, guid: 160fe1b4d65292a40abc0e29bcce38ca, type: 3}
       propertyPath: m_SortingLayer
-      value: 3
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 6716112925611486788, guid: 160fe1b4d65292a40abc0e29bcce38ca, type: 3}
       propertyPath: m_SortingLayerID
-      value: -1995804741
+      value: 227496993
       objectReference: {fileID: 0}
     - target: {fileID: 8378113322578472997, guid: 160fe1b4d65292a40abc0e29bcce38ca, type: 3}
       propertyPath: m_Name
@@ -3664,6 +3756,21 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 2264565457057245267}
+--- !u!4 &7791756988404588492
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2043361033761410528}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 3899742548527410740}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!70 &8178437358454191682
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -3701,21 +3808,6 @@ CapsuleCollider2D:
   m_Offset: {x: 0.3, y: 0}
   m_Size: {x: 1.4, y: 2}
   m_Direction: 0
---- !u!4 &7791756988404588492
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2043361033761410528}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 3899742548527410740}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &8661490576975312888
 SpriteRenderer:
   m_ObjectHideFlags: 0
