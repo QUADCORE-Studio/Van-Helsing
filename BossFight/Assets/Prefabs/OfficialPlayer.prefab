@@ -202,6 +202,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxHealth: 100
+  healthUI: {fileID: 0}
 --- !u!95 &1780631197322071201
 Animator:
   serializedVersion: 7
@@ -239,7 +240,7 @@ MonoBehaviour:
   animator: {fileID: 1780631197322071201}
   attackPoint: {fileID: 2435064615334297404}
   slashPrefab: {fileID: 9016858104080237798, guid: e7faaab0e57bfde4a8f8ed011a2c7426, type: 3}
-  attackCooldown: 0.3
+  attackCooldown: 1
 --- !u!114 &4669467377042072106
 MonoBehaviour:
   m_ObjectHideFlags: 0

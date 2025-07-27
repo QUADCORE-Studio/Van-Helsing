@@ -9,11 +9,17 @@ public class phase_2_manager : MonoBehaviour
     public bool attackLoop;
     public float cooldown;
     private Coroutine loopCourtine;
+
+    [Header("Health Settings")]
+    public int maxHealth = 5;
+    private int currentHealth;
+
     void Start()
     {
         manager = GetComponent<Blood_Attacks>();
         tele = GetComponent<teleporter>();
         tele.toggleTP = true;
+        currentHealth = maxHealth;
         if (loopCourtine == null)
         {
             loopCourtine = StartCoroutine(RepeatAction());
@@ -55,5 +61,18 @@ public class phase_2_manager : MonoBehaviour
             yield return new WaitForSeconds(0.1f);
         }
         yield break;
+    }
+
+    public void TakeDamage(int damage)
+    {
+        currentHealth -= damage;
+         Debug.Log("Dracula Phase 2 took damage! Current HP: " + currentHealth);
+
+        if (currentHealth <= 0)
+        {
+            Debug.Log("Phase 2 Dracula defeated!");
+            FindFirstObjectByType<DraculaPhaseManager>()?.OnDraculaDeath();
+            gameObject.SetActive(false);
+        }
     }
 }

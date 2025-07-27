@@ -48,18 +48,17 @@ public class DraculaBoss : MonoBehaviour
     public void TakeDamage()
     {
         health--;
+        Debug.Log("Dracula Phase 1 took damage! Current HP: " + health);
+
         if (health <= 0)
         {
             animator.Play("ShadowSlash");
-            // Death logic
-            return;
+            Debug.Log("Phase 1 Dracula defeated!");
+            FindFirstObjectByType<DraculaPhaseManager>()?.OnDraculaDeath();
+            gameObject.SetActive(false);
         }
 
-        // Example: advance phase every 3 hits
-        if (health % 3 == 0)
-        {
-            SwitchToPhase(currentPhaseIndex + 1);
-        }
+        
     }
 
     void SwitchToPhase(int index)

@@ -25,6 +25,7 @@ public class DraculaPhaseManager : MonoBehaviour
         {
             Debug.Log("🧛 All Dracula phases defeated!");
         }
+        // add in scene transition
     }
 
     private void ActivateDracula(int index)
