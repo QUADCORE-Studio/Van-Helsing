@@ -1,4 +1,4 @@
-using System.Data.Common;
+using System.Collections;
 using UnityEngine;
 
 
@@ -8,7 +8,7 @@ public class DraculaDash : MonoBehaviour
     public float dashSpeed = 35f;
     public float dashCooldown = 10f;
     public bool isVulnerable = false;
-    public float vulnerableDuration = 5f;
+    public float vulnerableDuration = 10f;
     public LayerMask pillarLayer;
     public Animator animator;
 
@@ -53,7 +53,6 @@ public class DraculaDash : MonoBehaviour
 
     void OnCollisionEnter2D(Collision2D collision)
     {
-        Debug.Log("COOOOLLIIIDDDS");
         if (((1 << collision.gameObject.layer) & pillarLayer) != 0 && isDashing)
         {
             isDashing = false;
@@ -78,19 +77,39 @@ public class DraculaDash : MonoBehaviour
         return Time.time >= lastDashTime + dashCooldown;
     }
 
-    void BecomeVulnerable()
+    public void BecomeVulnerable()
     {
-        if (isVulnerable) return; // Already vulnerable, do nothing
-        
-        isVulnerable = true;
-        Debug.Log("Dracula is vulnerable!");
-        animator.Play("Recover");
-        Invoke(nameof(RecoverFromVulnerability), vulnerableDuration);
+        // If we’re already in the middle of vulnerability, bail out
+        if (isVulnerable) return;
+
+        StartCoroutine(VulnerabilityRoutine());
     }
 
-    void RecoverFromVulnerability()
+    private IEnumerator VulnerabilityRoutine()
     {
+        isVulnerable = true;
+        Debug.Log("Dracula is now vulnerable!");
+
+        // (Optional) If you want to log a countdown every second:
+        float remaining = vulnerableDuration;
+        while (remaining > 0f)
+        {
+            Debug.Log($"Dracula vulnerable for {remaining:F0} more seconds");
+            yield return new WaitForSeconds(1f);
+            remaining -= 1f;
+        }
+
+        // End vulnerability
         isVulnerable = false;
-        Debug.Log("Dracula recovered from vulnerability.");
+        Debug.Log("Dracula has recovered and is no longer vulnerable.");
+        // (Optional) play a “get up” or idle animation here:
+        if (animator != null)
+            animator.Play("Recover");
     }
+
+    // void RecoverFromVulnerability()
+    // {
+    //     isVulnerable = false;
+    //     Debug.Log("Dracula recovered from vulnerability.");
+    // }
 }

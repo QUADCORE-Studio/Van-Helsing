@@ -2,13 +2,11 @@ using UnityEngine;
 
 public class DraculaSlashAttack : MonoBehaviour
 {
-   [Header("Slash Settings")]
-    public int slashDamage = 20;
+    public int slashDamage = 10;
     public float slashDuration = 1.0f;
     public float slashRange = 2.5f;
-    public float slashCooldown = 2.5f;
+    public float slashCooldown = 4f;
 
-    [Header("References")]
     public BoxCollider2D slashHitbox;
     public Animator animator;
     public DraculaDash draculaDash;
