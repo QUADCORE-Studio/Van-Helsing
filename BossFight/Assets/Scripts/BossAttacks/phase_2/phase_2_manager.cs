@@ -26,7 +26,7 @@ public class phase_2_manager : MonoBehaviour
     }
     void random_attack()
     {
-        int randInt = Random.Range(0, 2);
+        int randInt = Random.Range(0, 3);
         Debug.Log(randInt);
         Debug.Log("test");
         if (randInt == 0)
