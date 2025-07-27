@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 5574509226361064561}
   - component: {fileID: 2325297206335212844}
   - component: {fileID: 1491175636286815924}
+  - component: {fileID: 1610977763769022955}
   - component: {fileID: 4229411586843451897}
   - component: {fileID: 1392689776670195001}
   m_Layer: 0
@@ -31,7 +32,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -0.36, y: -0.58, z: 0.5}
-  m_LocalScale: {x: 0.33709, y: 0.33709, z: 0.33709}
+  m_LocalScale: {x: 0.6898546, y: 0.6898546, z: 0.6898546}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -103,58 +104,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 621759570c1bee842b767d2b1845ab8d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  animator: {fileID: 0}
-  circle_input:
-    m_Name: Circle_input
-    m_Type: 0
-    m_ExpectedControlType: 
-    m_Id: c2743c87-6699-4e33-8e80-55212feeae52
-    m_Processors: 
-    m_Interactions: 
-    m_SingletonActionBindings:
-    - m_Name: 
-      m_Id: cf72f269-9b21-4303-9121-ca85b00e74c7
-      m_Path: <Keyboard>/2
-      m_Interactions: 
-      m_Processors: 
-      m_Groups: 
-      m_Action: Circle_input
-      m_Flags: 0
-    m_Flags: 0
-  arrow_input:
-    m_Name: Arrow_input
-    m_Type: 0
-    m_ExpectedControlType: 
-    m_Id: ac6ee1bb-7958-4cc3-92a1-94e1562119b6
-    m_Processors: 
-    m_Interactions: 
-    m_SingletonActionBindings:
-    - m_Name: 
-      m_Id: e0c21be7-ba51-4fb4-bfed-8dddacbd0169
-      m_Path: <Keyboard>/1
-      m_Interactions: 
-      m_Processors: 
-      m_Groups: 
-      m_Action: Arrow_input
-      m_Flags: 0
-    m_Flags: 0
-  beam_input:
-    m_Name: Beam_input
-    m_Type: 0
-    m_ExpectedControlType: 
-    m_Id: 3dad3bb6-511e-475e-9a3b-1f76eab22145
-    m_Processors: 
-    m_Interactions: 
-    m_SingletonActionBindings:
-    - m_Name: 
-      m_Id: e9c2c275-a767-48e9-82fe-847378e66c60
-      m_Path: <Keyboard>/3
-      m_Interactions: 
-      m_Processors: 
-      m_Groups: 
-      m_Action: Beam_input
-      m_Flags: 0
-    m_Flags: 0
   arrow_prefab: {fileID: 5239621148246319555, guid: 01fa349bc65117746949384cf86c29c3, type: 3}
   beam_prefab: {fileID: 4719212814198332376, guid: b7c5f2d997f7f484494636927c982cd2, type: 3}
   arrow_circle_count: 8
@@ -177,7 +126,22 @@ MonoBehaviour:
   teleporter_1: {fileID: 1356560534698349917, guid: 60458780da8e60b47962e7ccf3c2d0e8, type: 3}
   teleporter_2: {fileID: 2171389512985579544, guid: b8bbdcd4675abdb47bc45c02cb60f5d3, type: 3}
   offset: 0.95
-  repeatRate: 3.53
+  toggleTP: 0
+  repeatRate: 10
+--- !u!114 &1610977763769022955
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9123124211826888638}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 361e49dd7c0d8bc4e882653feec813cf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  attackLoop: 1
+  cooldown: 4
 --- !u!70 &4229411586843451897
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
