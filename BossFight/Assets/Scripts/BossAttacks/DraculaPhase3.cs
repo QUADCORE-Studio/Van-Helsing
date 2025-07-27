@@ -23,6 +23,10 @@ public class DraculaPhase3 : MonoBehaviour
     private float attackCooldown = 1.5f;
     private float nextAttackTime;
 
+    [Header("Health Settings")]
+    public int maxHealth = 5;
+    private int currentHealth;
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -34,6 +38,7 @@ public class DraculaPhase3 : MonoBehaviour
         draculaLurk = GetComponent<Lurk>();
         draculaHypnoBeam = GetComponent<DraculaHypnoBeam>();
         nextAttackTime = Time.time + attackCooldown;
+        currentHealth = maxHealth;
     }
 
     // Update is called once per frame
@@ -62,7 +67,7 @@ public class DraculaPhase3 : MonoBehaviour
             case DraculaAttackState.Hypno:
                 PerformHypnoBeam();
                 break;
-                
+
         }
     }
     void ChooseNextAttack()
@@ -73,7 +78,7 @@ public class DraculaPhase3 : MonoBehaviour
             return;
         }
         currentState = (DraculaAttackState)Random.Range(1, 4); // Pick Dash, Slash, or Hypno
-        if(currentState == DraculaAttackState.Idle) currentState = DraculaAttackState.Lurk;
+        if (currentState == DraculaAttackState.Idle) currentState = DraculaAttackState.Lurk;
     }
     void PerformDash()
     {
@@ -82,9 +87,9 @@ public class DraculaPhase3 : MonoBehaviour
         {
             Debug.Log("Dracula used Dash!");
             Invoke(nameof(FinishAttack), 3f);
-            
+
         }
-        
+
     }
 
     void PerformHypnoBeam()
@@ -108,5 +113,17 @@ public class DraculaPhase3 : MonoBehaviour
     {
         currentState = DraculaAttackState.Idle;
         nextAttackTime = Time.time + attackCooldown;
+    }
+
+    public void TakeDamage(int damage)
+    {
+        currentHealth -= damage;
+        Debug.Log("Dracula Phase 3 took damage! Current HP: " + currentHealth);
+        if (currentHealth <= 0)
+        {
+            Debug.Log("Phase 3 Dracula defeated!");
+            FindFirstObjectByType<DraculaPhaseManager>()?.OnDraculaDeath();
+            gameObject.SetActive(false);
+        }
     }
 }

@@ -35,4 +35,13 @@ public class PlayerHealth : MonoBehaviour
     {
         currentHealth = Mathf.Min(currentHealth + amount, maxHealth);
     }
+
+    void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.CompareTag("Mob") || collision.CompareTag("Dracula"))
+        {
+            Debug.Log("Player hit by: " + collision.name);
+            TakeDamage(1); // or whatever function you're using
+        }
+    }
 }
