@@ -6,7 +6,6 @@ using UnityEngine.Rendering.Universal;
 public class light : MonoBehaviour
 {
     private Light2D myLight;
-    public float radius_offset;
     public float duration = 5f;
     public bool pulsating_flag;
     public List<float> min_nums;
@@ -67,10 +66,7 @@ public class light : MonoBehaviour
 
             }
         }
-        else
-        {
-            myLight.intensity = max_nums[0]/2;
-        }
+
         
     }
     void pulsateToggle()

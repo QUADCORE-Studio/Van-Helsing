@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 4058949017303863536}
   - component: {fileID: 142861889061767456}
   - component: {fileID: 89649773982123353}
+  - component: {fileID: 97581607873881815}
   m_Layer: 0
   m_Name: Doors_3
   m_TagString: Untagged
@@ -74,8 +75,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: 227496993
+  m_SortingLayer: 2
   m_SortingOrder: 1
   m_Sprite: {fileID: 3499683669041570755, guid: de558f7213ca4e8418959a44950d9d15, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -122,7 +123,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0, y: 0.7640867}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -132,8 +133,21 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 4.2200003, y: 4.59}
+  m_Size: {x: 4.2200003, y: 3.0618267}
   m_EdgeRadius: 0
+--- !u!114 &97581607873881815
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 60823149535774051}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e8c7ca437cd2d1b4bb919a9fde231dd5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sceneToLoad: BossRoom
 --- !u!1 &203858843372629843
 GameObject:
   m_ObjectHideFlags: 0
@@ -237,6 +251,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   targetRoomSpawn: {fileID: 0}
+  newRoomCenter: {fileID: 0}
 --- !u!61 &1151938982592972217
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -927,13 +942,13 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_Sprite: {fileID: -8976715615389438421, guid: dd4959e349b1e704aa07de518d287b5a, type: 3}
+  m_SortingOrder: 1
+  m_Sprite: {fileID: 21300000, guid: 147b95525bc14b347aaa1c2f7907a867, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 30.000002, y: 30.000002}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
