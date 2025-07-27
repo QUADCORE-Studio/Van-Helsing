@@ -9,6 +9,7 @@ public class pray : MonoBehaviour
     private Coroutine bounceCoroutine;
     public string nextSceneName;
     public float duration = 5f;
+    public GameObject angelGO;
 
     void Awake()
     {
@@ -46,8 +47,10 @@ public class pray : MonoBehaviour
         }
 
         Destroy(praySign, 0.1f);
-        LoadNextScene();
-        Debug.Log("loadns");
+        // LoadNextScene();
+        angel angelRef = angelGO.GetComponent<angel>();
+        angelRef.toggle = true;
+        
     }
     void LoadNextScene()
     {
