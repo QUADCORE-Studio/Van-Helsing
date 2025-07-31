@@ -8,7 +8,7 @@ public class DraculaDash : MonoBehaviour
     public float dashSpeed = 35f;
     public float dashCooldown = 10f;
     public bool isVulnerable = false;
-    public float vulnerableDuration = 10f;
+    public float vulnerableDuration = 4f;
     public LayerMask pillarLayer;
     public Animator animator;
 

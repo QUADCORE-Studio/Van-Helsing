@@ -7,7 +7,7 @@ public class PlayerMovement : MonoBehaviour
 {
     [Header("Movement")]
     public Animator animator;
-    public float moveSpeed = 5f;
+    public float moveSpeed = 15f;
     private Vector2 moveInput;
     private Rigidbody2D rb;
     private PlayerControls controls;

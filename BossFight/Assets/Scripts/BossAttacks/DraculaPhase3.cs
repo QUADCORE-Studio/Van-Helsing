@@ -21,7 +21,7 @@ public class DraculaPhase3 : MonoBehaviour
 
     public Animator animator;
     public DraculaAttackState currentState = DraculaAttackState.Idle;
-    private float attackCooldown = 1.5f;
+    private readonly float attackCooldown = 1.5f;
     private float nextAttackTime;
 
     [Header("Health Settings")]
@@ -47,7 +47,7 @@ public class DraculaPhase3 : MonoBehaviour
     void Update()
     {
         healthUI.text = currentHealth.ToString("F0");
-        if (Time.time < nextAttackTime || playerTransform == null) return;
+        if (Time.time < nextAttackTime || playerTransform == null|| draculaDash.isVulnerable) return;
         switch (currentState)
         {
             case DraculaAttackState.Idle:
@@ -81,7 +81,7 @@ public class DraculaPhase3 : MonoBehaviour
         if (draculaDash.IsDashReady() && draculaDash.Dash())
         {
             Debug.Log("Dracula used Dash!");
-            Invoke(nameof(FinishAttack), 3f);
+            Invoke(nameof(FinishAttack), 1.5f);
 
         }
 
@@ -97,7 +97,7 @@ public class DraculaPhase3 : MonoBehaviour
     {
         draculaLurk.SetPlayer(playerTransform);
         draculaLurk.StartLurking();
-        Invoke(nameof(FinishLurk), 3f);
+        Invoke(nameof(FinishLurk), 1.5f);
     }
     void FinishLurk()
     {

@@ -1,7 +1,7 @@
 using UnityEngine;
 public class Lurk : MonoBehaviour
 {
-    public float lurkSpeed = 10f;
+    public float lurkSpeed = 15f;
     public float lurkDuration = 5f;
 
     private bool isLurking = false;
