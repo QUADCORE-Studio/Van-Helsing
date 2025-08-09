@@ -42,7 +42,7 @@ public class PlayerMovement : MonoBehaviour
         if (moveInput.x < 0)
         {
            spriteRenderer.flipX = false;
-            animator.SetBool("isWalkingLeft", true);
+            animator.SetBool("isWalking", true);
         }
         else if (moveInput.x > 0)
         {
@@ -53,7 +53,6 @@ public class PlayerMovement : MonoBehaviour
         if (moveInput.sqrMagnitude < 0.01f)
         {
             animator.SetBool("isWalking", false);
-            animator.SetBool("isWalkingLeft", false);
         }
     }
 }

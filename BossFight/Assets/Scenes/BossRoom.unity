@@ -357,7 +357,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 10
+  m_text: 100
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -3226,10 +3226,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: OfficialPlayer
       objectReference: {fileID: 0}
-    - target: {fileID: 5908498810637894742, guid: baf0914febaab7e468de873908d1178c, type: 3}
-      propertyPath: moveSpeed
-      value: 5
-      objectReference: {fileID: 0}
     - target: {fileID: 6282628797773958750, guid: baf0914febaab7e468de873908d1178c, type: 3}
       propertyPath: healthUI
       value: 
@@ -3529,7 +3525,7 @@ AudioSource:
   m_audioClip: {fileID: 0}
   m_Resource: {fileID: 0}
   m_PlayOnAwake: 1
-  m_Volume: 0.5
+  m_Volume: 0.106
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -4001,8 +3997,8 @@ GameObject:
   - component: {fileID: 2372366328685307180}
   - component: {fileID: 491445469713409241}
   - component: {fileID: 5976303545470951015}
-  - component: {fileID: 4035232350222804989}
   - component: {fileID: 7694484471882338013}
+  - component: {fileID: 4035232350222804989}
   m_Layer: 0
   m_Name: Dracula 3
   m_TagString: Dracula
